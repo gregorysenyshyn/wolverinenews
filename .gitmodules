@@ -1,0 +1,6 @@
+[submodule "repos/purecss"]
+	path = repos/purecss
+	url = git@github.com:yahoo/pure.git
+[submodule "repos/Twitter-Post-Fetcher"]
+	path = repos/Twitter-Post-Fetcher
+	url = git@github.com:jasonmayes/Twitter-Post-Fetcher.git

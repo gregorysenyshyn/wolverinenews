@@ -1,0 +1,89 @@
+$blue: #2c1b76;
+$grey: #989aa0;
+$black: #231f20;
+
+body {
+  background-color: $grey;
+}
+
+#sidebar {
+  position:absolute;
+  height: 92vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+}
+
+#content {
+  height: 92vh;
+  margin-left: 33.3333%;
+}
+
+#announcement-box {
+  background-color: lighten($grey, 20);
+  text-align: center;
+  border: solid 4px $blue;
+  height: 525px;
+  margin: 4rem;
+  padding: 2rem;
+}
+
+
+#title {
+  height: 100px;
+  font-size: 3rem; 
+  margin-top: 1.5rem;
+}
+
+#body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem; 
+  height: 300px;
+
+  span {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+#footer {
+  font-size: 2rem; 
+  margin-top: 1rem;
+}
+
+#twitter-wrapper {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  background-color: $blue;
+  color: lighten($grey, 10);
+  overflow: hidden;
+}
+
+#twitter-feed {
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    float: left;
+    font-size: 2rem;
+    padding-left: 10%;
+    -webkit-animation: marquee 90s linear infinite;
+    li {
+      display: inline-block;
+      padding-right: 4rem;
+    }
+  }
+}
+
+@-webkit-keyframes marquee {
+  0%   { transform: translateX(0);  }
+  100% { transform: translateX(-100%);  }
+}

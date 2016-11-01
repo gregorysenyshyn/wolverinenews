@@ -1,0 +1,9 @@
+*~
+*.swp
+HTMLTidy*
+__pycache__/
+dist
+nginx/
+repos/
+src/scss/*.css
+src/js/sheets.js
