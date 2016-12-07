@@ -62,35 +62,39 @@ function switchAnnouncements() {
 
 function consider(potentialAnnouncement, today) {
   if (potentialAnnouncement.start <= today && today <= potentialAnnouncement.end) {
+
     if (potentialAnnouncement.end.getMonth() < potentialAnnouncement.start.getMonth()){
+      //goes across year change
       if (today.getMonth() <= 6){
         if ((new Date(today.getFullYear()) - 1),
                       potentialAnnouncement.start.getMonth(),
-                      potentialAnnouncement.start.getDay() <= today &&
+                      potentialAnnouncement.start.getDate() <= today &&
              today <= new Date(today.getFullYear(),
                                potentialAnnouncement.start.getMonth(),
-                               potentialAnnouncement.start.getDay())){
+                               potentialAnnouncement.start.getDate())){
           return true;
         }
       }
+
       else if (today.getMonth() >= 8){
-        if (new Date(today.getFullYear()),
+        if (new Date(today.getFullYear(),
                      potentialAnnouncement.start.getMonth(),
-                     potentialAnnouncement.start.getDay() <= today &&
+                     potentialAnnouncement.start.getDate()) <= today &&
              today <= new Date((today.getFullYear() + 1),
-                                potentialAnnouncement.start.getMonth(),
-                                potentialAnnouncement.start.getDay())){
+                                potentialAnnouncement.end.getMonth(),
+                                potentialAnnouncement.end.getDate())){
           return true;
         }
       }
     }
     else {
+      //Doesn't go across year change
       if (new Date(today.getFullYear(),
                    potentialAnnouncement.start.getMonth(),
-                   potentialAnnouncement.start.getDay()) <= today &&
+                   potentialAnnouncement.start.getDate()) <= today &&
           today <= new Date(today.getFullYear(),
                             potentialAnnouncement.end.getMonth(),
-                            potentialAnnouncement.end.getDay())) {
+                            potentialAnnouncement.end.getDate())) {
         return true;
       }
     }
@@ -162,7 +166,7 @@ function handleAnnouncements(announcementResponse) {
   var currentAnnouncements = [];
   var today = new Date();
   for (var item in rawAnnouncements) {
-    if (rawAnnouncements[item].values[0].formattedValue) {
+    if (rawAnnouncements[item].values[0].formattedValue && rawAnnouncements[item].values[0].formattedValue !== 'Start Year') {
       var potentialAnnouncement = {};
       potentialAnnouncement.start = new Date(rawAnnouncements[item].values[0].formattedValue,
                                              Number(rawAnnouncements[item].values[1].formattedValue) - 1,
