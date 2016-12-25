@@ -150,21 +150,29 @@ def handle_scss(production):
 # ###### #
 #  HTML  #
 # ###### #
-data = {'pagesets': [{'files': [{'src': ['src/pages/main/*.html',
-                                         '!src/pages/main/announcements.html'],
+data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
+                                         '!src/pages/announcements.html'],
                                 'dest': ''},
-                                {'src': 'src/pages/main/tools/*.html',
-                                 'dest': 'tools'}
-                                ],
+                                {'src': ['src/pages/tools/*.html',
+                                         'src/pages/tools/*.md'],
+                                 'dest': 'tools'}],
                       'partials': ['src/partials/main/*.html'],
                       'layouts': 'src/layouts/layout.html',
                       'options': {'section': False}},
-                     {'files': [{'src': 'src/pages/main/announcements.html',
+
+                      {'files': [{'src': ['src/pages/osslt/*.yaml'],
+                                  'dest': 'osslt'}],
+                      'partials': ['src/partials/osslt/*.html',
+                                   'src/partials/main/*.html'],
+                      'layouts': 'src/layouts/layout.html',
+                      'options': {'section': False}},
+
+                     {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
                        'partials': ['src/partials/announcements/*.html'],
                        'layouts': 'src/layouts/layout.html',
                        'options': {'section': False}}
-                    ],
+                     ],
         'options': {'s3 bucket': 'wolverinenews.ca',
                     'local prefix': 'dist/pages',
                     'local static': 'dist'}
@@ -203,12 +211,11 @@ if __name__ == '__main__':
         production = True
 
     tools.clean()
-    
-    ## AWS ##
-    s3 = None
-    s3_bucket = None
-    s3_bucket_name = data['options']['s3 bucket']
+    s3=None 
+
     if production:
+        ## AWS ##
+        s3_bucket_name = data['options']['s3 bucket']
         print('\n\n=== A W S ===\n\nCleaning {0}'.format(s3_bucket_name))
         s3 = boto3.resource('s3')
         s3_bucket = s3.Bucket(s3_bucket_name)
@@ -221,11 +228,11 @@ if __name__ == '__main__':
     print('\n\n=== J S ===')
     handle_js(production)
 
-    # print('\n\n=== I M A G E S ===')
-    # copy_images()
+    print('\n\n=== I M A G E S ===')
+    copy_images()
 
     print('\n\n=== H T M L ===')
-    tools.main(data['pagesets'], data['options'], s3, production=production)
+    tools.main(data['pagesets'], data['options'], s3, production)
 
     if production:
         print('\n\n=== S T A T I C   F I L E S ===')

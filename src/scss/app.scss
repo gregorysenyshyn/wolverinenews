@@ -21,16 +21,14 @@ button {
 }
 
 #header {
-  background-color: lighten($blue, 20);
+  background-color: $black;
   display: flex;
   align-items: center;
 }
 
 
 #logo {
-  background-color: $black;
   display:flex;
-  padding-bottom: 1rem;
   a {
     margin: auto;
   }
@@ -42,12 +40,16 @@ button {
 
 #header-title {
   display: flex;
+  background-color: lighten($blue, 20);
   text-align: center;
   align-items: center;
   justify-content: center;
-  span {
+  font-size: 2rem;
+  p {
     color: lighten($grey, 20);
-    font-size: 4rem;
+    @media screen and (min-width: 35.5rem) {
+      font-size: 4rem;
+    }
     @media screen and (min-width: 52rem) {
       font-size: 7rem;
     }
@@ -134,7 +136,10 @@ button {
 
 .panel {
   border: solid 2px $blue;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
+  @media screen and (min-width: 35.5rem) {
+    padding: 2rem 3rem;
+  }
   background-color: white;
 }
 .index-blog-entry {
@@ -383,10 +388,13 @@ button {
 
 #tools-main {
   padding: 2rem;
+  hr {
+    border-color: $black;
+  }
 }
 
 .tools-container {
-  height: 200px;
+  min-height: 200px;
   padding: 0 2rem;
   a {
     text-decoration: none;
@@ -398,9 +406,11 @@ button {
   background-color: $grey;
 }
 
-#calculator-container {
+.calculator-container {
+  @media screen and (min-width: 50rem) {
+    font-size: 2rem;
+  }
   padding: 2rem;
-  font-size: 2rem;
   line-height: 400%;
   h1 {
     font-size: 3rem;
@@ -411,7 +421,7 @@ button {
   }
 }
 
-#calculator-header {
+.calculator-header {
   padding-left: 1rem;
   span {
     font-size: 2rem;

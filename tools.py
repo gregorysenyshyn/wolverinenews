@@ -10,6 +10,7 @@ from jinja2 import BaseLoader
 from jinja2 import Environment
 
 import htmlmin
+import yaml
 import markdown
 import frontmatter
 from tidylib import tidy_document
@@ -131,9 +132,13 @@ def set_page_metadata(pages, production):
     Sets metadata, including src, dest, content, data
     '''
     for page in pages:
-        fm_page = frontmatter.load(page['src'])
-        page['data'] = fm_page.metadata
-        page['content'] = fm_page.content
+        if page['src'].endswith('.yaml'):
+            with open(page['src'], 'r') as f:
+                page['data'] = yaml.load(f)
+        else:
+            fm_page = frontmatter.load(page['src'])
+            page['data'] = fm_page.metadata
+            page['content'] = fm_page.content
 
 
 def get_pages(files):
@@ -159,7 +164,7 @@ def build_page(page, environment):
     t1 = time.time()
     print('Building {0}...'.format(page['src']), end='')
 
-    if not page['src'].endswith('.html'):
+    if page['src'].endswith('.md'):
         environment = get_environment_filters(page, environment)
     final_page = environment.from_string(page['content']).render(page['data'])
 
