@@ -84,21 +84,6 @@ def markdown_filter(text):
     return markdown.markdown(text)
 
 
-def get_environment_filters(page, environment):
-    '''
-    Uses file extension to determine filetype and pass page content to
-    a handler
-    '''
-    if page['src'].endswith('.md'):
-        if 'markdown' not in environment.filters:
-            environment.filters['markdown'] = markdown_filter
-        page['src'] = '{0}html'.format(page['src'][:-2])
-    else:
-        print(' '.join(['{0} must be in either'.format(page['src']),
-                        '.md or .html (jinja2) format!']))
-    return environment
-
-
 def get_destination(page, dest, production):
     '''
     Joins dest to the last part of the path from page, and strips the
@@ -112,17 +97,12 @@ def get_destination(page, dest, production):
     return os.path.join(dest, final_name)
 
 
-def get_id(filename):
-    f_id = os.path.splitext(os.path.basename(filename))[0]
-    return f_id
-
-
 def get_sidebar_data(pages):
     sidebar_data = []
     for page in pages:
-        print(page)
+        f_id = os.path.splitext(os.path.basename(page['src']))[0]
         sidebar_data.append({'title': page['data']['title'],
-                             'id': get_id(page['src']),
+                             'id': f_id, 
                              'order': page['data']['order']})
     return sorted(sidebar_data, key=lambda x: x['order'])
 
@@ -132,13 +112,21 @@ def set_page_metadata(pages, production):
     Sets metadata, including src, dest, content, data
     '''
     for page in pages:
+
         if page['src'].endswith('.yaml'):
             with open(page['src'], 'r') as f:
                 page['data'] = yaml.load(f)
-        else:
+            page['src'] = '{0}html'.format(page['src'][:-4])
+
+        elif page['src'].endswith('.md') or page['src'].endswith('.html'):
             fm_page = frontmatter.load(page['src'])
             page['data'] = fm_page.metadata
             page['content'] = fm_page.content
+            if page['src'].endswith('.md'):
+                page['src'] = '{0}html'.format(page['src'][:-2])
+        else:
+            print(' '.join(['{0} must be in either'.format(page['src']),
+                            '.yaml, .md or .html (jinja2) format!']))
 
 
 def get_pages(files):
@@ -156,36 +144,16 @@ def get_pages(files):
     return pages
 
 
-def build_page(page, environment):
-    '''
-    Takes page name and returns final HTML with updated page name (if
-    necessary)
-    '''
-    t1 = time.time()
-    print('Building {0}...'.format(page['src']), end='')
-
-    if page['src'].endswith('.md'):
-        environment = get_environment_filters(page, environment)
-    final_page = environment.from_string(page['content']).render(page['data'])
-
-    tidy_page, errors = tidy_document(final_page)
-    if errors:
-        error_page = os.path.basename(page['src'])
-        with open('HTMLTidy Errors', 'a') as f:
-            f.write('{0}:\n{1}'.format(error_page, errors))
-
-    print(' Done in {0} seconds'.format(round(float(time.time() - t1), 4)))
-    return final_page
-
-
 def build_pageset(pageset, options, production=False, s3=None):
     '''Logic for building pages.'''
 
     template_files = [pageset[pathset] for pathset in pageset
                       if pathset in ['partials', 'layouts']]
     j2_env = Environment(loader=GlobLoader(template_files), trim_blocks=True)
+    j2_env.filters['markdown'] = markdown_filter
     pages = get_pages(pageset['files'])
     set_page_metadata(pages, production)
+
     # need a copy to embed to avoid circular reference, sorting it for sidebar
     sidebar_data = []
     if ('section' in pageset['options'] and
@@ -193,11 +161,26 @@ def build_pageset(pageset, options, production=False, s3=None):
         sidebar_data = get_sidebar_data(pages)
 
     for page in pages:
-        page['data']['id'] = get_id(page['src'])
+        f_id = os.path.splitext(os.path.basename(page['src']))[0]
+        page['data']['id'] = f_id 
         if sidebar_data:
             page['data']['pages'] = sidebar_data
-        final_page = build_page(page,
-                                j2_env)
+        t1 = time.time()
+        print('Building {0}...'.format(page['src']), end='')
+        if page['content']:
+            final_page = j2_env.from_string(page['content']).render(page['data'])
+        else:
+            template = j2_env.get_template(pageset['options']['template'])
+            final_page = template.render(page['data']) 
+
+        # UPDATE HTML TIDY BEFORE UNCOMMENTING
+        # tidy_page, errors = tidy_document(final_page)
+        # if errors:
+        #     error_page = os.path.basename(page['src'])
+        #     with open('HTMLTidy Errors', 'a') as f:
+        #         f.write('{0}:\n{1}'.format(error_page, errors))
+
+        print(' Done in {0} seconds'.format(round(float(time.time() - t1), 4)))
 
         destination = get_destination(page['src'],
                                       page['dest'],
@@ -241,7 +224,7 @@ def main(pagesets, options, s3, production=False):
     print('Built all pages in {0} seconds'.format(
         round(float(time.time() - t0), 4)))
 
-    if os.path.isfile('HTMLTidy Errors'):
-        print(colored(' '.join(['HTML Errors Detected!',
-                                'Check HTMLTidy Errors for details']),
-                      'red'))
+    # if os.path.isfile('HTMLTidy Errors'):
+    #     print(colored(' '.join(['HTML Errors Detected!',
+    #                             'Check HTMLTidy Errors for details']),
+    #                   'red'))

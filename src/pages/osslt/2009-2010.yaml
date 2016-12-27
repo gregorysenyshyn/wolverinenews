@@ -1,0 +1,27 @@
+
+  '2009-2010': [['b','c','b','b','c',
+                 'c','c','d','a',
+                 'b','d','b','a','b','d',
+                 'a','d','a','c',
+                 'b','b','b','c','c','d','b','b','d',
+                 'b','d','d','b','d',
+                 'c','d','b','c','d','d'
+                 ],
+                ['direct','direct','indirect','indirect','indirect',
+
+                 'indirect','indirect','indirect','indirect',
+
+                 'direct','indirect','direct','indirect','indirect',
+                 'indirect',
+
+                 'indirect','indirect','indirect','indirect',
+
+                 'direct','indirect','indirect','direct','indirect',
+                 'indirect','direct','indirect','indirect',
+
+                 'direct','indirect','indirect','indirect','indirect',
+
+                 'indirect','indirect','indirect','direct','direct',
+                 'direct'
+                 ]
+               ],

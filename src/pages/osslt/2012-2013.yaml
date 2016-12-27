@@ -1,0 +1,29 @@
+
+  '2012-2013': [['c','a','b','c','b',
+                 'c','a','b','a',
+                 'c','b','b','a','b','c',
+                 'd','c','b','c',
+                 'a','a','d','a','c','d','a','c','d',
+                 'c','b','d','b','c',
+                 'c','a','b','d','a','a'
+                 ],
+
+                ['direct','indirect','direct','indirect','indirect',
+
+                 'indirect','indirect','indirect','indirect',
+
+                 'indirect','indirect','direct','indirect','indirect',
+                 'indirect',
+
+                 'indirect','indirect','indirect','indirect',
+
+                 'indirect','indirect','direct','direct','direct',
+                 'indirect','indirect','indirect','indirect',
+
+                 'indirect','indirect','indirect','direct','indirect',
+
+                 'indirect','indirect','indirect','indirect','indirect',
+                 'indirect'
+
+                 ]
+               ],

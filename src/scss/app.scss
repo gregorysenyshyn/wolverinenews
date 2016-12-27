@@ -14,8 +14,8 @@ body {
 
 button {
   line-height: 100%;
-  background: $blue !important;
-  color: $grey !important;
+  background: lighten($grey, 20) !important;
+  color: $blue !important;
   padding: 1rem !important;
   border-radius: 7px !important;
 }
@@ -23,34 +23,41 @@ button {
 #header {
   background-color: $black;
   display: flex;
+  align-items: 'stretch';
+}
+
+#logo-wrapper {
+  display: flex;
   align-items: center;
 }
 
-
 #logo {
-  display:flex;
-  a {
-    margin: auto;
-  }
+  text-align: center;
+  margin: auto;
   svg {
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 
+
 #header-title {
-  display: flex;
+  height: 100%;
   background-color: lighten($blue, 20);
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   p {
+    height: 100%;
     color: lighten($grey, 20);
     @media screen and (min-width: 35.5rem) {
+      margin: 1rem;
       font-size: 4rem;
     }
     @media screen and (min-width: 52rem) {
+      margin: 1rem;
       font-size: 7rem;
     }
     @media screen and (min-width: 80rem) {

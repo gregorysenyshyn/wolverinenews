@@ -10,7 +10,7 @@ description: A set of interactive multiple choice quizzes based on the released 
 <div class="pure-u-1">
 
   {% filter markdown %}
-  [2007-2008 OSSLT](/tools/osslt/2007-2008)
+  [2007-2008 OSSLT](/osslt/2007-2008)
   {% endfilter %}
 
 </div>

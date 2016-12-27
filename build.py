@@ -53,6 +53,7 @@ def concat_files(glob_paths, include_paths=None):
 js_include_paths = ['src/js/']
 js_paths = {'dist/static/js/app.js': ['sheets.js',
                                       'app.js'],
+            'dist/static/js/osslt.js': ['osslt.js'],
             'dist/static/js/index.js': ['index.js'],
             'dist/static/js/records.js': ['records.js'],
             'dist/static/js/teams.js': ['teams.js'],
@@ -106,7 +107,8 @@ SCSS_PATHS = {'dist/static/css/app.css': ['base.css',
                                           'menus-core.css',
                                           'menus-horizontal.css',
                                           'menus-dropdown.css',
-                                          'app.scss'],
+                                          'app.scss',
+                                          'osslt.scss'],
               'dist/static/css/announcements.css': ['base.css',
                                                     'grids.css',
                                                     'announcements.scss']}
@@ -144,13 +146,14 @@ def handle_scss(production):
                     write_css_file(os.path.join(dest_path, dest_filename),
                                    scss_string,
                                    production)
-    print(' Done in {0} seconds'.format(round(float(time.time() - t1), 4)))
+        print(' Done in {0} seconds'.format(round(float(time.time() - t1), 4)))
 
 
 # ###### #
 #  HTML  #
 # ###### #
 data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
+                                         'src/pages/*.md',
                                          '!src/pages/announcements.html'],
                                 'dest': ''},
                                 {'src': ['src/pages/tools/*.html',
@@ -160,12 +163,16 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                       'layouts': 'src/layouts/layout.html',
                       'options': {'section': False}},
 
-                      {'files': [{'src': ['src/pages/osslt/*.yaml'],
+                      {'files': [{'src': ['src/pages/osslt/2007-2008.yaml'],
                                   'dest': 'osslt'}],
-                      'partials': ['src/partials/osslt/*.html',
-                                   'src/partials/main/*.html'],
-                      'layouts': 'src/layouts/layout.html',
-                      'options': {'section': False}},
+                       'partials': ['src/partials/osslt/*.html',
+                                    'src/partials/main/head.html',
+                                    'src/partials/main/header.html',
+                                    'src/partials/main/footer.html'],
+                       'layouts': ['src/layouts/layout.html',
+                                   'src/layouts/osslt.html'],
+                       'options': {'section': False,
+                                   'template': 'osslt.html'}},
 
                      {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
