@@ -5,51 +5,57 @@ files:
     link: "https://drive.google.com/file/d/0B6pPn1UsGrlccTVDR1ZjUVQxaWM/view?usp=sharing"
 sections:
   - title: New Discoveries at the Dinosaur Capital of the World
-    type: reading
     questions:
       - text: "The headline of this news report does not:"
         answer: a
-        type: direct
+        type: normal
+        subtype: direct
         a: describe the museum
         b: summarize the story details
         c: suggest the kind of discovery
         d: identify the location of the story
       - text: "Scientists in Alberta are studying the duck-billed dinosaur skeleton to:"
         answer: a
-        type: direct
+        type: normal
+        subtype: direct
         a: perhaps discover a new species
         b: determine the degree of hillside erosion
         c: learn about the ancient climate of Drumheller
         d: possibly uncover the mystery of the Badlands
       - text: "Hadrosaurs were most likely threatened by:"
         answer: c
-        type: direct
+        type: normal
+        subtype: direct
         a: the retreat of ice
         b: the erosion of land
         c: predatory dinosaurs
         d: newly discovered species
       - text: "In paragraph 3, the words 'dramatic and mysterious' are used to:"
         answer: d
-        type: direct
+        type: normal
+        subtype: direct
         a: explain erosion
         b: describe dinosaurs
         c: explain the day digs
         d: describe the landscape
       - text: "Paragraph 2 relates to paragraph 1 because paragraph 2:"
         answer: d
-        type: indirect
+        type: normal
+        subtype: indirect
         a: outlines the contents of the Royal Tyrrell Museum in Drumheller, Alberta
         b: explains the term “Dinosaur Capital of the World” as used in paragraph 1
         c: describes a sequence of steps in the discovery process identified in paragraph 1
         d: provides additional information about the skeleton recovered in northern Alberta
-  - title: Grammar
-    type: grammar
+      - text: How might the information in this news report encourage people to visit Alberta? Use specific details and examples from the selection to support your answer.
+        type: short
+        subtype: indirect
+  - title: Writing
     questions:
-      - question_text: "Which sentence does not belong in the paragraph?"
-        question_type: identification
-        type: indirect
+      - text: Which sentence does not belong in the paragraph?
+        type: identification
+        subtype: indirect
         answer: c
-        text: >
+        question_text: >
                 (1) The Torino games were Canada’s most successful Winter
                 Olympics to date. (2) During the two weeks, 24 medals were
                 earned by the Canadian athletes. (3) Canadian competitors 
@@ -64,11 +70,11 @@ sections:
         b: Sentence 3
         c: Sentence 5
         d: Sentence 6
-      - question_text: "Choose the option that best combines all the information in the boldfaced sentences."
-        question_type: combination 
-        type: indirect
+      - text: Choose the option that best combines all the information in the boldfaced sentences.
+        type: combination 
+        subtype: indirect
         answer: b
-        text: 
+        question_text: 
           - Some forms of transportation do not pollute the environment.
           - Some people walk.
           - Some people ride bicycles.
@@ -76,75 +82,98 @@ sections:
         b: Some people walk or ride bicycles, which are forms of transportation that do not pollute the environment.
         c: Some people walk, some people ride bicycles but some forms of transportation do not pollute the environment.
         d: Some people walk and some people ride bicycles, and some forms of transportation do not pollute the environment.
-      - question_text: "Choose the sentence that is correctly written:"
-        question_type: normal
-        type: indirect
+      - text: "Choose the sentence that is correctly written:"
+        type: normal
+        subtype: indirect
         answer: c
         a: She was interested in applied for the job, and submit her application tomorrow.
         b: She was interested in apply for the job, and submitted her application tomorrow.
         c: She is interested in applying for the job and will submit her application tomorrow.
         d: She is interested in applying for the job, and will submitted her application tomorrow.
-      - question_text: "Choose the sentence that is correctly written:"
-        question_type: normal
-        type: indirect
+      - text: "Choose the sentence that is correctly written:"
+        type: normal
+        subtype: indirect
         answer: c
         a: Ying Lu a world-class golfer, is competing in a golf tournament today.
         b: Ying Lu, a world-class golfer is competing in a golf tournament today.
         c: Ying Lu, a world-class golfer, is competing in a golf tournament today.
         d: Ying Lu, a world-class golfer is, competing in a golf tournament today.
+  - title: Writing
+    questions:
+      - text: If you could visit anywhere in the world, which place would you visit? Explain why.
+        type: short
+        subtype: connection
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: Guest speaker's message inspires students
   - title: Reading
-    type: reading
     questions:
       - text: What is the main purpose of this passage?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: d
         a: to make building roofs more attractive
         b: to reduce the use of air conditioning in cities
         c: to sell prairie grass to people who live in cities
         d: to provide information about an environmental innovation
       - text: "In this selection, quotation marks around the word 'green' are used to:"
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: d
         a: indicate a specific colour
         b: emphasize an unfamiliar word
         c: indicate that someone is speaking
         d: show the word has more than one meaning
       - text: What would be a primary advantage of installing green roofs?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: a
         a: Urban air pollution would be reduced
         b: They keep solar heat absorption stable
         c: The grass is watered by rain and seeds itself
         d: Runoff water would not contain pollutants
-      - text: "How would 'green' roofs reduce the heavy demand for electrical power in the summer?"
-        type: direct
+      - text: How would 'green' roofs reduce the heavy demand for electrical power in the summer?
+        type: normal
+        subtype: direct
         answer: b
         a: The polluted water runoff would be prevented
         b: The need for air conditioning would be decreased
         c: The roofs would save energy by trapping rainwater
         d: The grass would release clean, cool oxygen into the air
       - text: "'The benefits of a grass roof outweigh the start-up costs.' In this sentence, what is the best meaning of 'outweigh'?"
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: b
         a: are focused on
         b: are greater than
         c: are dependent upon
         d: are less expensive than
-      - text: "The last sentence states 'The answer is over our heads.' What is it referring to?"
-        type: indirect
+      - text: The last sentence states 'The answer is over our heads.' What is it referring to?
+        type: normal
+        subtype: indirect
         answer: c
         a: the hot, smoggy air
         b: the tall city buildings
         c: the use of prairie grass on rooftops
         d: the use of rainwater to feed prairie grass
+      - text: Summarize this selection. Include a main idea and one relevant point that supports it.
+        type: short
+        subtype: indirect
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Are today’s famous people good role models for young people?
   - title: Grammar
     type: grammar
     questions:
-      - question_text: "Choose the option that best combines all the information in the boldfaced sentences."
-        question_type: combination 
-        type: indirect
+      - text: Choose the option that best combines all the information in the boldfaced sentences.
+        type: combination 
+        subtype: indirect
         answer: b
-        text: 
+        question_text: 
           - There was a snowstorm.
           - The airplane could not leave.
           - We were delayed.
@@ -152,11 +181,11 @@ sections:
         b: We were delayed because the airplane could not leave due to a snowstorm.
         c: The airplane cannot leave when there are snowstorms then we were delayed.
         d: We were delayed and there was a snowstorm and the airplane could not leave.
-      - question_text: Choose the best topic for the paragraph.
-        question_type: identification
-        type: indirect
+      - text: Choose the best topic for the paragraph.
+        type: identification
+        subtype: indirect
         answer: a
-        text: >
+        question_text: >
                 They may spend hours downloading their favourite artists’
                 songs. Hats and T-shirts announce their love of various rap
                 or rock groups. Concerts and dance clubs are sold out on
@@ -166,159 +195,186 @@ sections:
         b: Teenagers have different tastes in music.
         c: Teenagers express themselves in different ways.
         d: Most teenagers spend too much time listening to music
-      - question_text: "Choose the sentence that is correctly written:"
-        question_type: normal
-        type: indirect
+      - text: "Choose the sentence that is correctly written:"
+        type: normal
+        subtype: indirect
         answer: d
         a: “It was cold yesterday, he said. I hope it warms up soon.”
         b: “It was cold yesterday, he said. “I hope it warms up soon.”
         c: “It was cold yesterday”, he said. I hope it warms up soon”.
         d: “It was cold yesterday,” he said. “I hope it warms up soon.”
-      - question_text: "Choose the sentence that is correctly written:"
-        question_type: normal
-        type: indirect
+      - text: "Choose the sentence that is correctly written:"
+        type: normal
+        subtype: indirect
         answer: c
         a: Several items were recycled. That went into the blue recycling bags.
         b: Several items were recycled. Then went into the blue recycling bags.
         c: Several items were recycled. They went into the blue recycling bags.
         d: Several items were recycled. Them went into the blue recycling bags.
-  - title: The Long Pen
-    type: reading
+  - title: The Long-Distance Pen
     questions: 
       - text: At the signing of which book was the LongPen first used in public?
-        type: direct
+        type: normal
+        subtype: direct
         answer: a
         a: The Tent
         b: Alias Grace
         c: Oryx and Crake
-        d: "The Handmaid’s Tale"
+        d: The Handmaid’s Tale
       - text: According to this selection, what is an accurate statement about the invention of the LongPen?
-        type: direct
+        type: normal
+        subtype: direct
         answer: d
         a: Atwood designed it herself in her Toronto basement
         b: Publishers encouraged this invention as a money saver
         c: The invention required a high-tech laboratory and experts
         d: Many versions failed during the design and manufacturing process
       - text: In paragraph 2, the purpose of the words in parentheses is to
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: d
         a: show the title of Atwood’s novel that was on tour
         b: provide additional details about how the LongPen works
         c: give less important information that the reader can skim over
         d: help the reader pronounce and understand an unfamiliar word
       - text: "The word “documents” in paragraph 6 refers to:"
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: c
         a: transactions
         b: applications
         c: official forms
         d: video exchanges
       - text: For both authors and their fans, the LongPen will be better than a photocopier because the LongPen can
-        type: direct
+        type: normal
+        subtype: direct
         answer: d
         a: produce many signatures at a greater speed
         b: eliminate book tours that publishers cannot afford
         c: duplicate an unlimited number of signatures in new locations
         d: write unique signatures and personal messages across great distances
       - text: In the future, the LongPen designers hope to
-        type: direct
+        type: normal
+        subtype: direct
         answer: c
         a: produce larger versions of their product for industrial use
         b: invent other similar laboratory and office equipment machines
         c: design more versions for business, entertainment and home use
         d: subcontract the design of similar high-tech handwriting devices
       - text: "According to this selection, critics of the LongPen are:"
-        type: direct
+        type: normal
+        subtype: direct
         answer: c
         a: book fans who prefer traditional uses of technology
         b: designers who want to enhance computer technology
         c: authors who worry that book tours may be eliminated
         d: doctors who write prescriptions for out-of-town patients
       - text: In paragraphs 8 and 9, the purpose of the quotations is to
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: b
         a: describe the role of the president of LongPen
         b: give information about the advantages of the LongPen
         c: explain why several versions of the LongPen have been developed
         d: emphasize reasons why the reaction to the LongPen has not been all favourable
       - text: What pattern best describes the order of this article?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: a
         a: background, challenges, advantages, criticism
         b: advantages, background, criticism, challenges
         c: advantages, criticism, background, challenges
         d: background, criticism, advantages, challenges
   - title: Reading 
-    type: reading
     questions: 
       - text: Which statement was most likely spoken before the events in this selection took place?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: c
         a: “I keep forgetting to tell people about our specials,” said Ben.
         b: “This restaurant is too busy. Let’s go somewhere else,” said Ali.
         c: “No, thanks. We’d rather wait for a table in that section,” said Dana.
         d: “We’re not usually this crowded on Saturday,” said the restaurant owner.
       - text: "When Ben recites the list in paragraph 3, he shows that he:"
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: d
         a: has memorized the information
         b: is confused by so many choices
         c: does not care what his customers want
         d: must speak loudly in the busy restaurant
       - text: What is the main purpose of the italics in paragraphs 5 and 10?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: a
         a: identify direct speech
         b: indicate who is talking
         c: highlight unusual words
         d: emphasize tone of voice
       - text: Who is speaking in paragraph 7?
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: c
         a: Ali
         b: Ben
         c: Dana
         d: the restaurant owner
+      - text: Explain why the final sentence is an effective conclusion to the selection. Use relevant and specific information from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: Explain whether or not Ben is a good waiter. Use specific details and examples from the selection to support your explanation.
+        type: short
+        subtype: indirect
+  - title: Writing
+    questions: 
+      - text: Describe two positive features of living in Canada. Give reasons to support your answer. 
+        type: short
+        subtype: connection 
   - title: The Chemistry Behind Ice Cream
-    type: reading
     questions: 
       - text: What allows the exothermic process to take place in the making of ice cream?
-        type: direct
+        type: normal
+        subtype: direct
         answer: d
         a: shaking the sealed unit
         b: sealing one can inside the other
         c: adding salt to the ice cream mixture
         d: surrounding the inner can with ice and salt
       - text: Text boxes are used in this selection to
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: c
         a: highlight contrasting information
         b: organize information in a sequence
         c: separate different kinds of information
         d: present information in a scientific way
       - text: The thermometer shows both Fahrenheit and Celsius (Centigrade) because
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: d
         a: the ice cream changes temperature quickly
         b: the ice and salt have different temperatures
         c: there is a small sealed can inside a larger outer can
         d: there is more than one standard scale of temperature
       - text: The small sealed can is placed inside the larger outer can to allow
-        type: direct
+        type: normal
+        subtype: direct
         answer: d
         a: the small can to float
         b: the salt to enter the small can
         c: the ice to melt inside the small can
         d: the mixture inside the small can to freeze
       - text: The large arrows on the diagram indicate that the temperature in the small sealed can is
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: b
         a: increasing
         b: decreasing
         c: remaining at a constant level
         d: becoming warmer and then cooler
       - text: The purpose of the information in italics at the bottom of the selection is to
-        type: indirect
+        type: normal
+        subtype: indirect
         answer: a
         a: define a process in making ice cream
         b: list the chemicals used in making ice cream

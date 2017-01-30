@@ -29,6 +29,75 @@
 
 .grammar-list {
   margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.identification-text {
+  line-height: 1.5rem;
+}
+
+.question-description {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.osslt-response-short {
+  width: 100%;
+  margin: 2rem 0 0;
+  @media screen and (orientation: landscape){
+    height: 50vh;
+  }
+  @media screen and (orientation: landscape) and (min-width: 48em) {
+    height: 20vh;
+  }
+  @media screen and (orientation: portrait) {
+    height: 60vh;
+  }
+  @media screen and (orientation: portrait) and (min-width: 35.5em) {
+    height: 15vh;
+  }
+}
+
+.osslt-response-long {
+  width: 100%;
+  margin: 2rem 0 0;
+  @media screen and (orientation: landscape) {
+    height: 80vh;
+  }
+  @media screen and (orientation: portrait) {
+    height: 50vh;
+  }
+}
+
+.wc-bar {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.wc-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wc-scale {
+  position: relative;
+  border: solid 1px darken($grey, 30);
+  background: linear-gradient(to right, $grey, lighten($blue, 40));
+  text-align: center;
+  overflow: hidden;
+}
+
+.wc-arrow {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
 }
 
 .answer {
@@ -64,6 +133,7 @@
 #score-panel {
   margin: 0 auto;
   padding: 2rem;
+  max-height: 90vh;
   border: 1px solid $black;
   background-color: lighten($grey,35);
   overflow: auto; 

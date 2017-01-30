@@ -24,38 +24,22 @@
       <ol id="section{{loop.index0}}">
 
       {% set sectionloop = loop %}
-      {% if section.type == "reading" %}
+      {% for question in section.questions %}
+      <li id="question-{{sectionloop.index0}}-{{loop.index0}}" 
+          class="question" 
+          data-type="{{question.type}}" 
+          data-subtype="{{question.subtype}}" 
+          data-answer="{{question.answer}}">
 
-        {% for question in section.questions %}
-          <li id="question-{{sectionloop.index0}}-{{loop.index0}}" class="question" data-type="{{question.type}}" data-answer="{{question.answer}}">
-            <label class="question-text">
-              {{question.text}}
-            </label>
-            {% include 'mc-answers.html' %}
-          </li> 
-        {% endfor %}
+          <label class="question-text">
+            {{question.text}}
+          </label>
 
-      {% elif section.type == "grammar" %}
-
-        {% for question in section.questions %}
-          {% if question.question_type == "normal" %}
-            <li id="question-{{sectionloop.index0}}-{{loop.index0}}" class="question" data-type="{{question.type}}" data-answer="{{question.answer}}">
-              <label>
-                {{question.question_text}}
-              </label>
-              <p>
-                {{question.text}}
-              </p>
-              {% include 'mc-answers.html' %}
-            </li> 
-          {% elif question.question_type == "combination" %}
-            <li id="question-{{sectionloop.index0}}-{{loop.index0}}" class="question" data-type="{{question.type}}" data-answer="{{question.answer}}">
-              <label>
-                {{question.question_text}}
-              </label>
+          {% if question.type in ["normal", "combination", "identification"] %}
+            {% if question.type == "combination" %}
               <div class="grammar-list">
                 <ul>
-                  {% for item in question.text %}
+                  {% for item in question.question_text %}
                     <li>
                       <strong>
                         {{item}}
@@ -64,22 +48,34 @@
                   {% endfor %}
                 </ul>
               </div>
-              {% include 'mc-answers.html' %}
-            </li> 
-          {% elif question.question_type == "identification" %}
-            <li id="question-{{sectionloop.index0}}-{{loop.index0}}" class="question" data-type="{{question.type}}" data-answer="{{question.answer}}">
-              <label>
+            {% elif question.type == "identification" %}
+              <p class="identification-text">
                 {{question.question_text}}
-              </label>
-              <p>
-                {{question.text}}
               </p>
-              {% include 'mc-answers.html' %}
-            </li> 
+            {% endif %}
+          {% include 'mc-answers.html' %}
+          {% elif question.type == "short" %}
+            <textarea 
+              id="response-{{sectionloop.index0}}-{{loop.index0}}" 
+              oninput="updateCount({{sectionloop.index0}},{{loop.index0}}, 1)"
+              class="osslt-response-short"></textarea>
+            {% include 'word-count.html' %}
+          {% elif question.type in ["news report", "opinion"] %}
+            {% if question.type == "news report" %}
+              <ul class="question-description">
+                <li>You will have to make up the facts and information, answering some or all of the following questions: Who? What? Where? When? Why? How?</li>
+                <li>You must relate your newspaper report to both the headline and the picture.</li>
+              </ul>
+            {% endif %}
+            <h3>{{question.cue}}</h3>
+            <textarea 
+              id="response-{{sectionloop.index0}}-{{loop.index0}}" 
+              oninput="updateCount({{sectionloop.index0}},{{loop.index0}},{% if question.type == "news report" %}2{% elif question.type == "opinion" %}3{% endif %})"
+              class="osslt-response-long"></textarea>
+            {% include 'word-count.html' %}
           {% endif %}
-        {% endfor %}
-
-      {% endif %}
+        </li> 
+      {% endfor %}
       </ol>
       <div class="pure-g">
         <div class="pure-u-1">
@@ -91,7 +87,7 @@
     {% endfor %}
     <div class="pure-g">
       <div class="pure-u-1">
-        <button onclick="markTest()">
+        <button onclick="markTest({{loop.length}})">
           Submit Test
         </button>
       </div>
@@ -100,15 +96,18 @@
 
 </div>
 
-<div id="score-modal">
-  <div class="pure-g full-width">
-    <div id="score-panel" class="pure-u-7-8">
-      <div class="pure-g">
-        <div class="pure-u-1">
-          <p id="direct"></p>
-          <p id="indirect"></p>
-          <p id="total"></p>
-        </div>
+<div class="pure-g" id="score-modal">
+  <div id="score-panel" class="pure-u-3-4">
+    <h2>Result Summary</h2>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <h3>Multiple Choice</h3>
+        <p id="direct"></p>
+        <p id="indirect"></p>
+        <p id="total"></p>
+        <h3>Short Writing</h3>
+        <h3>News Report</h3>
+        <h3>Opinion Piece</h3>
       </div>
     </div>
   </div>
