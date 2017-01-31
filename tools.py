@@ -11,7 +11,7 @@ from jinja2 import Environment
 
 import htmlmin
 import yaml
-import markdown
+import mistune 
 import frontmatter
 from tidylib import tidy_document
 from termcolor import colored
@@ -81,7 +81,9 @@ def clean():
 
 
 def markdown_filter(text):
-    return markdown.markdown(text)
+    renderer = mistune.Renderer(parse_html=True)
+    markdown = mistune.Markdown(renderer=renderer)
+    return markdown(text)
 
 
 def get_destination(page, dest, production):

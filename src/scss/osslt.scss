@@ -9,6 +9,16 @@
     float: right;
     margin-bottom: 4rem;
   }
+  a {
+    color: lighten($blue, 20);
+  }
+}
+
+#osslt-test-links {
+  text-align: center;
+  p {
+    padding: 0.5rem 0;
+  }
 }
 
 .correct {
@@ -30,6 +40,9 @@
 .grammar-list {
   margin: 1rem 0;
   line-height: 1.5rem;
+  ul {
+    list-style: none;
+  }
 }
 
 .identification-text {

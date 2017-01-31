@@ -1,27 +1,392 @@
-
-  '2008-2009': [['d','b','a','b','b',
-                 'b','b','a','a',
-                 'c','a','a','d','c','a',
-                 'b','b','a','c',
-                 'c','d','c','c','b','b','d','b','b',
-                 'c','b','d','d','c',
-                 'b','c','d','d','d','a'
-                 ],
-                ['indirect','direct','indirect','direct','direct',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'indirect','indirect','indirect','direct','direct',
-                 'indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'direct','indirect','indirect','indirect','indirect',
-                 'indirect','indirect','direct','indirect',
-
-                 'direct','indirect','indirect','indirect','indirect',
-
-                 'direct','direct','direct','direct','indirect',
-                 'indirect'
-                 ]
-               ],
+title: Reading Self-Assessment (2008-2009 OSSLT)
+description: An interactive multiple choice quiz based on the 2007-2008 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2008-2009 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcWDRPdlcxdnRtc00/view?usp=sharing"
+sections:
+  - title: Who Ate Pasta First?
+    questions:
+      - text: "A “hotly debated question” (paragraph 4) is a question that is"
+        answer: d
+        type: normal
+        subtype: indirect
+        a: easy to answer
+        b: rarely considered
+        c: boring to think about
+        d: passionately argued about
+      - text: "Why is Marco Polo mentioned in this news report?"
+        answer: b
+        type: normal
+        subtype: direct
+        a: He is credited with inventing pasta
+        b: He visited China in the 13th century
+        c: He claimed the Italians invented pasta
+        d: He brought noodles from Italy to China
+      - text: "The information in paragraph 4 is organized to"
+        answer: a
+        type: normal
+        subtype: indirect
+        a: compare and contrast ideas
+        b: describe the steps in a process
+        c: present events in chronological order
+        d: provide details in order of importance
+      - text: "What evidence do researchers consider most convincing in answering the question of the origin of noodles?"
+        answer: b
+        type: normal
+        subtype: direct
+        a: ancient menus
+        b: preserved food
+        c: personal accounts
+        d: written documents
+      - text: "The archeologists described in this selection"
+        answer: b
+        type: normal
+        subtype: direct
+        a: wrote a news report
+        b: dug up an ancient object
+        c: restored a prehistoric site
+        d: discovered ways to preserve food
+      - text: Explain whether this archaeological find settles the historical question about who invented pasta. Use specific details from the selection and your own ideas to support your answer.
+        type: short
+        subtype: indirect
+  - title: Writing
+    questions:
+      - text: Which of the following is written correctly?
+        type: normal 
+        subtype: indirect
+        answer: b
+        a: Is the amusement park in Ontario!
+        b: Hooray! I won a free trip to the amusement park!
+        c: Last March we planned a trip to the amusement park!!!
+        d: Can you believe! that I won a free trip to the amusement park?
+      - text: In which sentence of the following paragraph does the verb need to change to make the sentence correct?
+        type: identification
+        subtype: indirect
+        answer: b
+        question_text: >
+                    (1) Darren went to the store and bought a loaf of
+                    bread. (2) On his way home, he runs into his best
+                    friend. (3) He forgot he had to take the bread home.
+                    (4) Instead, he played games with his friend until
+                    dinnertime. (5) When he finally got home, his mother
+                    was very annoyed with him.
+        a: sentence 1
+        b: sentence 2
+        c: sentence 3
+        d: sentence 5
+      - text: Choose the word that best completes the sentence.
+        type: identification
+        subtype: indirect
+        answer: a
+        question_text: The high school team won the championship ___________ the captain’s injury.
+        a: despite
+        b: besides
+        c: because
+        d: although
+      - text: Choose the best opening sentence for the following paragraph.
+        type: identification
+        subtype: indirect
+        answer: a
+        question_text: > 
+                    ______________________________________. In 1999, at
+                    least six billion people lived on earth, and
+                    predictions indicate that another billion will be
+                    born by 2020. Scientists estimate that the world’s
+                    population will increase to nine billion by 2054 and
+                    ten billion by the end of the 21st century. Humans
+                    need to find a way to sustain a booming population
+                    and continue to provide everyone with the necessary
+                    resources.
+        a: Population growth is an increasing concern.
+        b: People predict the world’s population growth.
+        c: There are enough resources on earth for everyone.
+        d: Scientists believe that too many people live on earth.
+      - text: Explain why it is important to learn about other cultures. Use specific details to support your answer.
+        type: short
+        subtype: indirect
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: Student volunteers improve school grounds
+  - title: Reading 
+    questions:
+      - text: The Grand Hall is shaped like a canoe because it
+        answer: c
+        type: normal 
+        subtype: indirect
+        a: honours the architect
+        b: accommodates more visitors
+        c: represents Aboriginal heritage
+        d: permits more artifacts to be displayed
+      - text: Which word is closest in meaning to “emulate” as used in line 5 of this selection?
+        answer: a
+        type: normal 
+        subtype: indirect
+        a: imitate
+        b: disguise
+        c: advertise
+        d: designate
+      - text: "In the sentence “The forest backdrop, stretching the full length of the hall, is the world’s largest colour photograph” (lines 7–8), the commas are used to"
+        answer: a
+        type: normal 
+        subtype: indirect
+        a: set off a detail
+        b: separate items in a list
+        c: indicate missing words
+        d: highlight contrasting information
+      - text: According to this selection, the Canadian Museum of Civilization’s Aboriginal artifacts include
+        answer: d
+        type: normal 
+        subtype: direct
+        a: glass cases
+        b: rocks and minerals
+        c: musical instruments
+        d: stone tools and pottery
+      - text: Which of the following items are contrasted in this selection?
+        answer: c
+        type: normal 
+        subtype: direct
+        a: past and present visitors
+        b: rocky and flat landscapes
+        c: early and modern artifacts
+        d: Aboriginal and present-day houses
+      - text: Which word in the opening sentence best captures the meaning of the words “history and culture” in the final sentence?
+        answer: a
+        type: normal 
+        subtype: indirect
+        a: heritage
+        b: birthday
+        c: important
+        d: preservation
+      - text: Summarize this selection. Include a main idea and one detail that supports it.
+        type: short
+        subtype: connection
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Is it a good idea for high school students to have a part-time job? 
+  - title: Writing 
+    questions:
+      - text: "Choose the sentence that correctly shows possession"
+        type: normal
+        subtype: indirect
+        answer: b
+        a: There’s land here.
+        b: Their land is here.
+        c: There is land here.
+        d: They’re landing here.
+      - text: "Choose the sentence that is written correctly"
+        type: normal
+        subtype: indirect
+        answer: b
+        a: The mayor of Vancouver declared, The 2010 Winter Olympics will attract thousands of tourists.
+        b: The mayor of Vancouver declared, “The 2010 Winter Olympics will attract thousands of tourists.”
+        c: The mayor of Vancouver declared that “the 2010 Winter Olympics,” would attract thousands of tourists.
+        d: The mayor of Vancouver, declared “that the 2010 Winter Olympics would attract thousands of tourists.”
+      - text: "Choose the option that best combines all the information in the following sentences:"
+        type: combination 
+        subtype: indirect
+        answer: a
+        question_text: 
+          - The work is featured in the gallery.
+          - The artist’s paintings are impressive.
+          - Many people can view the paintings in the gallery.
+        a: The artist’s impressive paintings are featured in the gallery, where many people can view them.
+        b: Although the artist’s paintings are impressive, the work is featured in the gallery and many people can view them.
+        c: Many people can view the paintings in the gallery because the work is featured, so the artist’s paintings are impressive.
+        d: The paintings are featured in the gallery and the artist’s paintings are impressive when many people can view them.
+      - text: Which sentence does not belong in the paragraph?
+        type: identification
+        subtype: indirect
+        answer: c
+        question_text: >
+                  (1) Extracurricular activities can be an important part
+                  of school life. (2) Joining clubs can help students make
+                  friends and develop their skills and interests. (3) Good
+                  sportsmanship can be developed on school teams. (4)
+                  Learning skills are usually emphasized in school courses.
+                  (5) Students who participate in extracurricular
+                  activities enjoy many benefits.
+        a: Sentence 2
+        b: Sentence 3
+        c: Sentence 4
+        d: Sentence 5
+  - title: "Simon Jackson: Saving the Spirit Bear"
+    questions: 
+      - text: The first endangered animal that Simon worked to protect was the
+        type: normal
+        subtype: direct
+        answer: c
+        a: panda.
+        b: elephant.
+        c: grizzly bear.
+        d: Kermode bear.
+      - text: "The list of 60 “Heroes of the Planet” (paragraph 1) was most likely designed to honour outstanding"
+        type: normal
+        subtype: indirect
+        answer: d
+        a: achievement of personal goals.
+        b: efforts in promoting youth issues.
+        c: success in educating youth about animal life.
+        d: contributions to environmental protection.
+      - text: "“The more he learned . . . .” (paragraph 2) refers to what Simon Jackson discovered about"
+        type: normal
+        subtype: indirect
+        answer: c
+        a: the way to protect grizzly bears.
+        b: the preservation of national parks.
+        c: the destruction of wilderness habitat.
+        d: the need for an insight into this issue.
+      - text: Simon’s first response to hearing about the spirit bear suggests he thought that
+        type: normal
+        subtype: indirect
+        answer: c
+        a: there was little time to waste on talking.
+        b: the best course of action was to raise funds.
+        c: he should first gather information from a variety of sources.
+        d: he should go to observe the Kermode bears in their coastal habitat.
+      - text: The effect of repeating the word “between” in paragraph 4 is to
+        type: normal
+        subtype: indirect
+        answer: b
+        a: emphasize Simon’s decision.
+        b: highlight the demands of Simon’s busy life.
+        c: show that Simon was uncertain about what he should do.
+        d: indicate that the work of saving the bear was sometimes repetitive.
+      - text: What evidence shows that the work of the Spirit Bear Youth Coalition was effective?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Simon joined the coalition while in high school.
+        b: Almost half the habitat of the bears was protected.
+        c: Decision-makers invited Simon to their meetings about forests.
+        d: Over 700 letters of support were sent to the British Columbia government.
+      - text: What word would best replace the word “caretakers” as used in paragraph 8?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: parents
+        b: citizens
+        c: cleaners
+        d: guardians
+      - text: Simon chose to campaign for the spirit bear rather than another endangered animal because of
+        type: normal
+        subtype: direct
+        answer: b
+        a: the way it looks.
+        b: where it is found.
+        c: the support he received from the Youth Coalition.
+        d: its importance as a symbol of youth around the world.
+      - text: What is the purpose of the quotation at the end of this selection?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: to add more description to the paragraph
+        b: to emphasize Simon Jackson’s viewpoint
+        c: to provide an example of Simon Jackson’s work
+        d: to show the importance of saving the spirit bear
+  - title: Reading
+    questions: 
+      - text: "Why does Pamela yell “Ouch”?"
+        type: normal
+        subtype: direct
+        answer: c
+        a: James clips her by mistake.
+        b: She is upset with her brother.
+        c: She pokes herself while sewing.
+        d: Her mother has stopped suddenly.
+      - text: What is the purpose of the dash in paragraph 4 of this selection?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: to introduce a list
+        b: to show an interrupted thought
+        c: to present a contrasting viewpoint
+        d: to develop an idea with more details
+      - text: James says “Just call me the next hotshot designer!” (paragraph 8) because he
+        type: normal
+        subtype: indirect
+        answer: d
+        a: designed Pamela’s dress.
+        b: enjoys lecturing his sister.
+        c: is inspired to become a designer.
+        d: is making fun of his sewing skills.
+      - text: When Mrs. Baker calls James an “innovative designer” (paragraph 11), she means he has done something
+        type: normal
+        subtype: indirect
+        answer: d
+        a: skillful.
+        b: helpful.
+        c: beneficial.
+        d: unexpected.
+      - text: Which of the following occurred before the events in this selection?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Mrs. Baker parked the car.
+        b: James learned how to sew.
+        c: Pamela chose a dress style.
+        d: Pamela modelled her dress.
+      - text: What do Pamela’s words and actions reveal about her character? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: Provide a title for this selection. Explain why your title is appropriate by using specific details from the selection and your own ideas to support your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions: 
+      - text: What is an effective way advertisers persuade teenagers to buy a product? Explain why this method is effective.
+        type: short
+        subtype: indirect
+  - title: How an Eco-Friendly Fish Farm Operates
+    questions: 
+      - text: The arrows in this selection show that the water flows
+        type: normal
+        subtype: direct
+        answer: b
+        a: through the ponds and out into the river.
+        b: in a complete, closed loop throughout the farm.
+        c: from the fish tanks directly into the aeration pond.
+        d: from the filter tank directly back into the fish tanks.
+      - text: Two separate ponds are needed on this fish farm, so that
+        type: normal
+        subtype: direct
+        answer: c
+        a: fish have two areas in which to swim.
+        b: there are two sources of fresh intake water.
+        c: each pond can perform a different function.
+        d: there are different habitats in which plants can grow.
+      - text: The purpose of the “shallow filtration pond” is to
+        type: normal
+        subtype: direct
+        answer: d
+        a: grow water plants.
+        b: mix oxygen into the water.
+        c: drain solid waste from the water.
+        d: remove chemicals from the water.
+      - text: A pump is necessary in the fish farm to make the
+        type: normal
+        subtype: direct
+        answer: d
+        a: clean water flow faster.
+        b: fish move from tank to tank.
+        c: oxygen bubbles move around.
+        d: water move up into the fish tanks.
+      - text: The effective operation of all components of the fish farm ensures that
+        type: normal
+        subtype: indirect
+        answer: d
+        a: solid waste is used to feed plants.
+        b: water in the filtration pond has sufficient oxygen.
+        c: new water is added to the system at several points.
+        d: the fish have a continuous supply of aerated water.
+      - text: The fish farm in this selection is “eco-friendly” because
+        type: normal
+        subtype: indirect
+        answer: a
+        a: the farm reuses cleaned water.
+        b: The farm uses organic fish food.
+        c: gravity is the only source of power.
+        d: a blower mixes oxygen into the water.

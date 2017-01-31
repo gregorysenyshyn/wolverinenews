@@ -50,13 +50,13 @@ function updateCount(section, question, questionType) {
       arrowMargin = (16.5 * ((count - milestones[1])/(milestones[2]-milestones[1]))) + 33;
     }
     else if (milestones[2] < count && count <= milestones[3]) {
-      arrowMargin = (16.5 * ((count - milestones[2])/(milestones[3]-milestones[2]))) + 50;
+      arrowMargin = (16.5 * ((count - milestones[2])/(milestones[3]-milestones[2]))) + 49.5;
     }
     else if (milestones[3] < count && count <= milestones[4]) {
-      arrowMargin = (16.5 * ((count - milestones[3])/(milestones[4]-milestones[3]))) + 66.5;
+      arrowMargin = (16.5 * ((count - milestones[3])/(milestones[4]-milestones[3]))) + 66;
     }
     else if (milestones[4] < count && count <= milestones[5]) {
-      arrowMargin = (16.5 * ((count - milestones[4])/(milestones[5]-milestones[4]))) + 83.5;
+      arrowMargin = (16.5 * ((count - milestones[4])/(milestones[5]-milestones[4]))) + 82.5;
     }
     else if (milestones[5] < count) {
       arrowMargin = 100; 

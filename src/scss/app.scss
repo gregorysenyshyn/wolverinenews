@@ -10,6 +10,9 @@ $black: #231f20;
 
 body {
   background-color: lighten($grey, 26);
+  a {
+    text-decoration: none;
+  }
 }
 
 button {
@@ -93,9 +96,6 @@ button {
   }
 }
 
-#main {
-}
-
 #footer {
   bottom: 0;
   height: 3rem;
@@ -103,7 +103,6 @@ button {
   a {
     margin: 1rem;
     color: $grey;
-    text-decoration: none;
   }
   padding: 1rem;
 }
@@ -167,7 +166,6 @@ button {
 
 .index-scoreboard {
   text-align: center;
-  
   padding-top: 1.5rem;
 
   @media screen and (max-width: 48rem) and (min-width: 35.5rem) {
@@ -208,20 +206,23 @@ button {
   width: 100%;
   border: solid 2px $blue;
   padding: 1rem 2rem;
+  background-color: lighten($blue, 20);
+
   @media screen and (min-width: 80rem) {
     padding: 0 3rem;
   }
-  background-color: lighten($blue, 20);
+
 }
 
 .index-scoreboard-game-result {
   display: block;
   margin: 1rem 0;
   padding: 1rem 0;
+  background-color: lighten($grey, 20);  
+
   @media screen and (min-width: 80rem) {
     padding: 1rem 0;
   }
-  background-color: lighten($grey, 20);  
 }
 
 .index-scoreboard-score {
@@ -242,7 +243,6 @@ button {
     margin: 1rem 0;
   }
   a {
-    text-decoration: none;
     color: $black;
   }
 }
@@ -260,7 +260,6 @@ button {
     margin: 1rem 0;
   }
   a {
-    text-decoration: none;
     color: $black;
   }
 }
@@ -278,7 +277,6 @@ button {
     margin: 1rem 0;
   }
   a {
-    text-decoration: none;
     color: $black;
   }
 }
@@ -341,17 +339,20 @@ button {
 
 .team-scoreboard-game-result {
 
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: lighten($grey, 20);  
+
   h4 {
     font-size: 2rem;
     margin: 1rem 0;
   }
-  display: block;
-  margin: 1rem 0;
-  padding: 1rem 0;
+
   @media screen and (min-width: 80rem) {
     padding: 1rem 0;
   }
-  background-color: lighten($grey, 20);  
+
 }
 
 .team-blog-score {
@@ -377,9 +378,11 @@ button {
   padding: 1rem 0;
   margin-bottom: 2rem;
   font-size: 1.3rem;
+
   @media screen and (min-width: 50rem) {
     font-size: 2rem;
   }
+
 }
 
 .records-row {
@@ -388,25 +391,30 @@ button {
   justify-content: center;
   text-align: center;
   padding: 1rem 0;
+
   @media screen and (min-width: 50rem) {
     font-size: 1.5rem;
   }
+
 }
 
 #tools-main {
   padding: 2rem;
+
   hr {
     border-color: $black;
   }
+  
 }
 
 .tools-container {
   min-height: 200px;
   padding: 0 2rem;
+
   a {
-    text-decoration: none;
     color: $black;
   }
+
 }
 
 #calculators-container {
@@ -414,25 +422,32 @@ button {
 }
 
 .calculator-container {
+  padding: 2rem;
+  line-height: 400%;
+
   @media screen and (min-width: 50rem) {
     font-size: 2rem;
   }
-  padding: 2rem;
-  line-height: 400%;
+
   h1 {
     font-size: 3rem;
     line-height: 100%;
   }
+
   label {
     margin: 0 1rem;
   }
+
 }
 
 .calculator-header {
+
   padding-left: 1rem;
+
   span {
     font-size: 2rem;
   }
+
 }
 
 .calculator-label {
@@ -462,10 +477,12 @@ button {
   font-size: 4rem;
   width: 50%;
   margin: 0 auto;
+
   h2 {
     font-size: 2rem;
     margin: 0;
   }
+
 }
 
 #wilks-result {
@@ -474,11 +491,14 @@ button {
   font-size: 4rem;
   width: 50%;
   margin: 0 auto;
+
   h2 {
     font-size: 2rem;
     margin: 0;
   }
+
 }
+
 .sinclair {
   margin-top: 3rem;
 }
