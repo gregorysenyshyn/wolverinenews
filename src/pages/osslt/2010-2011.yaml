@@ -1,26 +1,390 @@
-  '2010-2011': [['b','c','a','a','a',
-                 'c','b','b','b',
-                 'b','d','a','c','d','c',
-                 'b','d','d','b',
-                 'c','d','b','b','a','c','d','b','b',
-                 'c','d','b','b','a',
-                 'a','a','c','c','a','d'
-                 ],
-                ['indirect','indirect','direct','indirect','indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'direct','direct','indirect','indirect','indirect',
-                 'indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'direct','indirect','direct','indirect','indirect',
-                 'direct','indirect','indirect','indirect',
-
-                 'indirect','indirect','indirect','direct','indirect',
-
-                 'indirect','indirect','indirect','indirect','indirect',
-                 'indirect'
-                 ]
-               ],
+title: Reading Self-Assessment (2010-2011 OSSLT)
+description: An interactive multiple choice quiz based on the 2010-2011 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2010-2011 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcVzhCbUtFYktDODQ/view?usp=sharing"
+sections:
+  - title: Teen’s Recycling Recipe Bags Award
+    questions:
+      - text: Which paragraph describes the event that happened first?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: paragraph 2
+        b: paragraph 3
+        c: paragraph 4
+        d: paragraph 5
+      - text: What is the meaning of “hypothesis” as used in paragraph 5?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: a recipe
+        b: a problem
+        c: a prediction
+        d: an experiment
+      - text: What is responsible for the decomposition of plastic bags?
+        type: normal
+        subtype: direct
+        answer: a
+        a: bacteria
+        b: polyethylene
+        c: additional water
+        d: large composters
+      - text: What is the purpose of the information inside the parentheses in paragraph 6?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: It provides an explanation
+        b: It refers to another experiment
+        c: It presents a step in the experiment
+        d: It emphasizes the importance of the problem
+      - text: Why did Burd’s experiment win the top prize?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: It could solve a significant problem
+        b: Burd plans to study science in university
+        c: It encourages people to reduce their use of plastic bags
+        d: Burd discovered the bacteria that break down plastic bags
+      - text: Explain how Burd’s project demonstrates the work of a scientist. Use specific details from the selection and your own ideas to support your answer.
+        type: short
+        subtype: indirect
+  - title: Writing
+    questions:
+      - text: Choose the option that best combines all the information in the following sentences.
+        type: combination
+        subtype: indirect
+        answer: c
+        question_text:
+          - I love basketball.
+          - The Bears are my favourite team.
+          - I hope they win the championship this year.
+        a: I love basketball, and I hope the Bears win the championship this year.
+        b: I love basketball and the Bears because I hope they win the championship this year.
+        c: I love basketball and hope the Bears, my favourite team, win the championship this year.
+        d: I love basketball, I love the Bears, my favourite team, I hope they win the championship this year.
+      - text: Which option tells how to make the following sentence correct?
+        type: identification 
+        subtype: indirect
+        answer: b
+        question_text:
+          John Reid, the mayor of Kapuskasing wondered how his city would survive the economic downturn.
+        a: Capitalize the word “mayor”.
+        b: Add a comma after “Kapuskasing”.
+        c: Replace the period with a question mark.
+        d: Use quotation marks around “how his city would survive the economic downturn”.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: b
+        a: The students is going on the bus.
+        b: Each of the students is going on the bus.
+        c: Two students and their teacher is going on the bus.
+        d: All of the students except for Jim is going on the bus.
+      - text: Choose the sentence that does not belong in the following paragraph.
+        type: identification 
+        subtype: indirect
+        answer: b
+        question_text: >
+                    (1) Eating a variety of nutritious foods is important for
+                    good health. (2) Fruits and vegetables provide daily
+                    vitamins. (3) Exercise is an important part of healthy
+                    living. (4) Protein from meat, dairy foods or legumes is
+                    needed for muscle growth. (5) Fat intake should be limited.
+                    (6) A proper diet is important.
+        a: sentence 2
+        b: sentence 3
+        c: sentence 4
+        d: sentence 5
+  - title: Short Writing Task 
+    questions:
+      - text: What is the best advice you have ever given to someone? Use specific details to explain your answer. 
+        type: short
+        subtype: connection
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: Storm Shuts Down Region
+  - title: Reading
+    questions:
+      - text: In 1979 the method of naming hurricanes changed to respond to
+        type: normal
+        subtype: direct
+        answer: b
+        a: the need for more names
+        b: requests for equal treatment
+        c: confusion with repeated names
+        d: a desire to use all letters in the alphabet
+      - text: What factor determines when a hurricane’s name is retired?
+        type: normal
+        subtype: direct
+        answer: d
+        a: the location of its origin
+        b: the time of year it struck
+        c: the first letter of its name
+        d: the degree of its destruction
+      - text: The word “designated” as used in line 10 means
+        type: normal
+        subtype: indirect
+        answer: a
+        a: assigned
+        b: repeated
+        c: demanded
+        d: eliminated
+      - text: Why are the letters q, u, x, y and z (line 11) shown in italics?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to highlight their importance
+        b: to indicate the naming pattern
+        c: to distinguish letters from words
+        d: to emphasize their unique sounds
+      - text: The numbers in lines 15 and 16 emphasize
+        type: normal
+        subtype: indirect
+        answer: d
+        a: the uncommon names
+        b: pattern of unusual names
+        c: intensity of severe storms
+        d: increasing frequency of storms
+      - text: What is the overall organizational structure of this selection?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: present to past
+        b: general to specific
+        c: problem to solution
+        d: least to most important
+      - text: State a main idea of this selection and provide one specific detail from the selection that supports it.
+        type: short
+        subtype: indirect
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Is participation in extracurricular activities an important part of secondary school life?
+  - title: Writing
+    questions:
+      - text: What should the writer of the following paragraph do to improve its organization?
+        type: identification
+        subtype: indirect
+        answer: b
+        question_text: >
+                  (1) The Comfort Maple tree stands in a field near Welland,
+                  Ontario. (2) It is over 30 metres high and eight metres
+                  around the trunk. (3) Today it is a local attraction. (4)
+                  The tree was already 300 years old when the Comfort
+                  family settled the land in 1816. (5) Few trees like it
+                  survive.
+        a: Break sentence 2 into two sentences.
+        b: Switch the order of sentences 3 and 4.
+        c: Insert “Since” at the start of sentence 4.
+        d: Move sentence 5 to the start of the paragraph.
+      - text: Which sentence is written correctly?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: I travelled along the trans-Canada highway near North Bay.
+        b: I then continued toward Sudbury, passing the village of wahnapitei.
+        c: Once I got to Sudbury, I went to the lake laurentian conservation area.
+        d: Mayor Fortin greeted me at the park gate before my tour of the wetland.
+      - text: Choose the best closing sentence for the following paragraph.
+        type: normal
+        subtype: indirect
+        answer: d
+        question_text: >
+                    Travel is exciting and educational, but preparation is
+                    necessary. You should book transportation ahead. Guide
+                    books will help you learn about attractions. Knowing
+                    about the weather will help you make good decisions when
+                    packing your suitcase. _________________________________.
+        a: Travel guides are exciting to read.
+        b: Summertime is a popular time to travel.
+        c: Updating travel documents might be necessary.
+        d: Planning will make your vacation enjoyable.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: b
+        a: The flagpole stands on it’s own.
+        b: The cat licked its wounded paw.
+        c: Because of the storm, it’s roof caved in.
+        d: The game is cancelled because its raining.
+  - title: A Labour of Love Sparks a Career
+    questions:
+      - text: Why did Terasa create her own cookies?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to be able to work from home
+        b: to compete on a television show
+        c: to find a way to bond with Sierra
+        d: to provide a healthy diet for Sierra
+      - text: What is emphasized by the use of the word “plied” (paragraph 4)?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: Terasa’s trust
+        b: Terasa’s fussiness
+        c: Terasa’s frustration
+        d: Terasa’s determination
+      - text: When were Barnies available in 144 stores across Canada?
+        type: normal
+        subtype: direct
+        answer: b
+        a: after Terasa appeared on TV
+        b: after Terasa recovered from her illness
+        c: while Terasa’s friends and family ran the business
+        d: while Terasa was making them in her own kitchen
+      - text: Between which paragraphs does the focus shift from Sierra to Terasa’s business?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: paragraphs 2 and 3
+        b: paragraphs 4 and 5
+        c: paragraphs 5 and 6
+        d: paragraphs 6 and 7
+      - text: Why was it important for Terasa to deliver “her sales pitch persuasively” (paragraph 11)?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: She hoped to impress the judges
+        b: Sierra’s health depended on her success
+        c: Her daughters had written encouraging notes
+        d: Four thousand applicants were auditioning for the show
+      - text: What did Terasa have to give up to attain greater success?
+        type: normal
+        subtype: direct
+        answer: c
+        a: Sierra
+        b: her health
+        c: a part of her earnings
+        d: time with her friends
+      - text: Which of the following was most likely spoken?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: “Barnies” (paragraph 5)
+        b: “We believe in you!” (paragraph 10)
+        c: “straight from the horse’s mouth” (paragraph 11)
+        d: “Dream big, work hard…” (paragraph 12)
+      - text: Why is paragraph 13 an effective conclusion?
+        answer: b
+        type: normal
+        subtype: indirect
+        a: It provides surprising information.
+        b: It returns to the topic of the opening paragraph.
+        c: It continues the focus of the paragraph before it.
+        d: It builds suspense by asking an unanswered question.
+      - text: Which phrase indicates the popularity of Barnies?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: “Terasa took up this challenge”
+        b: “Terasa found a national distributor”
+        c: “Terasa plied Sierra with many treats”
+        d: “Terasa delivered her product sales pitch”
+  - title: Reading
+    questions:
+      - text: Why does Joe ask Amy to use “everyday language” (paragraph 3)?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Joe is testing Amy’s understanding.
+        b: The lunchroom is too noisy to hear her.
+        c: The brochure uses complicated language.
+        d: Amy is speaking too fast for him to understand.
+      - text: What is the relationship between the information in paragraphs 2 and 4?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: two contrasting ideas
+        b: a question and its answer
+        c: an opinion and supporting details
+        d: a general idea and a specific example
+      - text: Why does Joe collapse into the chair?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Working has tired him out.
+        b: He doesn’t know what to do next.
+        c: He feels sick from breathing fumes.
+        d: Amy’s words help him feel relaxed.
+      - text: Which phrase is quoted from the Occupational Health and Safety Act?
+        type: normal
+        subtype: direct
+        answer: b
+        a: “any worker can say no to work” (paragraph 2)
+        b: “is likely to endanger him or her” (paragraph 2)
+        c: “any worker has the right to refuse unsafe work” (paragraph 4)
+        d: “workplace safety is essential for everyone” (paragraph 7)
+      - text: What does this selection indicate about Joe’s and Amy’s workplace?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: Some employees lack safety training.
+        b: Only men are in supervisory positions.
+        c: New employees feel secure in their jobs.
+        d: All storage areas are adequately ventilated.
+      - text: What is one character trait that describes Amy? Use specific details from this selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: Why should everyone learn about workplace safety? Use specific details from this selection and your own ideas to support your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions:
+      - text: Identify the ideal destination for a high school field trip. Explain your choice with specific details.
+        type: short
+        subtype: indirect
+  - title: Canada’s Recreational Fish Tale
+    questions:
+      - text: What does the increasing use of barbless hooks suggest about anglers?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: They want to help maintain fish populations.
+        b: They want to retain as many fish as possible.
+        c: They want to make a lot of money selling fish.
+        d: They want to make sure the fish are securely hooked.
+      - text: If the trends shown in the graphs continue, what is a logical prediction?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: The number of fish caught decreases.
+        b: The number of anglers rises to 1985 levels.
+        c: In 2005, anglers spend less than one billion dollars on fishing.
+        d: In 2005, the number of retained fish reaches 150 million.
+      - text: What is the purpose of the asterisk (*) beside “direct fishing-related expenditures”?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to direct the reader to the graph
+        b: to indicate the importance of the section
+        c: to connect the heading to other information
+        d: to emphasize the amount of fishing-related expenditures
+      - text: Which part of the selection relates most closely to the final paragraph?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: the introductory paragraph
+        b: the “Total number of anglers” graph
+        c: the “Total fish caught and retained” graph
+        d: the “Direct fishing-related expenditures” graph
+      - text: What is the meaning of “adopted” as used in the final paragraph?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: used
+        b: noticed
+        c: suggested
+        d: abandoned
+      - text: Which part of the selection shows that the recreational fishing industry contributes to the economy?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: the picture of the angler
+        b: the “Total number of anglers” graph
+        c: the “Total fish caught and retained” graph
+        d: the “Direct fishing-related expenditures” graph

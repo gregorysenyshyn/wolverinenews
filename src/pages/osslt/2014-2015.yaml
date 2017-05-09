@@ -1,0 +1,157 @@
+title: Reading Self-Assessment (2014-2015 OSSLT)
+description: An interactive multiple choice quiz based on the 2014-2015 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2014-2015 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcaEdiN0NuNzJOMEk/view?usp=sharing"
+sections:
+  - title: A Huge Mural Marks a Graffiti Philosophy in Montreal
+    questions:
+      - text: Why did Montreal establish a relationship with graffiti artists?
+        type: normal
+        subtype: direct
+        answer: a
+        a: to deal with vandalism
+        b: to help politicians gain votes
+        c: to honour famous entertainers
+        d: to introduce citizens to local art
+      - text: Which word is closest in meaning to “adamant” as used in paragraph 3?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: critical
+        b: insistent
+        c: annoyed
+        d: surprised
+      - text: What feature of Our Lady of Grace reflects an aspect of the neighbourhood’s diverse population?
+        type: normal
+        subtype: direct
+        answer: c
+        a: the work’s title
+        b: the urban location
+        c: the Caribbean birds
+        d: the use of spray paint
+      - text: How is the information in paragraph 7 organized?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: cause and effect
+        b: question and answer
+        c: comparison and contrast 
+        d: statement and explanation
+      - text: What is the main idea of this selection? 
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Artwork is very expensive.
+        b: Artists require lots of space.
+        c: Co-operation reduces conflict. 
+        d: Interest groups block progress.
+      - text: Explain why Montreal’s approach to graffiti is beneficial. Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+  - title: Writing
+    questions:
+      - text: Choose the best place to insert the following sentence.
+        type: insertion
+        subtype: indirect
+        answer: b
+        cue: Industrialization was one cause of these changes.
+        question_text: > 
+                  (1) In 1900, more than 85% of the world’s population farmed their own food. 
+                  (2) However, several developments led people to move from the country to the city. 
+                  (3) This new type of economy depended on factories that were located close to raw materials, power and transportation. 
+                  (4) These sites attracted many workers. 
+                  (5) Hence, there was a shift from rural settings to urban centres.
+        a: after sentence 1
+        b: after sentence 2
+        c: after sentence 3
+        d: after sentence 4
+      - text: Select the best option to complete the sentence below.
+        type: identification
+        subtype: indirect
+        answer: c
+        question_text: The menu offers ______ soup ______ salad with a meal for an additional $1.99.
+        a: both, or
+        b: maybe, or
+        c: either, or
+        d: neither, or
+      - text: Which option shows how to make the following sentence correct?
+        type: identification
+        subtype: indirect
+        answer: b
+        question_text: Halifax’s Pier 21, the former point of arrival for most new immigrants to Canada is now a museum and historical landmark.
+        a: Add a colon after “arrival.”
+        b: Add a comma after “Canada.”
+        c: Remove the capital on “Pier.”
+        d: Remove the apostrophe in “Halifax’s.”
+      - text: Which sentence is correct?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: My father is feeling better for two weeks.
+        b: I don’t remember how long I’ve had my car.
+        c: I will be going on a bike ride, when I changed my mind.
+        d: I promise Michael that I would pick him up at 10:00 p.m.
+  - title: Short Writing Task
+    questions:
+      - text: If your school could offer a new course, what would you want it to be? Explain your answer using specific details.
+        type: short
+        subtype: indirect
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: School team qualifies for finals
+  - title: Reading
+    questions:
+      - text: In what way is competitive ice sculpting different from an Olympic sporting event?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: The winners receive medals.
+        b: The judges rate a created object.
+        c: The competition requires strength.
+        d: Each team includes representatives of only one country.
+      - text: What does Rebholtz’s quotation in lines 4 and 5 contribute to the selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: an expert opinion
+        b: a specific example
+        c: a contrasting opinion
+        d: a link between two topics
+      - text: Why do Surfacing Kingfisher and The Birth of the Bluebird appear in italics?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to highlight their success
+        b: to signify their importance
+        c: to show that they are artworks
+        d: to indicate they are winning entries
+      - text: What purpose does the phrase “but most important” serve in line 9?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: to highlight an item in a list
+        b: to exclude an item from a list 
+        c: to emphasize balance in a list 
+        d: to establish time order in a list
+      - text: Which event occurred first with respect to The Birth of the Bluebird sculpture?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: It was judged.
+        b: Its last pillar was cut.
+        c: It crashed to the ground.
+        d: Its collapse was shown on YouTube.
+      - text: What is the best meaning for “spectacle” as used in line 17?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: artwork
+        b: celebration
+        c: competition 
+        d: phenomenon
+      - text: State a main idea of this selection and provide one specific detail from the selection that supports it. 
+        type: short
+        subtype: indirect

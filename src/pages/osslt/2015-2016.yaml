@@ -1,0 +1,180 @@
+title: Reading Self-Assessment (2015-2016 OSSLT)
+description: An interactive multiple choice quiz based on the 2015-2016 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2015-2016 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcNTNDaDBJMjVZNGs/view?usp=sharing"
+sections:
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Is what you are learning in school affecting the way you live your life now?
+  - title: Writing
+    questions:
+      - text: Which sentence would be the best to conclude the following paragraph?
+        type: identification
+        subtype: indirect
+        answer: d
+        question_text: >
+                  It is important to bring your vehicle to an immediate but safe stop when an emergency vehicle 
+                  approaches with its lights or siren on. React quickly. Use your signals to alert other drivers 
+                  of your intent to pull over. This will ensure your own and their safety.
+        a: Driving an emergency-service vehicle can be challenging.
+        b: Emergency-service personnel require specialized safety training.
+        c: Different emergency vehicles will have different-coloured  ashing lights.
+        d: Always be prepared to clear the road safely for emergency vehicles.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Many communities in Ontario celebrate the fall season with a fair.
+        b: Demolition derbies often attracts a large and enthusiastic audience.
+        c: Some fairs also has midway rides and agricultural demonstrations.
+        d: By far, the best thing about fall fairs are the delicious food you can try.
+      - text: Choose the option that best combines the information in the following sentences.
+        type: combination
+        subtype: indirect
+        answer: d
+        question_text:
+          - Oil Springs is a town in Ontario.
+          - Oil Springs was once called Black Creek. 
+          - The town’s name was changed in 1858 when oil was discovered there.
+        a: Oil Springs is the name of a town also called Black Creek, Ontario, and oil was discovered there in 1858, so its name was changed.
+        b: Black Creek, an Ontario town, was once called Oil Springs, but oil was discovered there in 1858, so it changed its name.
+        c: The town of Oil Springs is located in Ontario, but it was called Black Creek after oil was discovered there in 1858.
+        d: Once called Black Creek, the town of Oil Springs, Ontario, changed its name in 1858 when oil was discovered there.
+      - text: Which of the following sentences is written correctly?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: Volunteer experiences looks good on a résumé.
+        b: Volunteering may even helps with career decisions.
+        c: Volunteering is a good way to learning responsibility.
+        d: Volunteering helps develop good time-management skills.
+  - title: The Lighthouse Builder
+    questions:
+      - text: Which factor contributed the most difficulty to building the open-sea lighthouse?
+        type: normal
+        subtype: direct
+        answer: b
+        a: expense
+        b: location
+        c: lack of skilled labour
+        d: lack of public support
+      - text: Which phrase shows why Winstanley was so committed to building the lighthouse in 1698?
+        type: normal
+        subtype: direct
+        answer: a
+        a: “Winstanley, furious because of the loss of two of his own five ships” (paragraph 2)
+        b: “With the upgrades completed ... , Winstanley was satisfied” (paragraph 5)
+        c: “Winstanley had proven it possible to save ships approaching Plymouth” (paragraph 9)
+        d: “despite a severe windstorm warning, Winstanley insisted on journeying to the lighthouse” (paragraph 7)
+      - text: In 1698, why was the project considered a success?
+        type: normal
+        subtype: direct
+        answer: a
+        a: The lantern helped ships avoid the reef. 
+        b: Winstanley built a structure 20 metres high.
+        c: Winstanley was able to make the necessary repairs.
+        d: The lighthouse was more spacious than the upgraded one.
+      - text: Which word is closest in meaning to “depict” as used in paragraph 5?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: allow 
+        b: define 
+        c: believe 
+        d: portray
+      - text: Which of the following best demonstrates Winstanley’s overconfidence?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: believing that building the lighthouse was possible (paragraph 2)
+        b: constructing on isolated rocks (paragraph 3)
+        c: rebuilding the first lighthouse (paragraph 4)
+        d: wishing to remain in the lighthouse during a storm (paragraph 6)
+      - text: What does paragraph 7 contribute to the passage?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: a flashback
+        b: a conclusion
+        c: a turning point
+        d: a change in point of view
+      - text: What is emphasized by the repetition of “no” in paragraph 8?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: the new level of danger
+        b: the degree of destruction
+        c: the calmness after the storm
+        d: the mystery of the lighthouse’s disappearance
+      - text: What is the most likely reason why efforts to build a lighthouse in such a difficult location persisted?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to attract tourists to the reef
+        b: to gather important weather data
+        c: to improve the profitability of the Plymouth port
+        d: to experiment with updated construction methods
+      - text: Overall, how is the selection organized?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: chronological order
+        b: order of importance
+        c: comparison and contrast
+        d: opinion and supporting details
+  - title: Reading
+    questions:
+      - text: From where are Biyu and Hong getting their information?
+        type: normal
+        subtype: direct
+        answer: c
+        a: the tablet
+        b: the Internet
+        c: the newspaper
+        d: the Seniors’ Centre
+      - text: What is the meaning of “cognitive” as used in paragraph 3?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: mental
+        b: physical
+        c: repetitive
+        d: communal
+      - text: What does the break between paragraphs 8 and 9 indicate?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: a change in mood
+        b: a change in setting
+        c: a change in characters
+        d: a change in point of view
+      - text: According to the selection, which example would best support the headline “Use It or Lose It,” found in paragraph 2?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Cold weather promotes health.
+        b: Sudoku puzzles require patience.
+        c: Learning a second language improves memory.
+        d: Using the Internet to find statistics improves brain function.
+      - text: What is the purpose of the single quotation marks in paragraph 12?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: to show emphasis
+        b: to enclose a headline
+        c: to indicate a specialized meaning
+        d: to identify words taken from elsewhere
+      - text: Explain how Biyu is a supportive granddaughter. Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: How is Hong a role model for other seniors? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions:
+      - text: What piece of clothing best expresses your personality? Use specific details to explain how it conveys who you are.
+        type: short
+        subtype: indirect

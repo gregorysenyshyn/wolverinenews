@@ -1,17 +1,225 @@
-
-  '2013-2014': [['b','c','a','b',
-                 'a','d','a','a','a','a','d','d','b',
-                 'a','c','b','a',
-                 'c','d','d','b','b','a'
-                 ],
-                ['indirect','indirect','indirect','indirect',
-
-                 'direct','indirect','indirect','indirect','indirect',
-                 'indirect','direct','direct','indirect',
-
-                 'indirect','indirect','indirect','direct',
-
-                 'indirect','indirect','indirect','indirect','indirect',
-                 'indirect'
-                 ]
-               ]
+title: Reading Self-Assessment (2013-2014 OSSLT)
+description: An interactive multiple choice quiz based on the 2013-2014 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2013-2014 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcZWhvRkcwTHcwRVE/view?usp=sharing"
+sections:
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Do students benefit from the two-month summer break?
+  - title: Writing
+    questions:
+      - text: Which option is the best concluding sentence for this paragraph?
+        type: identification
+        subtype: indirect
+        answer: b
+        question_text: >
+                    Many cities struggle with public transportation needs.
+                    New subway construction is expensive, and space for
+                    above-ground rail lines is limited. Adding more buses
+                    can’t always reduce street congestion. Transit users
+                    dislike fare increases, but that is one way to raise
+                    money for improvements. _________________________________.
+        a: Public transportation was cheaper in the past.
+        b: There are no easy solutions to transit problems.
+        c: There are various ways to eliminate the need for cars.
+        d: Urban population growth means more cars on city streets.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Improving your focus starting the day with breakfast.
+        b: Regular exercise result in better mental functioning.
+        c: Taking frequent breaks can improve focus and concentration.
+        d: Concentrating better with music or television playing in the background.
+      - text: Choose the option that best combines the following sentences.
+        type: combination
+        subtype: indirect
+        answer: a
+        question_text:
+            - Carl J. Eliason invented the snow machine.
+            - It was made using bicycle and car parts and a pair of skis.
+            - It was patented in 1927.
+        a: Carl J. Eliason’s snow machine invention, patented in 1927, was made using bicycle and car parts and a pair of skis.
+        b: The snow machine was invented out of parts from a bicycle, a car and a pair of skis in 1927 and patented by Carl J. Eliason.
+        c: The snow machine was patented after Carl J. Eliason used parts from a bicycle, a car and a pair of skis to invent it in 1927.
+        d: Carl J. Eliason patented a snow machine in 1927 because he used parts from a bicycle, a car and a pair of skis to invent it.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: b
+        a: We observe the stars last night.
+        b: Teresa and Sam witnessed the accident.
+        c: Aminah and Khalil is going to see the latest adventure film.
+        d: Of the whole class, only Winnie and Omar is going on the field trip.
+  - title: A Stunning Comeback to an Elite Sport
+    questions:
+      - text: Where was Chainey living when she was diagnosed with kidney disease?
+        type: normal
+        subtype: direct
+        answer: a
+        a: Spain
+        b: Toronto
+        c: Burlington
+        d: Kapuskasing
+      - text: Early on, how did Chainey demonstrate her dedication to high jumping?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: She went to Kapuskasing to train competitively.
+        b: She competed at the Canadian track and field championships.
+        c: She competed even though she had received dialysis
+        d: She frequently travelled long distances to train at York University.
+      - text: How is the information in paragraphs 1 to 3 organized?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: present to past
+        b: cause and effect
+        c: similarities and differences
+        d: more important to less important
+      - text: What is the purpose of the dashes in paragraph 1?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: to set off an explanation
+        b: to replace quotation marks
+        c: to indicate a change in topic
+        d: to separate an idea and an example
+      - text: Why is paragraph 5 important to the selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: It reveals Chainey’s determination.
+        b: It describes the dangers of dialysis.
+        c: It proves that Chainey should not compete.
+        d: It explains why high jumping is an elite sport.
+      - text: Which word is closest in meaning to “deterred” as used in paragraph 7?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: stopped
+        b: punished
+        c: confused
+        d: exhausted
+      - text: What impact did kidney disease have on Chainey?
+        type: normal
+        subtype: direct
+        answer: d
+        a: Chainey became dissatisfied with anything less than a win.
+        b: Chainey stopped using jumping as an escape from her troubles.
+        c: Chainey valued her fellow competitors as encouraging supporters.
+        d: Chainey no longer expected to be flawless in what she attempted.
+      - text: Why was Chainey satisfied with her finish at the national championships?
+        type: normal
+        subtype: direct
+        answer: d
+        a: She had jumped her personal best.
+        b: She had met her coach’s expectations.
+        c: She had defeated her closest competitor.
+        d: She had returned to the sport she enjoyed.
+      - text: What idea connects the introductory paragraph to the conclusion?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Chainey is a champion high jumper.
+        b: Chainey’s last place finish is a victory.
+        c: Chainey’s kidney disease is a curable illness.
+        d: Chainey has qualified for the national championships.
+  - title: Reading
+    questions:
+      - text: What would be the most appropriate title for this selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: A New Start
+        b: A Chef’s Special
+        c: Father Knows Best
+        d: Practice Makes Perfect
+      - text: What is indicated by the single quotation marks in paragraph 4 around “Go! Hurry!”?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Gerry is talking to himself.
+        b: Two people are talking at the same time.
+        c: Gerry is speaking someone else’s words.
+        d: The words are thoughts, not conversation.
+      - text: What does Hanna mean when she says “I was a wreck” (paragraph 7)?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: She was exhausted from lifeguarding.
+        b: She feared starting a new lifeguarding job.
+        c: She was injured while she was on the job.
+        d: She needed help from the Second Career program.
+      - text: How does Gerry feel when he exhales loudly in paragraph 10?
+        type: normal
+        subtype: direct
+        answer: a
+        a: He is beginning to relax.
+        b: He is exhausted with worry.
+        c: He is impatient with his children.
+        d: He is irritated to receive so much advice.
+      - text: Does Gerry believe that Hanna’s suggestions will help him? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: What does this selection show about Gerry and Hanna’s relationship? Use specific details from the selection to explain your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions:
+      - text: Identify one action you take in your daily life to be healthy. Use specific details to explain how this action contributes to your health.
+        type: short
+        subtype: indirect
+  - title: Canada's Forests
+    questions:
+      - text: What word is closest in meaning to “exporter” as used in the paragraph below the title?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: investor
+        b: purchaser
+        c: distributor
+        d: manufacturer
+      - text: Why is a bar graph appropriate for the forest management data?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: It shows decreasing size.
+        b: It shows changes over time.
+        c: It shows increasing importance.
+        d: It shows a comparison of categories.
+      - text: How is the “Canada’s Forest Management” graph organized?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: by degree of success
+        b: by size of production
+        c: by changes over time
+        d: by geographic location
+      - text: What was true about British Columbia’s forest management in 2008/2009?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Less area was burned than planted.
+        b: More area was burned than planted.
+        c: Less area was planted than harvested.
+        d: More area was harvested than burned.
+      - text: What is an accurate conclusion that can be drawn from the information in the pie charts?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Wood product manufacturing generated the largest percentage of revenue but the smallest percentage of wages in 2008.
+        b: The percentages of revenue and those of wages and salaries from the major sectors of Ontario’s forest industry were similar in 2008.
+        c: The largest percentage of wages came from pulp and paper product manufacturing in 2008, even though that sector generated the smallest amount of revenue in 2008.
+        d: The smallest amount of money was invested in forestry and logging in 2009, even though that sector generated the largest amount of revenue in 2008.
+      - text: What conclusion can be supported by information in this selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: The forest management of each region or province is unique.
+        b: It is likely that Alberta’s forest industry is similar to that of Ontario.
+        c: The pie charts suggest that forestry and logging in Ontario is the most profitable sector.
+        d: Manitoba’s forest industry determines Canada’s international position as an exporter of forest products.

@@ -35,7 +35,7 @@
             {{question.text}}
           </label>
 
-          {% if question.type in ["normal", "combination", "identification"] %}
+          {% if question.type in ["normal", "combination", "identification", "insertion"] %}
             {% if question.type == "combination" %}
               <div class="grammar-list">
                 <ul>
@@ -49,6 +49,15 @@
                 </ul>
               </div>
             {% elif question.type == "identification" %}
+              <p class="identification-text">
+                {{question.question_text}}
+              </p>
+            {% elif question.type == "insertion" %}
+              <p>
+                <strong>
+                  {{question.cue}}
+                </strong>
+              </p>
               <p class="identification-text">
                 {{question.question_text}}
               </p>
@@ -102,12 +111,12 @@
     <div class="pure-g">
       <div class="pure-u-1">
         <h3>Multiple Choice</h3>
-        <p id="direct"></p>
-        <p id="indirect"></p>
-        <p id="total"></p>
-        <h3>Short Writing</h3>
-        <h3>News Report</h3>
-        <h3>Opinion Piece</h3>
+        <p id="direct-score"></p>
+        <p id="indirect-score"></p>
+        <p id="total-score"></p>
+        <div id="short-score"></div>
+        <div id="news-score"></div>
+        <div id="opinion-score"></div>
       </div>
     </div>
   </div>

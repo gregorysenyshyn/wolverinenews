@@ -10,7 +10,7 @@ sections:
     questions:
       - text: According to the selection, why did Whittaker and Jerry make frequent stops?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: d
         a: to present their ideas
         b: to buy some fast food
@@ -26,7 +26,7 @@ sections:
         d: They planted trees together.
       - text: What was the environmental benefit of the “Driven to Sustain” project?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: c
         a: It used natural gas.
         b: It reduced fuel costs.
@@ -42,7 +42,7 @@ sections:
         d: communicate
       - text: Which event described in the selection happened first?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: c
         a: The road trip began in British Columbia. 
         b: Whittaker and Jerry met during the summer.
@@ -108,7 +108,7 @@ sections:
     questions:
       - text: Which of the following was used in the guitar to represent one of the “natural wonders of Canada” (line 4)?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: a
         a: wood from a 300-year-old tree
         b: wood from Pierre Trudeau’s paddle
@@ -124,7 +124,7 @@ sections:
         d: by the importance of the components
       - text: Which line shows the use of a comma to separate items in a list?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: a
         a: line 3
         b: line 6
@@ -132,7 +132,7 @@ sections:
         d: line 14
       - text: Why was July 1, 2006, an important date for the Six String Nation guitar?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: d
         a: Feist played the guitar that day.
         b: The guitar’s construction was  nished.
@@ -171,7 +171,7 @@ sections:
     questions:
       - text: Which is a holiday that is currently celebrated in Canada?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: a
         a: Patriots’ Day
         b: Peacekeepers’ Day
@@ -281,6 +281,8 @@ sections:
         answer: b
         a: to show that Sikh-Canadians should learn more about World War I
         b: to show that the role of Sikhs in the development of Canada is significant
+        c: the community centre
+        d: the neighbouring community
       - text: What does the dash after the date in paragraph 2 introduce?
         type: normal
         subtype: indirect
@@ -307,7 +309,7 @@ sections:
         d: It emphasizes the importance of Brar’s find. 
       - text: In what country did Singh get tuberculosis?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: d
         a: India
         b: France 
@@ -320,10 +322,10 @@ sections:
         a: It provides answers to the mystery. 
         b: It suggests that there is more to investigate.
         c: It confirms that Private Singh was a Canadian.
-        d: It emphasizes the ef ciency of Brar’s research.
+        d: It emphasizes the efficiency of Brar’s research.
       - text: How has Sandeep Singh Brar kept the memory of Private Buckam Singh alive?
         type: normal
-        subtype: indirect
+        subtype: direct
         answer: a
         a: by creating a Web site
         b: by presenting a medal
@@ -342,7 +344,7 @@ sections:
         subtype: indirect
         answer: d
         a: “injured by shrapnel and a bullet” (paragraph 5)
-        b: “discovery of the grave is signi cant” (paragraph 7)
+        b: “discovery of the grave is significant” (paragraph 7)
         c: “may also be the only one awarded” (paragraph 8)
         d: “still many blanks in his story” (paragraph 9)
   - title: Reading

@@ -1,0 +1,234 @@
+title: Reading Self-Assessment (2011-2012 OSSLT Released Questions)
+description: An interactive multiple choice quiz based on the 2011-2012 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2011-2012 OSSLT Released Questions 
+    link: "https://drive.google.com/file/d/0B9VmGHZE-qaKY1V2ZmhLcktEUVk/view?usp=sharing"
+sections:
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Do teenagers place too much importance on what they wear?
+  - title: Writing 
+    questions:
+      - text: Which sentence does not belong in the following paragraph?
+        type: identification
+        subtype: indirect
+        answer: c
+        question_text: >
+                  (1) The Olympic games are represented by a flaming torch.
+                  (2) The torch is lit in Olympia, Greece, to honour the
+                  ancient origins of the games. (3) It travels through the
+                  participating countries, representing international
+                  harmony. (4) Twelve thousand torches were made for the
+                  2010 Vancouver games. (5) The Olympic torch is a
+                  meaningful symbol.
+        a: sentence 2
+        b: sentence 3
+        c: sentence 4
+        d: sentence 5
+      - text: Choose the option that best combines all the information in the sentences below.
+        type: combination 
+        subtype: indirect
+        answer: c
+        question_text: 
+          - Mikko and Paige were friends.
+          - Mikko and Paige had known each other since Grade 3.
+          - Mikko and Paige attended the same college.
+        a: Mikko and Paige, who were friends, attended the same college since Grade 3.
+        b: Mikko and Paige were friends known since Grade 3 and attended the same college.
+        c: Mikko and Paige, friends who had known each other since Grade 3, attended the same college.
+        d: Mikko and Paige attended the same college and had known each other and their friends since Grade 3.
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: c
+        a: I was waiting Omar said. “In the cold!”
+        b: “Wasn’t it hot outside” Oliver responded?
+        c: “I was e-mailing,” Sara exclaimed, “for three hours!”
+        d: “I went to a scary movie,” Maria said “At two o’clock.”
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Our family likes to hike, swim and biking.
+        b: The children like jumping, singing and dancing.
+        c: The student likes drawing, painting and to sculpt.
+        d: The athletes like to train, to practise and competing
+  - title: Farmer Sugar-Coats Crop and Sweetens Family Business
+    questions:
+      - text: What does paragraph 1 suggest is most important to Paul?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: the creativity of the employee
+        b: the speed of the decorating process
+        c: the uniform appearance of the apples
+        d: the amount of chocolate on each apple
+      - text: For how long has Paul Moyer’s family been farming?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: 100 years
+        b: 20 to 25 years
+        c: nine generations
+        d: since the mid-1990s
+      - text: Which product matches the definition of “value-added” in paragraph 3?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: whole fish
+        b: leaf lettuce
+        c: tomato soup
+        d: green grapes
+      - text: What happened first after Paul realized his apple crop made insufficient profit?
+        type: normal
+        subtype: direct
+        answer: c
+        a: Sabrina suggested the TV show to Paul.
+        b: Paul hired employees to decorate apples.
+        c: Paul sold candy-coated apples at Ontario Place.
+        d: Paul expanded apple sales to large grocery stores.
+      - text: What is linked by the colon in paragraph 4?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: cause and effect
+        b: term and examples
+        c: opinion and support
+        d: problem and solution
+      - text: Which word is closest in meaning to “revamped” as used in paragraph 5?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: sped up
+        b: modified
+        c: simplified
+        d: mechanized
+      - text: Who is thinking “Wow, this is it” (paragraph 8)?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: the host
+        b: the reader
+        c: the farmer
+        d: the daughter
+      - text: What does Paul Moyer think was the most influential factor for the panel?
+        type: normal
+        subtype: direct
+        answer: b
+        a: He brought his family to the show.
+        b: He knew all aspects of his business.
+        c: He distributed free samples of his product.
+        d: He had been an apple farmer for over 20 years.
+      - text: How is paragraph 9 organized?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: problems and solutions
+        b: opinion and supporting reasons
+        c: series of events according to time
+        d: from most to least important details
+  - title: Reading
+    questions:
+      - text: What does Byron’s “chortle” in paragraph 1 show about his reaction to the newspaper article?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: He thinks it is exciting
+        b: He thinks it is shocking
+        c: He thinks it is amusing
+        d: He thinks it is fascinating
+      - text: Which headline would be best for the news report Byron is reading?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: Young Audience Rejects Poet
+        b: Hit Song Celebrates Edmonton
+        c: Hip Hop Artist Wins “Poem-Off”
+        d: Hip Hop Poet Hopes to Open Minds
+      - text: What is indicated by the single quotation marks around “Oliver Square” in paragraph 6?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: a song title
+        b: Byron’s words
+        c: Rita’s sarcasm
+        d: a proper place name
+      - text: What is the meaning of the phrase “must have ruffled a few feathers” as used in paragraph 10?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Pemberton’s appointment must have encouraged people to become poets.
+        b: People must have been pleased that Edmonton was maintaining a tradition.
+        c: Some people must have considered Pemberton’s appointment unconventional.
+        d: Pemberton’s appointment must have been celebrated by the hip hop community.
+      - text: Which event would be most appropriate for Pemberton to write about in his new position?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: the election of a new premier in Alberta
+        b: the naming of a national park in Nova Scotia
+        c: the signing of an international trade agreement in Ottawa
+        d: the donation of a painting to the Art Gallery of Ontario
+      - text: What suggests Pemberton will be a good choice for the position of Poet Laureate of Edmonton? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: Why is Pemberton’s appointment newsworthy? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions:
+      - text: Suggest one improvement that could be made to your school building or its grounds. Use specific details to explain why it would be an improvement.
+        type: short
+        subtype: indirect
+  - title: New roof at Wimbledon
+    questions:
+      - text: Why is the new roof considered “retractable”?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: It can be used in high winds.
+        b: It can be opened and folded back.
+        c: It is made of translucent, flexible fabric.
+        d: It allows the use of natural and artificial light.
+      - text: What idea links the information under “Concertina (accordion-fold) design” and “Steel trusses”?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: time
+        b: weight
+        c: climate
+        d: movement
+      - text: Which part of the selection shows a spectator’s view of Centre Court?
+        type: normal
+        subtype: direct
+        answer: a
+        a: the photograph labelled “Interior”
+        b: the drawing in the top right corner
+        c: the overall diagram of the club facility
+        d: the diagram of Centre Court at the bottom centre
+      - text: What is the purpose of the illustration at the top of the selection?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: to show why a new roof was needed
+        b: to explain how the roof system works
+        c: to compare the old roof with the new roof
+        d: to emphasize the weight and cost of the new roof
+      - text: What is the purpose of the “Roof Facts” section?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: to summarize key information
+        b: to advertise the new construction
+        c: to describe how the roof was built
+        d: to explain how the roof opens and closes
+      - text: Which part of the facility is south of Court 5?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Court 14
+        b: No. 1 Court
+        c: new Court 2
+        d: Millennium Building

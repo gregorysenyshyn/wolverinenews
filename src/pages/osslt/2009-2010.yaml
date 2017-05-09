@@ -1,27 +1,389 @@
-
-  '2009-2010': [['b','c','b','b','c',
-                 'c','c','d','a',
-                 'b','d','b','a','b','d',
-                 'a','d','a','c',
-                 'b','b','b','c','c','d','b','b','d',
-                 'b','d','d','b','d',
-                 'c','d','b','c','d','d'
-                 ],
-                ['direct','direct','indirect','indirect','indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'direct','indirect','direct','indirect','indirect',
-                 'indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'direct','indirect','indirect','direct','indirect',
-                 'indirect','direct','indirect','indirect',
-
-                 'direct','indirect','indirect','indirect','indirect',
-
-                 'indirect','indirect','indirect','direct','direct',
-                 'direct'
-                 ]
-               ],
+title: Reading Self-Assessment (2009-2010 OSSLT)
+description: An interactive multiple choice quiz based on the 2007-2008 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2009-2010 OSSLT Booklet
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcZml3OHBwNzYtdFE/view?usp=sharing"
+sections:
+  - title: Romans putting a lock on love
+    questions:
+      - text: "“Milvio” is the name of a"
+        type: normal
+        subtype: direct
+        answer: b
+        a: river.
+        b: bridge.
+        c: city official.
+        d: Roman emperor.
+      - text: The “Golden Padlock” prize recognizes
+        type: normal
+        subtype: direct
+        answer: c
+        a: music.
+        b: movies.
+        c: romance.
+        d: teenagers.
+      - text: Which event occurred first in the development of the ritual?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: Couples threw keys into the river.
+        b: Two popular novels were published.
+        c: A Roman city official made a statement.
+        d: Many tourists chose to visit the ancient bridge.
+      - text: Describing the bridge as “off the beaten track” means it is
+        type: normal
+        subtype: indirect
+        answer: b
+        a: ancient.
+        b: rarely used.
+        c: a site of battles.
+        d: not used by trucks.
+      - text: Which word is closest in meaning to “rite” as used in paragraph 5?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: solution
+        b: privilege
+        c: ceremony
+        d: discussion
+      - text: Should city officials in Rome be worried or pleased about the fad of putting locks on the lamppost? Explain your answer using details from the selection and your own ideas.
+        type: short
+        subtype: indirect
+  - title: Writing
+    questions:
+      - text: Choose the best opening sentence for the following paragraph.
+        type: identification 
+        subtype: indirect
+        answer: c
+        question_text: >
+                    _____________________________________. They have
+                    competitive and recreational sports for students who
+                    want physical activity. Trivia teams and yearbook
+                    committees offer opportunities to students who might
+                    not be interested in sports.
+        a: Schools offer opportunities for athletes.
+        b: School spirit is important for safe and successful schools.
+        c: Schools offer a variety of extracurricular activities for all students.
+        d: Schools can encourage better achievement by offering fun activities
+      - text: Choose the best place to insert the following sentence.
+        type: insertion
+        subtype: indirect
+        answer: c
+        cue: Unfortunately, it doesn’t snow as much as it used to.
+        question_text: >
+                    (1) Winter in Ontario is a wonderful time. (2) There are
+                    all kinds of outdoor activities and sports for people to
+                    enjoy. (3) Many people enjoy skiing or snowshoeing. (4)
+                    Even without snow, people enjoy skating on outdoor ice
+                    rinks. (5) Winter can be a truly wonderful season.
+        a: after sentence 1
+        b: after sentence 2
+        c: after sentence 3
+        d: after sentence 4
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: d
+        a: “Let’s get the car packed,” Rohan pleaded, or we’ll never get going.
+        b: “Let’s get the car packed, Rohan pleaded, or we’ll never get going.”
+        c: “Let’s get the car packed” Rohan pleaded “or we’ll never get going.”
+        d: “Let’s get the car packed,” Rohan pleaded, “or we’ll never get going.”
+      - text: Choose the sentence that is written correctly
+        type: normal
+        subtype: indirect
+        answer: a
+        a: When Amit surprised the raccoon in the garbage, it ran away.
+        b: Jenny looks at the new catalogue and choosing a green sweater.
+        c: Sean quickly finishes his homework and then went to the hockey rink.
+        d: When Rhonda looked at the clay, she wonders how she should sculpt it.
+  - title: Short Writing Task
+    questions:
+    - text: What would be the ideal job for you? Use specific details to explain your choice.
+      type: short
+      subtype: indirect
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: Car wash a success 
+  - title: Reading
+    questions:
+      - text: In 1920, few mining and forestry settlements in Northern Ontario had schools, because the settlements lacked
+        type: normal
+        subtype: direct
+        answer: b
+        a: roads.
+        b: money.
+        c: children.
+        d: teachers.
+      - text: Using quotation marks around the word “luxury” (line 4) shows that schools
+        type: normal
+        subtype: indirect
+        answer: d
+        a: are more expensive today.
+        b: were more expensive in the past.
+        c: are not considered to be a necessity today.
+        d: were not considered to be a necessity in the past.
+      - text: Which of the following was not served by a rail car classroom?
+        type: normal
+        subtype: direct
+        answer: b
+        a: “forestry settlements” (line 2)
+        b: “few towns” (line 3)
+        c: “remote settlements” (lines 5–6)
+        d: “tiny communities” (line 10)
+      - text: What supports the idea that the “experiment” was a success?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: Children and adults showed up.
+        b: Some towns opened their own schools.
+        c: Highways were built in Northern Ontario.
+        d: A passenger rail car was converted into a museum.
+      - text: What is the best meaning for the word “restored” as used in line 18?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: resold
+        b: repaired
+        c: replaced
+        d: reorganized
+      - text: Which is the correct order of uses of the rail car?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: classroom, passenger car, museum
+        b: museum, passenger car, classroom
+        c: classroom, museum, passenger car
+        d: passenger car, classroom, museum
+      - text: Summarize this selection. Include a main idea and one detail that supports it.
+        type: short
+        subtype: indirect
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Are cellphones necessary in teenagers’ lives?
+  - title: Grammar
+    questions:
+      - text: Which is the best way to combine all the information in the following sentences?
+        type: combination
+        subtype: indirect
+        answer: a
+        question_text:
+          - Ontario is Canada’s largest province.
+          - Ontario has many different physical regions.
+          - Ontario’s wildlife is very diverse.
+        a: Ontario, Canada’s largest province, has diverse wildlife and many different physical regions.
+        b: Canada’s largest province is Ontario because it has different physical regions and diverse wildlife.
+        c: Ontario has many physical regions because of the diverse wildlife and it is Canada’s largest province.
+        d: Ontario is Canada’s largest province and it has many different physical regions but its wildlife is very diverse.
+      - text: Which of the following is written correctly?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: Samuel de Champlain a famous explorer lived in the 1600s
+        b: Samuel de Champlain a famous explorer, lived in the 1600s
+        c: Samuel de Champlain, a famous explorer lived in the 1600s
+        d: Samuel de Champlain, a famous explorer, lived in the 1600s
+      - text: Choose the sentence that does not belong in the following paragraph.
+        type: identification
+        subtype: indirect
+        answer: a
+        question_text: >
+                (1) Ottawa offers visitors a variety of things to do. (2)
+                Ottawa is in eastern Ontario. (3) There are many parks for
+                recreation. (4) In the Byward Market district, visitors can
+                find an open-air market and many sidewalk cafés. (5) The
+                museums and historical sites are interesting to visit. (6)
+                A wide selection of activities make Ottawa attractive to
+                tourists.
+        a: sentence 2
+        b: sentence 3
+        c: sentence 4
+        d: sentence 5
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Sam performed more better than before
+        b: The storm was worser than Nancy expected
+        c: Luisa became angrier as the argument continued
+        d: Pedro thought this game was funner than the last one
+  - title: The Diner That Saved Lives
+    questions:
+    - text: Why did the OPP close the main roads?
+      type: normal
+      subtype: direct
+      answer: b
+      a: A snow storm was predicted.
+      b: A storm had made the roads dangerous.
+      c: Traffic congestion had blocked the roads.
+      d: The fire department had recommended the closure.
+    - text: The word “strangers” in paragraph 1 most likely refers to
+      type: normal
+      subtype: indirect
+      answer: b
+      a: other skiers.
+      b: diner workers.
+      c: police officers.
+      d: business people.
+    - text: Which is the best meaning of the word “impassable” as used in paragraph 4?
+      type: normal
+      subtype: indirect
+      answer: b
+      a: busy
+      b: blocked
+      c: slippery
+      d: dangerous
+    - text: Why was the diner reopened?
+      type: normal
+      subtype: direct
+      answer: c
+      a: Local motels were full.
+      b: Other nearby restaurants were open.
+      c: The Gallaughers were eager to help.
+      d: The Gallaughers couldn’t make it home.
+    - text: The expression “make do for the night" (paragraph 7) means to
+      type: normal
+      subtype: indirect
+      answer: c
+      a: clear away the snow.
+      b: make sure everyone slept.
+      c: tolerate the circumstances.
+      d: make food for the evening.
+    - text: What is the purpose of the semicolon used in paragraph 7?
+      type: normal
+      subtype: indirect
+      answer: d
+      a: to separate the sounds from the silence
+      b: to separate the chorus from the announcer
+      c: to connect a list of the feelings of the people
+      d: to connect the people’s reaction to their understanding
+    - text: It was surprising that the children were able to fall asleep so easily because they were
+      type: normal
+      subtype: direct
+      answer: b
+      a: standing all night.
+      b: in temporary beds.
+      c: fed so many treats.
+      d: having too much fun.
+    - text: What helps the reader track events?
+      type: normal
+      subtype: indirect
+      answer: b
+      a: Flashbacks explain the events.
+      b: The selection indicates times throughout.
+      c: Police and fire officials give constant updates.
+      d: Frequent radio announcements describe the situation.
+    - text: From whose point of view is this story told?
+      type: normal
+      subtype: indirect
+      answer: d
+      a: an OPP officer
+      b: a diner employee
+      c: a radio announcer
+      d: a stranded motorist
+  - title: Reading
+    questions:
+    - text: Why doesn’t Jacinta obey the store clerk immediately?
+      type: normal
+      subtype: direct
+      answer: b
+      a: Jacinta wants to prove she is not a thief.
+      b: Jacinta wonders why the rule is in place.
+      c: Jacinta is afraid her backpack will get lost.
+      d: Jacinta is worried that her calculator will get stolen.
+    - text: The use of the ellipsis dots (…) in paragraph 9 indicates that
+      type: normal
+      subtype: indirect
+      answer: d
+      a: the clerk is interrupting.
+      b: the conversation is over.
+      c: a solution has been reached.
+      d: the speaker has not completed a thought.
+    - text: "The word “mess” in paragraph 13 refers to"
+      type: normal
+      subtype: indirect
+      answer: d
+      a: the slushy floor.
+      b: buying a newspaper.
+      c: Jacinta’s assignment.
+      d: protecting the backpacks.
+    - text: Which paragraph refers to an event that has occurred before the students enter the store?
+      type: normal
+      subtype: indirect
+      answer: b
+      a: paragraph 3
+      b: paragraph 8
+      c: paragraph 10
+      d: paragraph 13
+    - text: What is an effective title for this selection?
+      type: normal
+      subtype: indirect
+      answer: d
+      a: Winter Slush
+      b: An Afternoon Visit
+      c: The End of a Friendship
+      d: Coming to a Compromise
+    - text: Describe how the store clerk’s attitude changes in this selection. Use specific details from the selection to support your answer.
+      type: short
+      subtype: indirect
+    - text: Explain whether or not Jacinta and Dave behave appropriately. Use specific details from the selection and your own ideas to support your answer.
+      type: short
+      subtype: indirect
+  - title: Short Writing Task
+    questions:
+    - text: If you could learn how to do something new, what would it be and why? Use specific details to explain your choice.
+      type: short
+      subtype: indirect
+  - title: SportsPlex Stadium Preliminary Design Proposal Submitted to City Council
+    questions:
+    - text: The purpose of the italicized text under the title is to provide
+      type: normal
+      subtype: indirect
+      answer: c
+      a: a reason to hire an engineer.
+      b: an explanation of the structure.
+      c: an introduction to the proposal.
+      d: an overview of the design details.
+    - text: In this selection, “Bird’s-Eye View” means a
+      type: normal
+      subtype: indirect
+      answer: d
+      a: scale view.
+      b: a detailed view.
+      c: a structural view.
+      d: an overhead view.
+    - text: What does the star (&#9734;) indicate?
+      type: normal
+      subtype: indirect
+      answer: b
+      a: A star is the city’s trademark.
+      b: A company can advertise here.
+      c: The roof has a star-shaped opening.
+      d: “The Stars” is the name of the sports team.
+    - text: The arrows surrounding the building
+      type: normal
+      subtype: direct
+      answer: c
+      a: indicate the visitor parking area.
+      b: direct spectators to the entrances.
+      c: show the streets next to the stadium.
+      d: designate the roofline of the stadium.
+    - text: On which side of the stadium is the parking located?
+      type: normal
+      subtype: direct
+      answer: d
+      a: north
+      b: south
+      c: east
+      d: west
+    - text: Which of the following details does N. Gilmour expect to be a topic for future discussions with city council?
+      type: normal
+      subtype: direct
+      answer: d
+      a: the purchase of land
+      b: the availability of parking
+      c: the number of video screens
+      d: the cost of including VIP box seats

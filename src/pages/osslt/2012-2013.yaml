@@ -1,29 +1,395 @@
-
-  '2012-2013': [['c','a','b','c','b',
-                 'c','a','b','a',
-                 'c','b','b','a','b','c',
-                 'd','c','b','c',
-                 'a','a','d','a','c','d','a','c','d',
-                 'c','b','d','b','c',
-                 'c','a','b','d','a','a'
-                 ],
-
-                ['direct','indirect','direct','indirect','indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'indirect','indirect','direct','indirect','indirect',
-                 'indirect',
-
-                 'indirect','indirect','indirect','indirect',
-
-                 'indirect','indirect','direct','direct','direct',
-                 'indirect','indirect','indirect','indirect',
-
-                 'indirect','indirect','indirect','direct','indirect',
-
-                 'indirect','indirect','indirect','indirect','indirect',
-                 'indirect'
-
-                 ]
-               ],
+title: Reading Self-Assessment (2012-2013 OSSLT)
+description: An interactive multiple choice quiz based on the 2012-2013 OSSLT. Quiz yourself and improve your EQAO test scores!
+files:
+  - description: 2012-2013 OSSLT Booklet 1
+    link: "https://drive.google.com/file/d/0B6pPn1UsGrlcSVhzaEdCQzJMb1U/view?usp=sharing"
+  - description: 2012-2013 OSSLT Booklet 2
+    link: "https://drive.google.com/a/ugcloud.ca/file/d/0B6pPn1UsGrlcWG41QWVxVWQ3UHc/view?usp=sharing"
+sections:
+  - title: An Animator From Scarborough
+    questions:
+      - text: What will the focus of Lizarda’s internship be?
+        type: normal
+        subtype: direct
+        answer: c
+        a: films
+        b: cartoons
+        c: video games
+        d: action sequences
+      - text: Which word is closest in meaning to “confidential” as used in paragraph 2?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: secret
+        b: personal
+        c: confusing
+        d: professional
+      - text: According to Quesnelle, what ability is most important for an animator?
+        type: normal
+        subtype: direct
+        answer: b
+        a: creating characters
+        b: pleasing an audience
+        c: developing a demo reel
+        d: programming computers
+      - text: What do Quesnelle’s quotes indicate about him?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: He knows a lot about internships
+        b: He focuses on technical aspects of animation
+        c: He recognizes skill and creativity in his students
+        d: He suggests interesting storylines to his students
+      - text: Which paragraph presents information in chronological order?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: paragraph 2
+        b: paragraph 4
+        c: paragraph 5
+        d: paragraph 7
+      - text: Why is Lizarda a good choice for this internship? Use specific details from the selection to explain your answer.
+        type: short
+        subtype: indirect
+  - title: Grammar
+    questions:
+      - text: Choose the sentence that does not belong in this paragraph.
+        type: identification
+        subtype: indirect
+        answer: c
+        question_text: >
+                  (1) Traffic is busy on city streets. 
+                  (2) Cars, pedestrians and cyclists must share them. 
+                  (3) Pedestrians often cross the street where it is convenient but not always where it is safe. 
+                  (4) Tall buildings often line the streets. 
+                  (5) Navigating city streets can be a challenge.
+        a: sentence 2
+        b: sentence 3
+        c: sentence 4
+        d: sentence 5
+      - text: Choose the best place to insert the following sentence.
+        type: insertion
+        subtype: indirect
+        answer: a
+        cue: They were originally chew sticks made from twigs, feathers, bones and even porcupine quills.
+        question_text: >
+                  (1) The first toothbrush dates back over 3000 years.
+                  (2) In the 1700s, bristled toothbrushes began to appear. 
+                  (3) Today, they come in all shapes, sizes and colours. 
+                  (4) With so many choices, it is easy to have good dental hygiene.
+        a: after sentence 1
+        b: after sentence 2
+        c: after sentence 3
+        d: after sentence 4
+      - text: Which of the following sentences needs revision?
+        type: identification
+        subtype: indirect
+        answer: b
+        question_text: >
+                  (1) The Tri-Town Snow Travellers is a snowmobile club in Ontario. 
+                  (2) When the club was formed in 1968, it focuses on teaching safe driving on snowmachines. 
+                  (3) Since then, it has raised money to purchase two snow groomers. 
+                  (4) Now, club members maintain the snowmobile trails so that everyone can ride safely.
+        a: sentence 1
+        b: sentence 2
+        c: sentence 3
+        d: sentence 4
+      - text: Which sentence is written correctly?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: Ice fishing, a popular activity in northern regions, requires skill.
+        b: First, you need to drill a hole, in the ice on a lake using an auger.
+        c: Some avid anglers, use an ice shack, while waiting for the fish to bite.
+        d: Ice fishing in the north requires patience a stool to sit on and warm winter clothing
+  - title: Short Writing Task
+    questions:
+      - text: Identify an important environmental issue. Use specific details to explain why it is important.
+        type: short
+        subtype: indirect
+  - title: News Report
+    questions:
+      - text: Write a news report based on the headline and picture provided in the booklet.
+        type: news report
+        cue: Students Participate in Important Election
+  - title: Reading
+    questions:
+      - text: What is the best meaning of “endure” as used in line 10?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: start
+        b: enjoy
+        c: tolerate
+        d: prevent
+      - text: Which option best describes how the information in lines 4 to 7 is presented?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: chronologically
+        b: by cause and effect
+        c: as a problem and solution
+        d: by similarities and differences
+      - text: How did the biologists determine which bears had recently eaten berries?
+        type: normal
+        subtype: direct
+        answer: b
+        a: They tested blood samples.
+        b: They looked for stained teeth.
+        c: They measured their muscles.
+        d: They used masks to capture breath.
+      - text: What is set off by the comma in the final sentence of the selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: a contrast
+        b: a definition
+        c: items in a list
+        d: a repeated detail
+      - text: Which of the following is likely to occur if the average temperature continues to rise in the Arctic?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: The polar bear population will rise.
+        b: Polar bears will consume less seal meat.
+        c: Polar bears will spend less time on land.
+        d: Polar bears’ dependency on berries will decrease.
+      - text: Which is compared in this selection?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: blueberries and crowberries
+        b: tranquilized and awake bears
+        c: past and more-current research
+        d: muscle measurements and blood samples
+      - text: State a main idea of this selection and provide one specific detail from the selection that supports it.
+        type: short
+        subtype: indirect
+  - title: Writing a Series of Paragraphs
+    questions:
+      - text: Write a minimum of three paragraphs expressing an opinion on the topic below. Develop your main idea with supporting details (proof, facts, examples, etc.).
+        type: opinion
+        cue: Should any course be compulsory in high school?
+  - title: Grammar
+    questions:
+      - text: Choose the best closing sentence for the following paragraph.
+        type: identification
+        subtype: indirect
+        answer: d
+        question_text: >
+                    Although there are millions of Web sites, they are not
+                    created equal. A good Web site can be compared to an
+                    iceberg: only the tip of all the effort can be seen
+                    online. What cannot be seen are all the details and hours
+                    of planning that have led to its success.
+        a: Any Web site needs an audience and fans to make it successful.
+        b: Graphics and detailed content are necessary parts of any Web site.
+        c: A Web site is a good way to find information for a research project.
+        d: A good Web site combines online appeal and a well-organized structure.
+      - text: What revision is needed to improve the organization of this paragraph?
+        type: identification
+        subtype: indirect
+        answer: c
+        question_text: >
+                  (1) Eons ago, a powerful meteor struck the Sudbury area.
+                  (2) Most meteors that crash into Earth weigh only about 100 grams. 
+                  (3) They have little impact on Earth’s crust.
+                  (4) The one that landed near Sudbury was so large that it changed the bedrock. 
+                  (5) Its impact created Canada’s largest nickel deposit.
+        a: Break sentence 4 into two sentences.
+        b: Move sentence 1 to the end of the paragraph.
+        c: Insert “However” at the beginning of sentence 4.
+        d: Replace “a powerful meteor” in sentence 1 with “it.”
+      - text: Choose the sentence that is written correctly.
+        type: normal
+        subtype: indirect
+        answer: b
+        a: What time is it in Sao Paulo, Brazil!
+        b: Put the wrapper in the recycling bin.
+        c: I am so tired that I could sleep in class?
+        d: Will the hockey game be over in an hour.
+      - text: Which sentence is written correctly?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: Paige read about Kirkland Lake in the northern news.
+        b: It described this community in the Northern part of the province.
+        c: It is surrounded by several kettle lakes that were formed eons ago.
+        d: Several gold mines are in the area, including Kirkland Lake Gold and queenston mining inc.
+  - title: Practical Woman Donned It First
+    questions:
+      - text: What is the main purpose of this selection?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: to recognize a female innovator
+        b: to explain how goalie masks are made
+        c: to show the role of newspaper reporting in sport
+        d: to encourage readers to learn more about their families
+      - text: Why does the author refer to Graham as a “pioneer” in paragraph 7?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: She initiated a trend.
+        b: She lived several decades ago.
+        c: She was the first female goaltender.
+        d: Few women attended university in the 1920s.
+      - text: Which publication first reported a hockey goalie wearing a mask?
+        type: normal
+        subtype: direct
+        answer: d
+        a: Legends
+        b: The Toronto Sun
+        c: The Hockey News
+        d: The Kingston Whig-Standard
+      - text: Who popularized the use of masks?
+        type: normal
+        subtype: direct
+        answer: a
+        a: Plante
+        b: McRae
+        c: Graham
+        d: Benedict
+      - text: To whom does “both” refer in “You’re both wrong” (paragraph 8)?
+        type: normal
+        subtype: direct
+        answer: c
+        a: McRae and a reader
+        b: Benedict and Plante
+        c: a reader and someone else
+        d: Graham and another goalie
+      - text: At what point in the selection does the author shift from an objective to a more personal perspective?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: paragraph 3
+        b: paragraph 5
+        c: paragraph 6
+        d: paragraph 9
+      - text: What phrase from the selection refers to Elizabeth’s “prudence” (paragraph 9)?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: “safety first”
+        b: “getting her due”
+        c: “horsing around”
+        d: “mother of invention”
+      - text: What is the function of the dash used in paragraph 10?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: to build suspense
+        b: to link two unrelated facts
+        c: to emphasize a significant detail
+        d: to indicate an interruption in thought
+      - text: What idea links the first and last paragraphs?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: a belief in the importance of news
+        b: an opinion about women’s hockey
+        c: a comparison of hockey equipment
+        d: the author’s connection to the story
+  - title: Reading
+    questions:
+      - text: How does Nat show that he prepared for his interview with Alex?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: by shaking hands with Alex
+        b: by sharing his business plan
+        c: by having his questions ready
+        d: by volunteering at a seniors’ residence
+      - text: The colon in paragraph 3 is used to
+        type: normal
+        subtype: indirect
+        answer: b
+        a: end a sentence.
+        b: introduce a list.
+        c: indicate a pause.
+        d: highlight the next idea.
+      - text: The questions in paragraph 7 are a request for
+        type: normal
+        subtype: indirect
+        answer: d
+        a: proof.
+        b: a reason.
+        c: permission.
+        d: clarification.
+      - text: What is the meaning of “aspiring” as used in paragraph 9?
+        type: normal
+        subtype: direct
+        answer: b
+        a: mature
+        b: hopeful
+        c: friendly
+        d: struggling
+      - text: Which of the following best shows that Alex is creative?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: He attended college.
+        b: He borrowed money.
+        c: He started a mobile salon.
+        d: He volunteered at a seniors’ residence
+      - text: Is the interview with Alex beneficial to Nat’s career exploration? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+      - text: How does this selection show the benefits of volunteering for community service? Use specific details from the selection to support your answer.
+        type: short
+        subtype: indirect
+  - title: Short Writing Task
+    questions:
+      - text: Identify a place that has special meaning for you. Use specific details to explain why it is special.
+        type: short
+        subtype: indirect
+  - title: Soybeans
+    questions:
+      - text: Which part of the selection best shows an “explosion” in soybean production in Canada?
+        type: normal
+        subtype: indirect
+        answer: c
+        a: the world map
+        b: the “Uses for Soybeans” text boxes
+        c: the “Soybean Production in Canada” graph
+        d: the “Most Valuable Cash Crops in Canada” graph
+      - text: What describes the relationship between the world map and the graphics at the bottom of the page?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: from general to specific location
+        b: from more to less valuable crops
+        c: from past to more recent production
+        d: from most productive to least productive
+      - text: What do the white numbers in the black circles on the world map represent?
+        type: normal
+        subtype: indirect
+        answer: b
+        a: rank in soybean use
+        b: rank in soybean production
+        c: total area of soybean crops, in millions of hectares
+        d: total soybeans produced annually, in millions of tonnes
+      - text: Between which years did soybean production in Canada increase most significantly?
+        type: normal
+        subtype: indirect
+        answer: d
+        a: 1961-1971
+        b: 1971-1981
+        c: 1981-1991
+        d: 1991-2001
+      - text: How are the provinces organized in the “Hectares of Soybeans Grown” table?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: from east to west
+        b: from west to east
+        c: from largest to smallest
+        d: from smallest to largest
+      - text: Which two countries were most similar in their soybean production in 2002-2005?
+        type: normal
+        subtype: indirect
+        answer: a
+        a: Italy and Indonesia
+        b: Paraguay and India
+        c: Canada and Bolivia
+        d: China and Argentina
