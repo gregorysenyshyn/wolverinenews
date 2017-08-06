@@ -1,3 +1,9 @@
+
+$sm: 35.5rem;
+$md: 48rem;
+$lg: 64rem;
+$xl: 80rem;
+
 $blue: #2c1b76;
 $grey: #989aa0;
 $black: #231f20;
@@ -9,11 +15,14 @@ $black: #231f20;
 }
 
 body {
+  margin: 0;
+  font-family: sans-serif;
   background-color: lighten($grey, 26);
   a {
     text-decoration: none;
   }
 }
+
 
 button {
   line-height: 100%;
@@ -26,23 +35,36 @@ button {
 #header {
   background-color: $black;
   display: flex;
-  align-items: 'stretch';
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 #logo-wrapper {
+  flex-basis: 40%;
+}
+
+#logo-spacer {
+  height: 100%;
   display: flex;
+  text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
 #logo {
-  text-align: center;
-  margin: auto;
   svg {
     height: auto;
     max-width: 80%;
   }
 }
 
+#title-wrapper {
+  flex-basis: 60%;
+  @media screen and (min-width: $md) {
+    flex-basis: 70%;
+  }
+}
 
 #header-title {
   height: 100%;
@@ -54,17 +76,26 @@ button {
   font-size: 2.5rem;
   p {
     height: 100%;
+    margin: 1rem 0;
     color: lighten($grey, 20);
-    @media screen and (min-width: 35.5rem) {
+    @media screen and (min-width: $sm) {
       margin: 1rem;
       font-size: 4rem;
     }
-    @media screen and (min-width: 52rem) {
+    @media screen and (min-width: $md) {
       margin: 1rem;
       font-size: 7rem;
     }
-    @media screen and (min-width: 80rem) {
+    @media screen and (min-width: $lg) {
       padding-left: 2rem;
+    }
+  }
+}
+
+nav {
+  ul {
+    li {
+      display: inline-block;
     }
   }
 }

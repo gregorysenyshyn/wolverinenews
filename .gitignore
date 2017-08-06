@@ -1,9 +1,13 @@
 *~
 *.swp
+.tern-project
+.DS_Store
 HTMLTidy*
 __pycache__/
+logs/
 dist
 nginx/
 repos/
 src/scss/*.css
 src/js/sheets.js
+
