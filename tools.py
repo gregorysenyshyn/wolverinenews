@@ -13,7 +13,6 @@ import htmlmin
 import yaml
 import mistune 
 import frontmatter
-from tidylib import tidy_document
 from termcolor import colored
 
 

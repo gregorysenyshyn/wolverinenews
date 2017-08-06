@@ -99,19 +99,8 @@ def handle_js(production):
 #  CSS   #
 # ###### #
 
-SCSS_PATHS = {'dist/static/css/app.css': ['base.css',
-                                          'buttons-core.css',
-                                          'buttons.css',
-                                          'grids.css',
-                                          'grids-responsive.css',
-                                          'menus-core.css',
-                                          'menus-horizontal.css',
-                                          'menus-dropdown.css',
-                                          'app.scss',
-                                          'osslt.scss'],
-              'dist/static/css/announcements.css': ['base.css',
-                                                    'grids.css',
-                                                    'announcements.scss']}
+SCSS_PATHS = {'dist/static/css/app.css': ['app.scss', 'osslt.scss'],
+              'dist/static/css/announcements.css': ['announcements.scss']}
 LOADPATH = ['src/scss/']
 
 
@@ -163,17 +152,16 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                       'layouts': 'src/layouts/layout.html',
                       'options': {'section': False}},
 
-                      {'files': [{'src': ['src/pages/osslt/2007-2008.yaml',
-                                          'src/pages/osslt/2008-2009.yaml'],
-                                  'dest': 'osslt'}],
-                       'partials': ['src/partials/osslt/*.html',
-                                    'src/partials/main/head.html',
-                                    'src/partials/main/header.html',
-                                    'src/partials/main/footer.html'],
-                       'layouts': ['src/layouts/layout.html',
-                                   'src/layouts/osslt.html'],
-                       'options': {'section': False,
-                                   'template': 'osslt.html'}},
+                      # {'files': [{'src': ['src/pages/osslt/*.yaml'],
+                      #             'dest': 'osslt'}],
+                      #  'partials': ['src/partials/osslt/*.html',
+                      #               'src/partials/main/head.html',
+                      #               'src/partials/main/header.html',
+                      #               'src/partials/main/footer.html'],
+                      #  'layouts': ['src/layouts/layout.html',
+                      #              'src/layouts/osslt.html'],
+                      #  'options': {'section': False,
+                      #              'template': 'osslt.html'}},
 
                      {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
