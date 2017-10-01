@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header" class="striped">
 
   <div id="logo-wrapper">
     <div id="logo-spacer">
@@ -536,28 +536,10 @@
   <div id="title-wrapper">
     <div id="header-title">
       <div>
-        <p>Wolverine News</p>
+        <p id="header-text">Wolverine News</p>
       </div>
     </div>
   </div>
-
 </div>
-<nav>
-  <ul>
-    <li class="pure-menu-item">
-      <a href="/teams" class="pure-menu-link">
-        Teams
-      </a>
-    </li>
-    <li class="pure-menu-item">
-      <a href="/records" class="pure-menu-link">
-        Records
-      </a>
-    </li>
-    <li class="pure-menu-item">
-      <a href="/tools" class="pure-menu-link">
-        Tools
-      </a>
-    </li>
-  </ul>
-</nav>
+
+{% include 'nav.html' %}

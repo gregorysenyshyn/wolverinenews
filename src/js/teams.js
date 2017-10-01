@@ -44,39 +44,35 @@ function initTeam (name) {
   while (teamsPanel.firstChild) {
     teamsPanel.removeChild(teamsPanel.firstChild);
   }
-  var linkBackContainer = document.createElement('div');
-  linkBackContainer.className = 'pure-u-1';
+  var titleContainer = document.createElement('div');
+  titleContainer.id = 'title-container';
+  teamsPanel.appendChild(titleContainer);
   var linkBack = document.createElement('button');
-  linkBack.className = 'pure-button-active';
-  linkBack.href = "#";
   linkBack.onclick = function() {populateAllTeams(responseSheet);};
-  linkBackContainer.appendChild(linkBack);
   linkBack.appendChild(document.createTextNode('<< Back to all teams'));
-  teamsPanel.appendChild(linkBackContainer);
+  titleContainer.appendChild(linkBack);
+  var teamNameContainer = document.createElement('div');
+  teamNameContainer.className = 'team-name';
+  titleContainer.appendChild(teamNameContainer);
+  var teamName = document.createElement('span');
+  teamNameContainer.appendChild(teamName);
   for (var sheet in responseSheet.sheets) {
     if (responseSheet.sheets[sheet].properties.title === name) {
       var currentSheet = responseSheet.sheets[sheet];
-      var parsedPosts = parseSheet(currentSheet);
-      var teamNameContainer = document.createElement('div');
-      teamsPanel.appendChild(teamNameContainer);
-      teamNameContainer.className = 'pure-u-1 team-name';
-      var teamName = document.createElement('h2');
       teamName.appendChild(document.createTextNode(currentSheet.properties.title));
-      teamNameContainer.appendChild(teamName);
       var blogContainer = document.createElement('div');
-      blogContainer.className = 'pure-u-1 pure-u-lg-2-3';
-      blogContainer.id = 'blog-container';
+      blogContainer.id = 'team-blog-container';
+      blogContainer.className = 'team-container';
       teamsPanel.appendChild(blogContainer);
       var blogHeader = document.createElement('div');
-      blogHeader.className = 'pure-u-1 team-blog-header';
+      blogHeader.className = 'team-blog-header';
       blogContainer.appendChild(blogHeader);
       var blogHeaderText = document.createElement('h2');
       blogHeaderText.appendChild(document.createTextNode('News'));
       blogHeader.appendChild(blogHeaderText);
-      blogHeader.appendChild(document.createElement('hr'));
       var scoreBoard = document.createElement('div');
-      scoreBoard.className = 'pure-u-1 pure-u-lg-1-3';
-      scoreBoard.id = 'team-score-container';
+      scoreBoard.id = 'team-scoreboard-container';
+      scoreBoard.className = 'team-container';
       teamsPanel.appendChild(scoreBoard);
       
       var teamsPanelHeader = document.createElement('div');
@@ -84,50 +80,65 @@ function initTeam (name) {
       var teamsPanelHeaderText = document.createElement('h2');
       teamsPanelHeader.appendChild(teamsPanelHeaderText);
       teamsPanelHeaderText.appendChild(document.createTextNode('Games'));
+      var teamsScoreboard = document.createElement('div');
+      teamsScoreboard.className = 'teams-scoreboard panel';
+      scoreBoard.appendChild(teamsScoreboard);
 
-      for (var post in parsedPosts) { 
+      var parsedPosts = parseSheet(currentSheet);
+      for (var post=0; post<parsedPosts.length; post++) { 
         if (parsedPosts[post].type === 'score') {
-          
           var scoresContainer = document.createElement('div');
-          scoresContainer.className = 'pure-g';
-          scoreBoard.appendChild(scoresContainer);
+          teamsScoreboard.appendChild(scoresContainer);
+          if (post !==0) {
+            scoresContainer.appendChild(document.createElement('hr'));
+          }
           var gameScore = document.createElement('div');
-          gameScore.className = 'pure-u-1 pure-u-lg-1 team-scoreboard-game-result';
+          gameScore.className = 'team-scoreboard-game-result';
           scoresContainer.appendChild(gameScore);
-          var gameDate = document.createElement('h4');
+          var gameDate = document.createElement('p');
+          gameDate.className = 'teams-game-date';
           gameDate.appendChild(document.createTextNode(parsedPosts[post].date.getFullYear() + '/' + parsedPosts[post].date.getMonth() + '/' + parsedPosts[post].date.getDate()));
           gameScore.appendChild(gameDate);
-          
-          var ourName = document.createElement('span');
-          ourName.className = 'index-scoreboard-school';
-          ourName.appendChild(document.createTextNode('WHSS'));
-          gameScore.appendChild(ourName);
 
-          var gameScoreScores = document.createElement('span');
-          gameScoreScores.className = 'index-scoreboard-score';
-          var ourScore = parsedPosts[post]['our score'];
-          var theirScore = parsedPosts[post]['their score'];
-          gameScoreScores.appendChild(document.createTextNode(ourScore + ' - ' + theirScore));
-          gameScore.appendChild(gameScoreScores);
+          var scoreLine = document.createElement('div');
+          scoreLine.className = 'teams-score-line';
+          gameScore.appendChild(scoreLine);
+          var ourName = document.createElement('span');
+          ourName.className = 'teams-scoreboard-school';
+          ourName.appendChild(document.createTextNode('WHSS'));
+          scoreLine.appendChild(ourName);
+
+          var gameScoreOurScore = document.createElement('div');
+          gameScoreOurScore.className = 'teams-scoreboard-our-score';
+          gameScoreOurScore.appendChild(document.createTextNode(parsedPosts[post]['our score']));
+          scoreLine.appendChild(gameScoreOurScore);
+
+          var gameScoreSpacer = document.createElement('div');
+          gameScoreSpacer.className = 'teams-scoreboard-spacer';
+          gameScoreSpacer.appendChild(document.createTextNode('-'));
+          scoreLine.appendChild(gameScoreSpacer);
+
+          var gameScoreTheirScore = document.createElement('div');
+          gameScoreTheirScore.className = 'teams-scoreboard-their-score';
+          gameScoreTheirScore.appendChild(document.createTextNode(parsedPosts[post]['their score']));
+          scoreLine.appendChild(gameScoreTheirScore);
 
           var theirName = document.createElement('span');
-          theirName.className = 'index-scoreboard-school';
+          theirName.className = 'teams-scoreboard-school teams-scoreboard-their-name';
           theirName.appendChild(document.createTextNode(parsedPosts[post]['their name']));
-          gameScore.appendChild(theirName);
+          scoreLine.appendChild(theirName);
         }
         var blogPost = document.createElement('div');
-        blogPost.className = 'pure-g team-blog-post';
+        blogPost.className = 'team-blog-post panel';
         blogContainer.appendChild(blogPost);
         var blogPostTitle = document.createElement('div');
-        blogPostTitle.className = 'pure-u-1';
-        var blogPostTitleText = document.createElement('h2');
+        var blogPostTitleText = document.createElement('h3');
         blogPostTitleText.appendChild(document.createTextNode(parsedPosts[post].headline));
         blogPostTitle.appendChild(blogPostTitleText);
         blogPost.appendChild(blogPostTitle);
 
         if (parsedPosts[post].type === 'score') {
           var blogPostScore = document.createElement('div');
-          blogPostScore.className = 'pure-u-1';
           var blogPostTextNode = document.createTextNode('WHSS ' + parsedPosts[post]['our score'] + ' - ' + parsedPosts[post]['their score'] + ' ' + parsedPosts[post]['their name']);
           var blogPostScoreText = document.createElement('span');
           blogPostScoreText.appendChild(blogPostTextNode);
@@ -144,14 +155,12 @@ function initTeam (name) {
         else {
           bylineString = document.createTextNode(parsedPosts[post].date.getFullYear() + '/' + parsedPosts[post].date.getMonth() + '/' + parsedPosts[post].date.getDate());
         }
-        blogPostByline.className = 'pure-u-1';
         var blogPostBylineText = document.createElement('span');
         blogPostBylineText.appendChild(bylineString);
         blogPostByline.appendChild(blogPostBylineText);
         blogPost.appendChild(blogPostByline);
 
         var blogPostBody = document.createElement('div');
-        blogPostBody.className = 'pure-u-1';
         var blogPostBodyText = document.createElement('p');
         blogPostBodyText.appendChild(document.createTextNode(parsedPosts[post].body));
         blogPostBody.appendChild(blogPostBodyText);
@@ -159,7 +168,6 @@ function initTeam (name) {
 
         if ('link title' in parsedPosts[post] && 'link destination' in parsedPosts[post]) {
           var blogPostLink = document.createElement('div');
-          blogPostLink.className = 'pure-u-1';
           var blogPostLinkText = document.createElement('a');
           blogPostLinkText.appendChild(document.createTextNode(parsedPosts[post]['link title']));
           blogPostLinkText.href = parsedPosts[post]['link destination'];
@@ -173,37 +181,32 @@ function initTeam (name) {
 
 
 function initTeamBoard (teamBoardData) {
-  var link = document.createElement('a');
-  link.className = 'pure-u-1 pure-u-md-1-2 pure-u-lg-1-3';
-  link.href = "#";
-  link.onclick = function(){initTeam(teamBoardData.name);};
   var teamBoardContainer = document.createElement('div');
   teamBoardContainer.className = 'team-board-container';
-  link.appendChild(teamBoardContainer);
   var teamBoard = document.createElement('div');
+  teamBoard.className = 'team-board panel';
   teamBoardContainer.appendChild(teamBoard);
-  teamBoard.className = 'team-board';
-  var teamBoardTitle = document.createElement('h2');
+  teamBoard.onclick = function(){initTeam(teamBoardData.name);};
+  var teamBoardTitle = document.createElement('h3');
   teamBoard.appendChild(teamBoardTitle);
   teamBoardTitle.appendChild(document.createTextNode(teamBoardData.name));
   var teamBoardCoachContainer = document.createElement('div');
-  teamBoardCoachContainer.className = 'pure-u-1 team-board-coach-container';
+  teamBoardCoachContainer.className = 'team-board-coach-container';
   var coachName = document.createElement('span');
   teamBoardCoachContainer.appendChild(coachName);
   coachName.appendChild(document.createTextNode(teamBoardData.teacher));
   teamBoard.appendChild(teamBoardCoachContainer);
   var teamBoardStatusContainer = document.createElement('div');
-  teamBoardStatusContainer.className = 'pure-u-1';
-  var teamBoardStatus = document.createElement('span');
+  var teamBoardStatus = document.createElement('h4');
   teamBoardStatusContainer.appendChild(teamBoardStatus);
-  teamBoardStatus.className = 'teams-status';
   teamBoard.appendChild(teamBoardStatusContainer);
   teamBoardStatus.appendChild(document.createTextNode(teamBoardData['current status']));
   
   if (teamBoardData['current status'] !== 'Season Finished') {
     var teamBoardPracticeTimeContainer = document.createElement('div');
     if (teamBoardData['current status'] !== 'Tryouts') {
-      var teamBoardPracticeTitle = document.createElement('span');
+      var teamBoardPracticeTitle = document.createElement('h4');
+      teamBoardPracticeTitle.className = 'nomargin';
       teamBoardPracticeTimeContainer.appendChild(document.createElement('br'));
       teamBoardPracticeTitle.appendChild(document.createTextNode('Practices'));
       teamBoardPracticeTimeContainer.appendChild(teamBoardPracticeTitle);
@@ -211,11 +214,12 @@ function initTeamBoard (teamBoardData) {
     
     teamBoardPracticeTimeContainer.appendChild(document.createElement('br'));
     var teamBoardPracticeTime = document.createElement('span');
+    teamBoardPracticeTime.className = 'team-board-practice-time';
     teamBoardPracticeTime.appendChild(document.createTextNode(teamBoardData.practice));
     teamBoardPracticeTimeContainer.appendChild(teamBoardPracticeTime);
     teamBoard.appendChild(teamBoardPracticeTimeContainer);
   }
-  return link;
+  return teamBoardContainer;
 }
 
 function populateAllTeams (responseSheet) {

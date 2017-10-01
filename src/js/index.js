@@ -42,10 +42,9 @@ function populateScoreboard(response) {
             for (var x = 0; x < scoreContainers.length; x += 1) {
               var currentSB = scoreContainers[x];
               var gameScoresContainer = document.createElement('div');
-              gameScoresContainer.className = 'pure-g';
               currentSB.appendChild(gameScoresContainer);
               var gameScore = document.createElement('div');
-              gameScore.className = 'pure-u-1 pure-u-lg-1 index-scoreboard-game-result';
+              gameScore.className = 'index-scoreboard-game-result';
               gameScoresContainer.appendChild(gameScore);
               var gameTitle = document.createElement('h3');
               gameTitle.className = 'index-gamescore-title';
@@ -80,16 +79,12 @@ function populateScoreboard(response) {
 
 
 function populateBlog(response) {
-  var blog = document.getElementById('index-blog');
+  var blog = document.getElementById('index-blog-body');
   while (blog.firstChild) {
     blog.removeChild(blog.firstChild);
   }
-  var blogHeader = document.createElement('h1');
-  blogHeader.appendChild(document.createTextNode('News'));
-  blogHeader.className = 'pure-u-1 index-blog-title';
-  blog.appendChild(blogHeader);
   var blogBorder = document.createElement('div');
-  blogBorder.className = 'panel pure-u-1';
+  blogBorder.className = 'panel';
   blog.appendChild(blogBorder);
   for (var i = 1; i < response.sheets[0].data[0].rowData.length; i += 1) {
     var currentEntry = response.sheets[0].data[0].rowData[i];
@@ -117,23 +112,13 @@ function populateBlog(response) {
 }
 
 function initDisplay () {
-  var scoreboards = document.getElementsByClassName('index-scoreboard');
-  for (var x = 0; x < scoreboards.length; x += 1) {
-    currentSB = scoreboards[x];
-    while (currentSB.firstChild) {
-      currentSB.removeChild(currentSB.firstChild);
-    }
-    var scoreboardHeaderContainer = document.createElement('div');
-    scoreboardHeaderContainer.className = 'pure-u-1';
-    currentSB.appendChild(scoreboardHeaderContainer);
-    var scoreboardHeader = document.createElement('h2');
-    scoreboardHeader.appendChild(document.createTextNode('Recent Results'));
-    scoreboardHeader.className = 'index-scoreboard-header';
-    scoreboardHeaderContainer.appendChild(scoreboardHeader);
-    var scoreboardBorder = document.createElement('div');
-    scoreboardBorder.className = 'index-scoreboard-container pure-u-1';
-    currentSB.appendChild(scoreboardBorder);
+  var scoreboard = document.getElementById('index-scoreboard-body');
+  while (scoreboard.firstChild) {
+    scoreboard.removeChild(scoreboard.firstChild);
   }
+  var scoreboardBorder = document.createElement('div');
+  scoreboardBorder.className = 'index-scoreboard-container panel';
+  scoreboard.appendChild(scoreboardBorder);
 }
 
 initDisplay();

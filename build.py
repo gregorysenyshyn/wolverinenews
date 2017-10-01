@@ -181,7 +181,8 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
 
 IMAGES ={ 
         'copy': [
-            {'dist/static/images': ['src/images/copy/*']}
+            {'dist/static/images': ['src/images/copy/*'],
+             'dist/pages': ['src/apache/.htaccess']}
             ]
         }
 

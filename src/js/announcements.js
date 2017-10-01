@@ -66,6 +66,7 @@ function consider(potentialAnnouncement, today) {
     if (potentialAnnouncement.end.getMonth() < potentialAnnouncement.start.getMonth()){
       //goes across year change
       if (today.getMonth() <= 6){
+        // Both of these conditions should be start date
         if ((new Date(today.getFullYear()) - 1),
                       potentialAnnouncement.start.getMonth(),
                       potentialAnnouncement.start.getDate() <= today &&
