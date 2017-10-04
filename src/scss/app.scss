@@ -278,6 +278,9 @@ h3 {
   background-color: white;
 }
 
+.nomargin {
+  margin: 0;
+}
 //
 //INDEX
 //
@@ -322,12 +325,10 @@ h3 {
   @media screen and (max-width: 48rem) and (min-width: 35.5rem) {
     padding: 1.5rem 2rem;
   }
-  grid-row: 1;
 }
 
 .index-body {
   padding: 0 2rem 2rem 2rem;
-  grid-row: 2;
 }
 
 .index-blog-entry {
@@ -417,9 +418,6 @@ h3 {
   justify-content: stretch;
   align-items: center;
   text-align: center; 
-  & .nomargin {
-    margin: 0;
-  }
 }
 
 .team-board-practice-time {
@@ -552,7 +550,6 @@ h3 {
 //
 
 #records-board-container {
-  background-color: $grey;
   padding: 2rem;
 }
 
@@ -560,10 +557,10 @@ h3 {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  background-color: $black;
-  color: $grey;
+  background-color: white;
+  color: darken($grey, 30);
   padding: 1rem 0;
   margin-bottom: 2rem;
   font-size: 1.3rem;
@@ -571,68 +568,134 @@ h3 {
   @media screen and (min-width: 50rem) {
     font-size: 2rem;
   }
-
 }
 
 .records-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 1rem 0;
 
   @media screen and (min-width: 50rem) {
     font-size: 1.5rem;
   }
-
+  & .record-type {
+    flex-basis: 10%;  
+  }
+  & .record-event {
+    flex-basis: 30%;
+  }
+  & .record-holder {
+    flex-basis: 30%;
+  }
+  & .record-result {
+    flex-basis: 15%;
+  }
+  & .record-supervisor {
+    flex-basis: 15%;
+  }
 }
 
-#tools-main {
-  padding: 2rem;
+//
+// TOOLS
+//
 
+#tools-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+  }
   hr {
     border-color: $black;
   }
-  
-}
-
-.tools-container {
-  min-height: 200px;
-  padding: 0 2rem;
-
   a {
     color: $black;
   }
-
 }
 
+.tool-container {
+  padding: 0 1rem;
+}
+
+#tools-literacy {
+  flex-basis: 50%;
+}
+
+#tools-fitness {
+  flex-basis: 50%;
+}
+
+//
+//CALCULATORS
+//
+
 #calculators-container {
-  background-color: $grey;
+  display:flex;
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+  }
 }
 
 .calculator-container {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
   padding: 2rem;
-  line-height: 400%;
-
-  @media screen and (min-width: 50rem) {
-    font-size: 2rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: 100%;
-  }
-
+  line-height: 200%;
+  font-size: 2rem;
   label {
     margin: 0 1rem;
   }
+}
 
+.calculator {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator-inputs {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.result-container {
+  width: 50%;
+  flex: 1 1 50%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+#calculator-button {
+  flex-basis: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.calculator-ui-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .calculator-header {
+  display: flex;
+  align-content: baseline;
   padding-left: 1rem;
   span {
-    font-size: 2rem;
+    font-size: 50%;
+    margin: 0;
+    padding: 0;
   }
 
 }
@@ -640,52 +703,4 @@ h3 {
 .calculator-label {
   display: inline-block;
   margin: 0 1rem 0 0;
-}
-
-#one-rm-weight {
-  max-width: 100%;
-}
-
-#calculator-button {
-  text-align: center;
-}
-
-#one-rm-result-container {
-  text-align: center;
-}
-
-#wilks-result-container {
-  text-align: center;
-}
-
-#one-rm-result {
-  background-color: $black;
-  color: $grey;
-  font-size: 4rem;
-  width: 50%;
-  margin: 0 auto;
-
-  h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-
-}
-
-#wilks-result {
-  background-color: $black;
-  color: $grey;
-  font-size: 4rem;
-  width: 50%;
-  margin: 0 auto;
-
-  h2 {
-    font-size: 2rem;
-    margin: 0;
-  }
-
-}
-
-.sinclair {
-  margin-top: 3rem;
 }

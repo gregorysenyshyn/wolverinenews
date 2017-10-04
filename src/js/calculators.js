@@ -63,7 +63,6 @@ function oneRmCalc () {
   oneRmResultIntroText.appendChild(document.createTextNode('Your One-Rep Max Is:'));
   oneRmResult.appendChild(oneRmResultIntroText);
   oneRmResult.appendChild(document.createTextNode(oneRm));
-
 }
 
 function wilksCalc () {

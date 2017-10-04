@@ -18,10 +18,9 @@ function parseRecords (records) {
 
 function initRecordRow (parsedRecord) {
   var row = document.createElement('div');
-  row.className = 'pure-g';
   var recordsType = document.createElement('div');
   row.appendChild(recordsType);
-  recordsType.className = 'pure-u-1-8';
+  recordsType.className = 'record-type';
   var recordsTypeLabel = document.createElement('span');
   recordsTypeLabel.appendChild(document.createTextNode(parsedRecord.type));
   recordsType.appendChild(recordsTypeLabel);
@@ -29,14 +28,14 @@ function initRecordRow (parsedRecord) {
   
   var recordsEvent = document.createElement('div');
   row.appendChild(recordsEvent);
-  recordsEvent.className = 'pure-u-1-4';
+  recordsEvent.className = 'record-event';
   var recordsEventLabel = document.createElement('span');
   recordsEventLabel.appendChild(document.createTextNode(parsedRecord.event));
   recordsEvent.appendChild(recordsEventLabel);
 
   var recordsName = document.createElement('div');
   row.appendChild(recordsName);
-  recordsName.className = 'pure-u-1-4';
+  recordsName.className = 'record-holder';
   var recordsNameLabel = document.createElement('span');
   var nameText = null;
   if ('first' in parsedRecord && 'last' in parsedRecord){
@@ -51,7 +50,7 @@ function initRecordRow (parsedRecord) {
 
   var recordsResult = document.createElement('div');
   row.appendChild(recordsResult);
-  recordsResult.className = 'pure-u-1-8';
+  recordsResult.className = 'record-result';
   var recordsResultLabel = document.createElement('span');
   var recordsResultText = null;
   if (parsedRecord.result !== undefined) {
@@ -62,7 +61,7 @@ function initRecordRow (parsedRecord) {
 
   var recordsStaff = document.createElement('div');
   row.appendChild(recordsStaff);
-  recordsStaff.className = 'pure-u-1-4';
+  recordsStaff.className = 'record-supervisor';
   var recordsStaffLabel = document.createElement('span');
   var nameText = null;
   if ('first' in parsedRecord && 'last' in parsedRecord){
@@ -81,7 +80,6 @@ function initRecordRow (parsedRecord) {
 function setRecords (response) {
   var recordBoard = document.getElementById('record-board');
   var recordsTable = document.createElement('div');
-  recordsTable.className = 'pure-u-1';
   recordBoard.appendChild(recordsTable);
   var headerLabels = {type:'Type',
                       event: 'Event',
@@ -89,6 +87,7 @@ function setRecords (response) {
                       staff: 'Staff Supervisor'};
   var newRow = initRecordRow(headerLabels);
   newRow.id = 'records-header-row';
+  newRow.className = 'records-row';
   recordsTable.appendChild(newRow);
 
   var parsedRecords = parseRecords(response['sheets'][0]['data'][0]['rowData']);

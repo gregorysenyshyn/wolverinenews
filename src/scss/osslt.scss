@@ -1,25 +1,50 @@
-.full-width {
-  width: 100%;
-}
-
 #osslt-wrapper {
-  margin: 0 auto;
   padding: 0 1rem;
-  button {
-    float: right;
-    margin-bottom: 4rem;
-  }
   a {
     color: lighten($blue, 20);
   }
+  h2 {
+    margin: 2rem 0;
+  }
+  h3 {
+    margin: 2rem 0;
+  }
+  h4 {
+    margin: 2rem 0;
+  }
+}
+
+.osslt-full-p {
+  flex-basis:100%; 
 }
 
 #osslt-test-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
+  margin-bottom: 2rem;
   p {
+    flex-basis: 33%;
     padding: 0.5rem 0;
   }
 }
+
+#osslt-explanation-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .question-type-30 {
+    flex-basis: 30%;
+    padding: 1rem 0;
+  }
+  .question-type-50 {
+    flex-basis: 47%;
+    padding: 1rem 0;
+  }
+}
+
 
 .correct {
   border: 2px solid green;
@@ -33,8 +58,23 @@
   padding: 0.5rem 1rem;
 }
 
+.question-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-text {
+  flex-basis: 100%;
+}
+
 .mc-answers {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
+}
+
+.answer {
 }
 
 .grammar-list {
@@ -83,11 +123,13 @@
 }
 
 .wc-bar {
+  display: flex;
   height: 3rem;
   margin-bottom: 1rem;
 }
 
 .wc-number {
+  flex-basis: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,11 +137,24 @@
 }
 
 .wc-scale {
+  flex-basis: 80%;
   position: relative;
   border: solid 1px darken($grey, 30);
   background: linear-gradient(to right, $grey, lighten($blue, 40));
   text-align: center;
   overflow: hidden;
+}
+
+.wc-markers {
+  display: flex;
+}
+
+.short-scale {
+  flex-basis: 33.333%;
+}
+
+.long-scale {
+  flex-basis: 16.666%;
 }
 
 .wc-arrow {
@@ -129,6 +184,10 @@
   }
 }
 
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+}
 #score-modal {
   display: none;
   align-items: center;
@@ -148,6 +207,6 @@
   padding: 2rem;
   max-height: 90vh;
   border: 1px solid $black;
-  background-color: lighten($grey,35);
+  background-color: lighten($grey,45);
   overflow: auto; 
 }

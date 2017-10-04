@@ -1,0 +1,160 @@
+---
+title: OSSLT Resources - WolverineNews.ca 
+description: A set of interactive multiple choice quizzes based on the released 
+             portions of the Ontario Secondary School Literacy Test that have 
+             been released by EQAO.
+---
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+
+
+<div id="osslt-wrapper">
+
+  <h1>OSSLT Practice Tests</h1>
+
+  <p>
+    On this page, you will find links to self-grading online quizzes made up of the
+    questions from past OSSLTs.  You can use these quizzes to get instant feedback
+    about the parts of the test you are strongest with, and which you should
+    practice more before attempting the OSSLT.
+  </p>
+  <div id="osslt-test-links" class="panel">
+    <p>
+      <a href="osslt/2007-2008">2007-2008 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2008-2009">2008-2009 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2009-2010">2009-2010 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2010-2011">2010-2011 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2011-2012-sample-test">2011-2012 OSSLT Sample Test</a>
+    </p>
+    <p>
+      <a href="osslt/2011-2012-released-questions">2011-2012 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2012-2013">2012-2013 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2013-2014">2013-2014 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2014-2015">2014-2015 OSSLT Released Questions</a>
+    </p>
+    <p>
+      <a href="osslt/2015-2016">2015-2016 OSSLT Released Questions</a>
+    </p>
+  </div>
+
+  <h2>OSSLT Question Types</h2>
+  <p>
+    There are several different types of questions on the OSSLT.  If you practice 
+    being able to identify which type of question you're looking at, you will have
+    an easier time giving a full-mark answer.
+  </p>
+
+  <h3>Multiple Choice</h3>
+  <div id="osslt-explanation-box" class="panel">
+    <p class="osslt-full-p">
+      There are two types of multiple choice questions on the OSSLT:
+    </p>
+
+    <div class="question-type-50">
+      <h4>Direct</h4>
+      <p>
+        <strong>Direct</strong> questions are questions which can be answered by copying information
+        directly from the text, like dates, names, ages, etc.
+      </p>
+      <a href="#">
+        Strategies for answering direct questions
+      </a>
+    </div>
+
+    <div class="question-type-50">
+      <h4>Indirect</h4>
+      <p>
+        <strong>Indirect</strong> questions require you to figure something out. The OSSLT will often
+        ask indirect questions like "What happened first?" or "Which word has the
+        closest meaning?"
+      </p>
+      <a href="#">
+        Strategies for answering indirect questions
+      </a>
+    </div>
+  </div>
+
+
+  <h3>Short Answer</h3>
+  <div id="osslt-explanation-box" class="panel">
+    <p class="osslt-full-p">
+      There are three types of short answer questions on the OSSLT:
+    </p>
+
+    <div class="question-type-30">
+      <h4>Open Response</h4>
+      <p>
+        In <strong>Open Response</strong> questions, you are asked to combine the material you read 
+        with your own experience to answer a question.
+      </p>
+      <a href="#">Strategies for answering open response questions</a>
+    </div>
+      
+    <div class="question-type-30">
+      <h4>Short Writing</h4>
+      <p>
+        In <strong>Short Writing</strong> questions, you are asked to look at the reading material 
+        exclusively when answering a question. 
+      </p>
+      <a href="#">Strategies for answering short writing questions</a>
+    </div>
+
+    <div class="question-type-30">
+      <h4>Information Paragraph/Main Idea</h4>
+      <p>
+        In <strong>Main Idea</strong> questions, you are asked to provide a main idea and at least one 
+        detail that supports it.
+      </p>
+      <a href="#"> Strategies for answering main idea questions </a>
+    </div>
+
+  </div>
+
+
+  <h3>Long Writing</h3>
+  <div id="osslt-explanation-box" class="panel">
+    <p class="osslt-full-p">
+      There are two types of long writing questions on the OSSLT:
+    </p>
+
+    <div class="question-type-50">
+      <h4>News Reports</h4>
+      <p>
+        <strong>News Reports</strong> should follow established conventions from news media.  In these
+        questions, you should use the headline and photo provided to write a short
+        news story.
+      </p>
+      <a href="#">
+        Strategies for writing news reports
+      </a>
+    </div>
+
+    <div class="question-type-50">
+      <h4>Series of Paragraphs/Opinion Piece</h4>
+      <p>
+        In the <strong>Series of Paragraphs Expressing an Opinion</strong>, you 
+        will answer a question provided by EQAO in several paragraphs.  This is 
+        the longest piece of writing on the OSSLT, so good planning is very important.
+      </p>
+      <a href="#">
+        Strategies for writing opinion pieces
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock main %}
