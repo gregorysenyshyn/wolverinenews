@@ -59,7 +59,6 @@ js_paths = {'dist/static/js/app.js': ['sheets.js',
             'dist/static/js/teams.js': ['teams.js'],
             'dist/static/js/calculators.js': [ 'calculators.js' ],
             'dist/static/js/announcements.js': ['sheets.js',
-                                                'repos/Twitter-Post-Fetcher/js/twitterFetcher.js',
                                                 'announcements.js' ]
            }
 
@@ -164,6 +163,19 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                        'options': {'section': False,
                                    'template': 'osslt.html'}},
 
+                      {'files': [{'src': ['src/pages/news/*.html'],
+                                  'dest': 'news'}],
+                       'partials': ['src/partials/news/*.html',
+                                    'src/partials/main/head.html',
+                                    'src/partials/main/header.html',
+                                    'src/partials/main/nav.html',
+                                    'src/partials/main/footer.html'],
+                       'layouts': ['src/layouts/layout.html',
+                                   'src/layouts/news.html'],
+                       'options': {'section': False,
+                                   'template': 'news.html'}},
+
+
                      {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
                        'partials': ['src/partials/announcements/*.html'],
@@ -180,7 +192,7 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
 #  IMAGES  #
 # ######## #
 
-IMAGES ={ 
+IMAGES ={
         'copy': [
             {'dist/static/images': ['src/images/copy/*'],
              'dist/pages': ['src/apache/.htaccess']}
@@ -209,7 +221,7 @@ if __name__ == '__main__':
         production = True
 
     tools.clean()
-    s3=None 
+    s3=None
 
     if production:
         ## AWS ##
