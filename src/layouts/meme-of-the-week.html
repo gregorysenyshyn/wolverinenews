@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+<div>
+  <H1>Meme Of The Week</H1>
+</div>
+
+{% for meme in memes %}
+
+  <div class="panel">
+
+      <div>
+        <h2>{{memes.meme-title}}</h2>
+      </div>
+
+      <div>
+        <img src="{{memes.meme-image}}" alt="{{memes.meme-alt}}" />
+      </div>
+
+    </div>
+
+{% endfor %}
+
+{% endblock main %}

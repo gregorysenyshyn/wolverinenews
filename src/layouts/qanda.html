@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+<div>
+  <H1>Wolverine Questions</H1>
+</div>
+
+{% for question in questions %}
+  <div class="qna-panel panel">
+
+    <div class="qna-question-text">
+      <h2>{{question.question_text}}</h2>
+    </div>
+
+    <div class="qna-author-box">
+
+      <div class="qna-byline">
+        <p>
+          Submited by: {{question.poser}}
+        </p>
+      </div>
+
+      <div class="qna-author-photo-box">
+        <img class="qna-author-photo" src="/static/images/author-placeholder-qanda.jpg" alt="Placeholder" />
+      </div>
+
+    </div>
+
+    <div class="qna-answer-text">
+      <p>
+        {{question.answer}}
+      </p>
+    </div>
+
+  </div>
+{% endfor %}
+
+{% endblock main %}
