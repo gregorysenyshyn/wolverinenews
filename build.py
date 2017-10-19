@@ -59,7 +59,6 @@ js_paths = {'dist/static/js/app.js': ['sheets.js',
             'dist/static/js/teams.js': ['teams.js'],
             'dist/static/js/calculators.js': [ 'calculators.js' ],
             'dist/static/js/announcements.js': ['sheets.js',
-                                                'repos/Twitter-Post-Fetcher/js/twitterFetcher.js',
                                                 'announcements.js' ]
            }
 
