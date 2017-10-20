@@ -142,7 +142,8 @@ def handle_scss(production):
 # ###### #
 data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                                          'src/pages/*.md',
-                                         '!src/pages/announcements.html'],
+                                         '!src/pages/announcements.html',
+                                         '!src/pages/editorial.html'],
                                 'dest': ''},
                                 {'src': ['src/pages/tools/*.html',
                                          'src/pages/tools/*.md'],
@@ -171,10 +172,10 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                                     'src/partials/main/nav.html',
                                     'src/partials/main/footer.html'],
                        'layouts': ['src/layouts/layout.html',
-                                   'src/layouts/qanda.html'],
-                       'options': {'section': False,
-                                   'template': 'qanda.html'}},
 
+                                   'src/layouts/editorial-landing.html',
+                                   'src/layouts/editorial-article.html'],
+                       'options': {'section': False}},
 
                      {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
@@ -192,7 +193,7 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
 #  IMAGES  #
 # ######## #
 
-IMAGES ={ 
+IMAGES ={
         'copy': [
             {'dist/static/images': ['src/images/copy/*'],
              'dist/pages': ['src/apache/.htaccess']}
@@ -221,7 +222,7 @@ if __name__ == '__main__':
         production = True
 
     tools.clean()
-    s3=None 
+    s3=None
 
     if production:
         ## AWS ##
