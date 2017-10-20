@@ -59,7 +59,6 @@ js_paths = {'dist/static/js/app.js': ['sheets.js',
             'dist/static/js/teams.js': ['teams.js'],
             'dist/static/js/calculators.js': [ 'calculators.js' ],
             'dist/static/js/announcements.js': ['sheets.js',
-                                                'repos/Twitter-Post-Fetcher/js/twitterFetcher.js',
                                                 'announcements.js' ]
            }
 
@@ -163,6 +162,19 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                                    'src/layouts/osslt.html'],
                        'options': {'section': False,
                                    'template': 'osslt.html'}},
+
+                      {'files': [{'src': ['src/pages/editorial/**/*.html'],
+                                  'dest': 'editorial'}],
+                       'partials': ['src/partials/editorial/*.html',
+                                    'src/partials/main/head.html',
+                                    'src/partials/main/header.html',
+                                    'src/partials/main/nav.html',
+                                    'src/partials/main/footer.html'],
+                       'layouts': ['src/layouts/layout.html',
+                                   'src/layouts/qanda.html'],
+                       'options': {'section': False,
+                                   'template': 'qanda.html'}},
+
 
                      {'files': [{'src': 'src/pages/announcements.html',
                                  'dest': ''}],
