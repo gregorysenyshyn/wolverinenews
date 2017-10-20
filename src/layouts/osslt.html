@@ -96,15 +96,15 @@
       <button onclick="markSection({{loop.index0}})">
         Submit Section
       </button>
+    {% if not loop.last %}
     </div>
+    {% endif %}
     {% endfor %}
-    <div class="button-box">
       <button onclick="markTest({{sections.length}})">
         Submit Test
       </button>
     </div>
   </form>
-
 </div>
 
 <div id="score-modal">

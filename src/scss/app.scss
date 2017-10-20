@@ -765,3 +765,50 @@ h3 {
   display: inline-block;
   margin: 0 1rem 0 0;
 }
+
+//
+//QandA
+//
+
+.qna-panel{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.qna-question-text {
+  flex-basis: 100%;
+
+}
+
+.qna-author-box {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.qna-byline{
+  flex-basis: 80%;
+  color: gray;
+  font-size: 20px;
+  order: 2;
+}
+
+.qna-author-photo-box {
+  flex-basis: 20%;
+  order: 1;
+}
+
+.qna-author-photo {
+  height: 150px;
+}
+
+.qna-answer-text {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+
+//
+//Meme of the Week
+//
