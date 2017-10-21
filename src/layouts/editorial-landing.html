@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+
+<div class="editorial-wrapper">
+
+  <div class="editorial-sidebar">
+    <h1>Sidebar</h1>
+    <p>
+      Text goes here. This is probaly the blurb section since those are usually smaller.
+    </p>
+  </div>
+
+  <div class="editorial-content">
+    <h1>
+      {% block articletop %}
+      {% endblock articletop %}
+    </h1>
+    <p>
+      {% block articledesc %}
+      {% endblock articledesc %}
+    </p>
+
+<!--Article 1-->
+
+      <div class="editorial-content-underbox">
+        <div class="editorial-content-underbox-content">
+        <a href="/editorial/crispr-1"><h2>CRISPR and Designer Babies - Part 1/2</h2></a>
+          <p>
+            Genetic engineering using CRISPR is revolutionary - but even more so its potential. In this article, we will discuss the disease-fighting capabilities of CRISPR.
+          </p>
+        </div>
+          <div class="editorial-content-underbox-image-wrapper">
+            <img src="https://www.tradiestart.com.au/assets/profile-cb7e79cf25aa447fa6410518d0c94abf3ff11184a3df4efeae1dfc5234884f61.png" width=75px height=100px/>
+          </div>
+      </div>
+
+<!--Article 2-->
+
+      <div class="editorial-content-underbox">
+        <div class="editorial-content-underbox-content">
+          <a href="/editorial/crispr-2"><h2>CRISPR and Designer Babies - Part 2/2</h2></a>
+          <p>
+            Genetic engineering using CRISPR is revolutionary - but even more so its potential. In this article, we will discuss the possible future of CRISPR, and human genetic engineering.
+          </p>
+        </div>
+          <div class="editorial-content-underbox-image-wrapper">
+            <img src="https://www.tradiestart.com.au/assets/profile-cb7e79cf25aa447fa6410518d0c94abf3ff11184a3df4efeae1dfc5234884f61.png" width=75px height=100px/>
+          </div>
+      </div>
+
+
+
+  </div>
+
+</div>
+
+{% endblock main %}
