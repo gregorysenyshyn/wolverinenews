@@ -7,14 +7,43 @@
 
 {% for meme in memes %}
 
-  <div class="panel">
+  <div class="panel the-alex-panel">
 
       <div>
+<<<<<<< Updated upstream
         <h2>{{memes.meme_title}}</h2>
       </div>
 
       <div>
         <img src="{{memes.meme_image}}" alt="{{memes.meme_alt}}" />
+=======
+        <h2>{{meme.meme_title}}</h2>
+      </div>
+
+      <div>
+        <p>
+          {{meme.meme_date}}
+        </p>
+      </div>
+
+      <div>
+        <p>
+          {{meme.meme_text_part1}}
+        </p>
+        <p>
+          {{meme.meme_text_part2}}
+        </p>
+      </div>
+
+      <div>
+        <img src="{{meme.meme_image}}" alt="{{meme.meme_alt}}">
+      </div>
+
+      <div>
+        <p class="motw-outro-text">
+          This has been your "Meme of the Week".
+        </p>
+>>>>>>> Stashed changes
       </div>
 
     </div>

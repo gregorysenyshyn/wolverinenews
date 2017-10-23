@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+<div>
+  <H1>Wolverine Recipes</H1>
+</div>
+
+{% for recipe in recipes %}
+  <div class="the-alex-panel panel">
+
+    <div class="recipe-title-text">
+      <h2>{{recipe.recipe_title}}</h2>
+    </div>
+
+    <div class="qna-author-box">
+
+      <div class="qna-byline">
+        <p>
+          By: Hawi Zawude-Ragasa
+        </p>
+      </div>
+
+      <div class="qna-author-photo-box">
+        <img class="qna-author-photo" src="/static/images/author-placeholder-qanda.jpg" alt="Hawi Zawude-Ragasa" />
+      </div>
+
+    </div>
+
+    <div>
+      <p>
+        {{recipe.recipe_date}}
+      </p>
+    </div>
+
+    <div class="qna-answer-text">
+      <p>
+        {% for item in recipe.recipe_ingredient_list %}
+        <ul>
+          <li>
+            {{item}}
+          </li>
+        </ul>
+        {% endfor %}
+
+      </p>
+    </div>
+
+    <div>
+      <p>
+        {{recipe.recipe_instructions}}
+      </p>
+    </div>
+
+  </div>
+{% endfor %}
+
+{% endblock main %}
