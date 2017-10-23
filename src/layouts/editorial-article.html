@@ -3,15 +3,15 @@
 {% include 'header.html' %}
 <div class="editorial-wrapper">
   <div class="editorial-content">
-  <div class="editorial-article-title">
-    <h1>{{title}}</h1>
-    <p class="editorial-article-author">
-      <strong>{{author}}</strong>
-    </p>
+    <div class="editorial-article-title">
+      <h1>{{title}}</h1>
+      <p class="editorial-article-author">
+        <strong>{{author}}</strong>
+      </p>
+    </div>
+    {% block article_content %}
+    {% endblock article_content %}
   </div>
-  {% block article_content %}
-  {% endblock article_content %}
-</div>
 </div>
 
 {% endblock main %}

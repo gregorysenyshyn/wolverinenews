@@ -140,8 +140,12 @@ def get_pages(files):
     for fileset in files:
         current_filenames = GlobLoader.concat_paths(fileset['src'])
         for filename in current_filenames:
-            pages.append({'src': filename, 'dest': fileset['dest'],
-                          'content': '', 'data': ''})
+            pages.append({'src': filename, 
+                          'dest': fileset['dest'],
+                          'content': '', 
+                          'data': {},
+                          'template': fileset['template']}
+                        )
     return pages
 
 
@@ -161,17 +165,21 @@ def build_pageset(pageset, options, production=False, s3=None):
             pageset['options']['section'] is True):
         sidebar_data = get_sidebar_data(pages)
 
+    if ('index' in pageset['options'] and
+            pageset['options']['index'] is True):
+        sidebar_data = get_sidebar_data(pages)
+
     for page in pages:
         f_id = os.path.splitext(os.path.basename(page['src']))[0]
         page['data']['id'] = f_id 
         if sidebar_data:
             page['data']['pages'] = sidebar_data
         t1 = time.time()
-        print('Building {0}...'.format(page['src']), end='')
+        print('Building {0}...'.format(f_id), end='')
         if page['content']:
             final_page = j2_env.from_string(page['content']).render(page['data'])
         else:
-            template = j2_env.get_template(pageset['options']['template'])
+            template = j2_env.get_template(page['template'])
             final_page = template.render(page['data']) 
 
         # UPDATE HTML TIDY BEFORE UNCOMMENTING
