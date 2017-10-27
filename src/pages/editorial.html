@@ -1,9 +1,16 @@
-{% extends 'editorial-landing.html' %}
+---
+title: Editorial
+description: Opinions from the staff of Wolverine News
+author: me
+---
+{% extends 'layout.html' %}
 
-{% block articledesc %}
-Stories and articles written by the editorial crew can be found below. We hope you enjoy them!
-{% endblock articledesc %}
+{% block main %}
 
-{% block articletop %}
-Articles and Stories
-{% endblock articletop %}
+{% include 'header.html' %}
+
+{% for item in section_pages %}
+<p>{{item}}</p>
+{% endfor %}
+{% endblock main %}
+
