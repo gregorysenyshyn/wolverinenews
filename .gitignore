@@ -3,6 +3,7 @@
 .tern-project
 .DS_Store
 HTMLTidy*
+local_config.json
 __pycache__/
 logs/
 dist
