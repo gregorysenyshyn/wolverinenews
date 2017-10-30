@@ -169,7 +169,8 @@ data = {'pagesets': [
             'template': 'osslt.html',
             'dest': 'osslt'}],
           'partials': ['src/partials/osslt/*.html',
-                       'src/partials/main/*.html'],
+                       'src/partials/main/*.html',
+                       '!src/partials/main/scripts.html'],
           'layouts': ['src/layouts/layout.html', 'src/layouts/osslt.html'],
           'options': {}},
 
