@@ -5,34 +5,31 @@
   <H1>Wolverine Questions</H1>
 </div>
 
-{% for question in questions %}
-  <div class="the-alex-panel panel">
+<div class="editorial-large-organizer-panel">
 
-    <div class="qna-question-text">
+{% for question in questions %}
+  <div class="editorial-alex-panel panel">
+    <div class="qanda-question-text">
       <h2>{{question.question_text}}</h2>
     </div>
-
-    <div class="qna-author-box">
-
-      <div class="qna-byline">
+    <div class="qanda-author-box">
+      <div class="qanda-byline">
         <p>
           Submited by: {{question.poser}}
         </p>
       </div>
-
-      <div class="qna-author-photo-box">
-        <img class="qna-author-photo" src="/static/images/author-placeholder-qanda.jpg" alt="Placeholder" />
+      <div class="qanda-author-photo-box">
+        <img class="qanda-author-photo" src="/static/images/author-placeholder-qanda.jpg" alt="Placeholder" />
       </div>
-
     </div>
-
-    <div class="qna-answer-text">
+    <div class="qanda-answer-text">
       <p>
         {{question.answer}}
       </p>
     </div>
-
   </div>
 {% endfor %}
+
+</div>
 
 {% endblock main %}
