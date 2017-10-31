@@ -163,7 +163,7 @@ data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
                        'options': {'section': False,
                                    'template': 'osslt.html'}},
 
-                      {'files': [{'src': ['src/pages/news/*.html'],
+                      {'files': [{'src': ['src/pages/news/2017-2018/*.html'],
                                   'dest': 'news'}],
                        'partials': ['src/partials/news/*.html',
                                     'src/partials/main/head.html',

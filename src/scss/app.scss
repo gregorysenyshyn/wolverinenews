@@ -8,10 +8,10 @@ $blue: #2c1b76;
 $grey: #989aa0;
 $black: #231f20;
 
-* { 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box; 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 button {
   line-height: 100%;
   background: darken($grey, 30);
-  color: white; 
+  color: white;
   padding: 1rem !important;
   border-radius: 7px !important;
 }
@@ -52,7 +52,7 @@ nav {
       -moz-transition: all 0.2s;
       -ms-transition: all 0.2s;
       -o-transition: all 0.2s;
-      transition: all 0.2s; 
+      transition: all 0.2s;
     }
   }
   > ul {
@@ -90,7 +90,7 @@ nav {
           -webkit-transition: color 0.1s linear;
           -moz-transition: color 0.1s linear;
           -o-transition: color 0.1s linear;
-          transition: color 0.1s linear; 
+          transition: color 0.1s linear;
         }
       }
       > div {
@@ -193,7 +193,7 @@ h3 {
   & #header-text {
     height: 100%;
     margin: 1rem 0;
-    color: white; 
+    color: white;
     text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
     @media screen and (min-width: $md) {
       text-shadow: -2px -2px 0 $black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black;
@@ -215,7 +215,7 @@ h3 {
 #footer {
   bottom: 0;
   height: 3rem;
-  background-color: $black; 
+  background-color: $black;
   & a {
     margin: 1rem;
     color: $grey;
@@ -234,7 +234,7 @@ h3 {
 
 #privacy-wrapper {
   color: $black;
-  padding: 2rem; 
+  padding: 2rem;
   li {
     margin: 1rem 0;
   }
@@ -245,7 +245,7 @@ h3 {
 
 #contact-wrapper {
   color: $black;
-  padding: 2rem; 
+  padding: 2rem;
   li {
     margin: 1rem 0;
   }
@@ -363,10 +363,36 @@ h3 {
 }
 
 .index-scoreboard-school {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   margin: 0 1rem;
 }
 
+//
+// NEWS
+//
+
+.news-wrapper {
+  padding: 1.5rem;
+}
+
+.news-byline-box {
+  display: flex;
+}
+
+.news-landing-image {
+  margin-right: 1rem;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new-highline {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
 //
 //TEAMS
 //
@@ -374,7 +400,7 @@ h3 {
 #teams-wrapper {
   color: $black;
   @media screen and (min-width: $lg) {
-    padding: 2rem; 
+    padding: 2rem;
   }
   @media screen and (min-width: $md) {
     padding: 1rem;
@@ -417,7 +443,7 @@ h3 {
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
-  text-align: center; 
+  text-align: center;
 }
 
 .team-board-practice-time {
@@ -430,7 +456,7 @@ h3 {
 }
 
 #title-container {
-  background-color: white; 
+  background-color: white;
   flex-basis: 100%;
   display: flex;
   padding: 1rem;
@@ -581,7 +607,7 @@ h3 {
     font-size: 1.5rem;
   }
   & .record-type {
-    flex-basis: 10%;  
+    flex-basis: 10%;
   }
   & .record-event {
     flex-basis: 30%;

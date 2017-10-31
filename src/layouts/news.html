@@ -2,9 +2,14 @@
 {% block main %}
 {% include 'header.html' %}
 
-woo hoo hunter
-
-{% block stuff %}
-{% endblock stuff %}
-
+<div class="news-wrapper">
+  <h1>{{title}}</h1>
+  <p class="news-byline">
+    {{author}}
+  </p>
+  <div class="panel">
+    {% block news_content %}
+    {% endblock news_content %}
+  </div>
+</div>
 {% endblock main %}
