@@ -3,7 +3,9 @@
 import os
 import glob
 import time
+import json
 import shutil
+import subprocess
 from sys import argv
 
 import boto3
@@ -51,15 +53,15 @@ def concat_files(glob_paths, include_paths=None):
 # #### #
 
 js_include_paths = ['src/js/']
-js_paths = {'dist/static/js/app.js': ['sheets.js',
-                                      'app.js'],
-            'dist/static/js/osslt.js': ['osslt.js'],
-            'dist/static/js/index.js': ['index.js'],
-            'dist/static/js/records.js': ['records.js'],
-            'dist/static/js/teams.js': ['teams.js'],
-            'dist/static/js/calculators.js': [ 'calculators.js' ],
-            'dist/static/js/announcements.js': ['sheets.js',
-                                                'announcements.js' ]
+js_paths = {'dist/js/app.js': ['sheets.js',
+                               'app.js'],
+            'dist/js/osslt.js': ['osslt.js'],
+            'dist/js/index.js': ['index.js'],
+            'dist/js/records.js': ['records.js'],
+            'dist/js/teams.js': ['teams.js'],
+            'dist/js/calculators.js': [ 'calculators.js'],
+            'dist/js/announcements.js': ['sheets.js',
+                                         'announcements.js' ]
            }
 
 
@@ -98,8 +100,8 @@ def handle_js(production):
 #  CSS   #
 # ###### #
 
-SCSS_PATHS = {'dist/static/css/app.css': ['app.scss', 'osslt.scss'],
-              'dist/static/css/announcements.css': ['announcements.scss']}
+SCSS_PATHS = {'dist/css/app.css': ['app.scss', 'osslt.scss'],
+              'dist/css/announcements.css': ['announcements.scss']}
 LOADPATH = ['src/scss/']
 
 
@@ -140,87 +142,118 @@ def handle_scss(production):
 # ###### #
 #  HTML  #
 # ###### #
-data = {'pagesets': [{'files': [{'src': ['src/pages/*.html',
-                                         'src/pages/*.md',
-                                         '!src/pages/announcements.html'],
-                                'dest': ''},
-                                {'src': ['src/pages/tools/*.html',
-                                         'src/pages/tools/*.md'],
-                                 'dest': 'tools'}],
-                      'partials': ['src/partials/main/*.html'],
-                      'layouts': 'src/layouts/layout.html',
-                      'options': {'section': False}},
+# 'section-pages' option can only create an index of one directory at a time
 
-                      {'files': [{'src': ['src/pages/osslt/*.yaml'],
-                                  'dest': 'osslt'}],
-                       'partials': ['src/partials/osslt/*.html',
-                                    'src/partials/main/head.html',
-                                    'src/partials/main/header.html',
-                                    'src/partials/main/nav.html',
-                                    'src/partials/main/footer.html'],
-                       'layouts': ['src/layouts/layout.html',
-                                   'src/layouts/osslt.html'],
-                       'options': {'section': False,
-                                   'template': 'osslt.html'}},
+data = {'pagesets': [
+         {'files': [
+           {'src': ['src/pages/*.html',
+                    'src/pages/*.md',
+                    '!src/pages/announcements.html',
+                    '!src/pages/editorial.html'],
+            'template': 'layout.html',
+            'dest': ''},
+           # {'src': 'src/pages/news.html',
+           #  'template': 'layout.html',
+           #  'dest': '',
+           #  'options': {'section pages': ('src/pages/news/2017-2018')}},
+           {'src': ['src/pages/tools/*.html', 'src/pages/tools/*.md'],
+            'template': 'layout.html',
+            'dest': 'tools'}],
+          'partials': ['src/partials/main/*.html'],
+          'layouts': ['src/layouts/layout.html',
+                      'src/layouts/section-index.html'],
+          'options': {}},
 
-                      {'files': [{'src': ['src/pages/news/2017-2018/*.html'],
-                                  'dest': 'news'}],
-                       'partials': ['src/partials/news/*.html',
-                                    'src/partials/main/head.html',
-                                    'src/partials/main/header.html',
-                                    'src/partials/main/nav.html',
-                                    'src/partials/main/footer.html'],
-                       'layouts': ['src/layouts/layout.html',
-                                   'src/layouts/news.html'],
-                       'options': {'section': False,
-                                   'template': 'news.html'}},
+         {'files': [
+           {'src': ['src/pages/osslt/*.yaml'],
+            'template': 'osslt.html',
+            'dest': 'osslt'}],
+          'partials': ['src/partials/osslt/*.html',
+                       'src/partials/main/*.html',
+                       '!src/partials/main/scripts.html'],
+          'layouts': ['src/layouts/layout.html', 'src/layouts/osslt.html'],
+          'options': {}},
 
+         {'files': [
+           {'src': 'src/pages/editorial.html',
+            'template': 'layout.html',
+            'dest': '',
+            'options': {'section pages': ('src/pages/editorial/'
+                                          '2017-2018/articles'),
+                        'section pages prefix': 'editorial'}},
+           {'src': ['src/pages/editorial/2017-2018/articles/*.html'],
+            'template': 'editorial-article.html',
+            'dest': 'editorial'},
+           {'src': ['src/pages/editorial/2017-2018/qanda.yaml'],
+            'template': 'qanda.html',
+            'dest': 'editorial'},
+           {'src': ['src/pages/editorial/2017-2018/meme-of-the-week.yaml'],
+            'template':'meme-of-the-week.html',
+            'dest': 'editorial'}],
+        'partials': ['src/partials/editorial/*.html',
+                     'src/partials/main/*.html'],
+        'layouts': ['src/layouts/layout.html',
+                    'src/layouts/qanda.html',
+                    'src/layouts/meme-of-the-week.html',
+                    'src/layouts/editorial-article.html'],
+        'options': {}},
 
-                     {'files': [{'src': 'src/pages/announcements.html',
-                                 'dest': ''}],
-                       'partials': ['src/partials/announcements/*.html'],
-                       'layouts': 'src/layouts/layout.html',
-                       'options': {'section': False}}
-                     ],
-        'options': {'s3 bucket': 'wolverinenews.ca',
-                    'local prefix': 'dist/pages',
-                    'local static': 'dist'}
+       {'files': [{
+           'src': 'src/pages/announcements.html',
+           'template': 'layout.html',
+           'dest': ''}],
+        'partials': ['src/partials/announcements/*.html'],
+        'layouts': 'src/layouts/layout.html',
+        'options': {}}
+       ],
+      'options': {
+            's3 bucket': 'wolverinenews.ca',
+            'prod': 'dist',
+            'images': None
+            }
         }
 
 
-# ######## #
-#  IMAGES  #
-# ######## #
+# ############ #
+#  COPY FILES  #
+# ############ #
 
-IMAGES ={
-        'copy': [
-            {'dist/static/images': ['src/images/copy/*'],
-             'dist/pages': ['src/apache/.htaccess']}
-            ]
-        }
+COPY_FILES = {data['options']['prod']: ['src/apache/.htaccess']}
 
-
-def copy_images():
-    for item in IMAGES['copy']:
-        for dest_path in item:
+def copy_files():
+    for dest_path in COPY_FILES:
+        if not os.path.exists(dest_path):
             os.makedirs(dest_path)
-            file_list = tools.GlobLoader(item[dest_path]).files
-            for file in file_list:
-                print('Copying {0} to {1}...'.format(os.path.basename(file),
-                                                     dest_path), end="")
-                shutil.copyfile(file, os.path.join(dest_path,
-                                                   os.path.basename(file)))
-                print(' Done!')
+        file_list = tools.GlobLoader(COPY_FILES[dest_path]).files
+        for file in file_list:
+            print((f'Copying {os.path.basename(file)} to {dest_path}'
+                    '...'), end="")
+            shutil.copyfile(file, os.path.join(dest_path,
+                                               os.path.basename(file)))
+            print(' Done!')
+
+def get_local_config(path='local_config.json'):
+    local_config = None
+    with open(path) as f:
+        local_config = json.load(f)
+    return local_config
+
 
 if __name__ == '__main__':
     print(chr(27) + "[2J")
     print('Starting build!')
     t1 = time.time()
     production = False
+    local_config = get_local_config();
+
+    print('\n\n=== C L E A N ===')
+    print(f'cleaning {data["options"]["prod"]}...', end='')
+    tools.clean(data['options']['prod'])
+    print(' Done!')
+
     if len(argv) > 1 and argv[1] == 'production':
         production = True
 
-    tools.clean()
     s3=None
 
     if production:
@@ -239,16 +272,26 @@ if __name__ == '__main__':
     handle_js(production)
 
     print('\n\n=== I M A G E S ===')
-    copy_images()
+    if data['options']['images'] is None:
+        data['options']['images'] = local_config['images']
+    image_src = f'{data["options"]["images"]}'
+    image_dest = f'{data["options"]["prod"]}'
+
+    print((f'linking {image_src} to {image_dest}...'), end='')
+    subprocess.run(['ln', '-s', image_src, image_dest])
+    print(' Done!')
 
     print('\n\n=== H T M L ===')
     tools.main(data['pagesets'], data['options'], s3, production)
+
+    print('\n\n=== C O P Y   F I L E S ===')
+    copy_files()
 
     if production:
         print('\n\n=== S T A T I C   F I L E S ===')
         tools.move_static('dist/static',
                           s3,
                           s3_bucket_name,
-                          data['options']['local static'])
-    print('\n\n=== Entire build done in {0} seconds ==='.format(
-        round(float(time.time() - t1), 4)))
+                          data['options']['prod'])
+        print('\n\n=== Entire build done in',
+              f'{round(float(time.time() - t1), 4)} seconds ===')
