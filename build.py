@@ -160,8 +160,7 @@ data = {'pagesets': [
             'template': 'layout.html',
             'dest': 'tools'}],
           'partials': ['src/partials/main/*.html'],
-          'layouts': ['src/layouts/layout.html',
-                      'src/layouts/section-index.html'],
+          'layouts': ['src/layouts/layout.html'],
           'options': {}},
 
          {'files': [
