@@ -366,6 +366,33 @@ h3 {
 }
 
 //
+// NEWS
+//
+
+.news-wrapper {
+  padding: 1.5rem;
+}
+
+.news-byline-box {
+  display: flex;
+}
+
+.news-landing-image {
+  margin-right: 1rem;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new-highline {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+//
 // EDITORIAL
 //
 
@@ -425,10 +452,6 @@ h3 {
   text-indent: 0px !important;
 }
 
-//
-//Alex's Work for Editorial
-//
-
 .editorial-large-organizer-panel {
   display: flex;
   flex-direction: row-reverse;
@@ -453,8 +476,6 @@ h3 {
     width: 100%
   }
 }
-
-
 
 
 //
