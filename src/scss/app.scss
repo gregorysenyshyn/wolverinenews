@@ -393,6 +393,67 @@ h3 {
   display: flex;
   flex-wrap: wrap-reverse;
 }
+
+//
+// EDITORIAL
+//
+
+.editorial-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 75%;
+  align-content: stretch;
+  align-items: center;
+  }
+
+.editorial-sidebar {
+  flex-basis: 25%;
+  min-width: 200px;
+  margin: 50px;
+}
+
+.editorial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 200px;
+  padding: 50px;
+  margin: 50px;
+
+  p {
+    text-indent: 50px;
+  }
+}
+
+.editorial-content-underbox {
+  display: flex;
+  min-width: 200px;
+  margin: 50px;
+}
+
+.editorial-content-underbox-content {
+  flex-basis: 75%;
+}
+
+.editorial-content-underbox-image-wrapper {
+  flex-basis: 25%;
+}
+
+.editorial-article-title {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.editorial-article-author {
+  text-align: right;
+}
+
+.editorial-article-sources {
+  text-indent: 0px !important;
+}
+
 //
 //TEAMS
 //
@@ -730,3 +791,50 @@ h3 {
   display: inline-block;
   margin: 0 1rem 0 0;
 }
+
+//
+//QandA
+//
+
+.qna-panel{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+}
+
+.qna-question-text {
+  flex-basis: 100%;
+
+}
+
+.qna-author-box {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.qna-byline{
+  flex-basis: 80%;
+  color: gray;
+  font-size: 20px;
+  order: 2;
+}
+
+.qna-author-photo-box {
+  flex-basis: 20%;
+  order: 1;
+}
+
+.qna-author-photo {
+  height: 150px;
+}
+
+.qna-answer-text {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+
+//
+//Meme of the Week
+//
