@@ -53,7 +53,6 @@ def concat_files(glob_paths, include_paths=None):
 # #### #
 
 js_include_paths = ['src/js/']
-
 js_paths = {'dist/js/app.js': ['sheets.js',
                                'app.js'],
             'dist/js/osslt.js': ['osslt.js'],
@@ -143,7 +142,6 @@ def handle_scss(production):
 # ###### #
 #  HTML  #
 # ###### #
-
 # 'section-pages' option can only create an index of one directory at a time
 
 data = {'pagesets': [
@@ -151,25 +149,13 @@ data = {'pagesets': [
            {'src': ['src/pages/*.html',
                     'src/pages/*.md',
                     '!src/pages/announcements.html',
-                    '!src/pages/editorial.html'],
             'template': 'layout.html',
             'dest': ''},
-
-         {'files': [{'src': ['src/pages/news/2017-2018/*.html'],
-                     'dest': 'news'}],
-          'partials': ['src/partials/news/*.html',
-                       'src/partials/main/head.html',
-                       'src/partials/main/header.html',
-                       'src/partials/main/nav.html',
-                       'src/partials/main/footer.html'],
-          'layouts': ['src/layouts/layout.html',
-                      'src/layouts/news.html'],
-          'options': {'section': False,
-                      'template': 'news.html'}},
            {'src': ['src/pages/tools/*.html', 'src/pages/tools/*.md'],
             'template': 'layout.html',
             'dest': 'tools'}],
           'partials': ['src/partials/main/*.html'],
+
           'layouts': ['src/layouts/layout.html'],
           'options': {}},
 
