@@ -155,7 +155,8 @@ data = {'pagesets': [
             'template': 'layout.html',
             'dest': 'tools'}],
           'partials': ['src/partials/main/*.html'],
-          'layouts': ['src/layouts/layout.html',
+
+          'layouts': ['src/layouts/layout.html'],
           'options': {}},
 
          {'files': [
