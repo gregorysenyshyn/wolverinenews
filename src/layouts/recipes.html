@@ -12,16 +12,16 @@
       <h2>{{recipe.recipe_title}}</h2>
     </div>
 
-    <div class="qna-author-box">
+    <div class="recipe-author-box">
 
-      <div class="qna-byline">
+      <div class="recipe-author-line">
         <p>
           By: Hawi Zawude-Ragasa
         </p>
       </div>
 
-      <div class="qna-author-photo-box">
-        <img class="qna-author-photo" src="/static/images/author-placeholder-qanda.jpg" alt="Hawi Zawude-Ragasa" />
+      <div class="recipe-author-photo-box">
+        <img class="recipe-author-photo" src="placeholder" alt="Hawi Zawude-Ragasa" />
       </div>
 
     </div>
@@ -32,7 +32,7 @@
       </p>
     </div>
 
-    <div class="qna-answer-text">
+    <div class="recipe_ingredient_list">
       <p>
         {% for item in recipe.recipe_ingredient_list %}
         <ul>
