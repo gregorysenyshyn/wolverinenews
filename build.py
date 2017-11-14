@@ -53,7 +53,6 @@ def concat_files(glob_paths, include_paths=None):
 # #### #
 
 js_include_paths = ['src/js/']
-
 js_paths = {'dist/js/app.js': ['sheets.js',
                                'app.js'],
             'dist/js/osslt.js': ['osslt.js'],
@@ -143,29 +142,15 @@ def handle_scss(production):
 # ###### #
 #  HTML  #
 # ###### #
-
 # 'section-pages' option can only create an index of one directory at a time
 
 data = {'pagesets': [
          {'files': [
            {'src': ['src/pages/*.html',
                     'src/pages/*.md',
-                    '!src/pages/announcements.html',
-                    '!src/pages/editorial.html'],
+                    '!src/pages/announcements.html'],
             'template': 'layout.html',
             'dest': ''},
-
-         {'files': [{'src': ['src/pages/news/2017-2018/*.html'],
-                     'dest': 'news'}],
-          'partials': ['src/partials/news/*.html',
-                       'src/partials/main/head.html',
-                       'src/partials/main/header.html',
-                       'src/partials/main/nav.html',
-                       'src/partials/main/footer.html'],
-          'layouts': ['src/layouts/layout.html',
-                      'src/layouts/news.html'],
-          'options': {'section': False,
-                      'template': 'news.html'}},
            {'src': ['src/pages/tools/*.html', 'src/pages/tools/*.md'],
             'template': 'layout.html',
             'dest': 'tools'}],
@@ -190,6 +175,15 @@ data = {'pagesets': [
             'options': {'section pages': ('src/pages/editorial/'
                                           '2017-2018/articles'),
                         'section pages prefix': 'editorial'}},
+           {'src': 'src/pages/news.html',
+            'template': 'layout.html',
+            'dest': '',
+            'options': {'section pages': ('src/pages/news/'
+                                          '2017-2018'),
+                        'section pages prefix': 'news'}},
+           {'src': ['src/pages/news/2017-2018/*.html'],
+            'template': 'news-article.html',
+            'dest': 'news'},
            {'src': ['src/pages/editorial/2017-2018/articles/*.html'],
             'template': 'editorial-article.html',
             'dest': 'editorial'},
@@ -204,7 +198,8 @@ data = {'pagesets': [
         'layouts': ['src/layouts/layout.html',
                     'src/layouts/qanda.html',
                     'src/layouts/meme-of-the-week.html',
-                    'src/layouts/editorial-article.html'],
+                    'src/layouts/editorial-article.html',
+                    'src/layouts/news-article.html'],
         'options': {}},
 
        {'files': [{
