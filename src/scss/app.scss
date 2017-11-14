@@ -25,11 +25,46 @@ body {
 
 
 button {
+  border: 2px solid currentColor;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
   line-height: 100%;
-  background: darken($grey, 30);
-  color: white;
+  background: lighten($black,10);
+  color: lighten($blue, 35);
   padding: 1rem !important;
   border-radius: 7px !important;
+  font-weight: bold;
+  &::after {
+   background-color: darken($blue, 20);
+   content: '';
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translate(-100%, 0) rotate(10deg);
+   transform-origin: top left;
+   transition: .2s transform ease-out;
+   will-change: transform;
+   z-index: -1;
+  }
+
+ &:hover::after {
+   transform: translate(0, 0);
+ }
+
+ &:hover {
+   border: 2px solid transparent;
+
+   transform: scale(1.05);
+   will-change: transform;
+ }
+
 }
 
 nav {
@@ -434,7 +469,7 @@ h3 {
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
   flex-basis: 100%;
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: $lg) {
     flex-basis: 100%;
     width: 100%;
     flex-direction: column-reverse;
@@ -448,7 +483,7 @@ h3 {
   flex-grow: 1;
   flex-basis: 33%;
   width: 33%;
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: $lg) {
     flex-basis: 100%;
     width: 100%
   }
@@ -535,6 +570,7 @@ h3 {
   flex-basis: 20%;
   order: 1;
 }
+//end of Alex's work
 
 //
 //TEAMS
