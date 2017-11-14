@@ -5,20 +5,47 @@
   <H1>Meme Of The Week</H1>
 </div>
 
+<div class="editorial-large-organizer-panel">
+
 {% for meme in memes %}
 
-  <div class="panel">
+  <div class="panel editorial-alex-panel motw-title-text-box-div">
 
       <div>
-        <h2>{{memes.meme_title}}</h2>
+        <h2>{{meme.meme_title}}</h2>
       </div>
 
       <div>
-        <img src="{{memes.meme_image}}" alt="{{memes.meme_alt}}" />
+        <p>
+          {{meme.meme_date}}
+        </p>
+        <img src="/images/alex-dawson.jpg" />
+      </div>
+
+      <div>
+        <p>
+          {{meme.meme_text_part1}}
+        </p>
+        <p>
+          {{meme.meme_text_part2}}
+        </p>
+      </div>
+
+      <div>
+        <img src="{{meme.meme_image}}" alt="{{meme.meme_alt}}">
+      </div>
+
+      <div>
+        <p class="motw-outro-text">
+          This has been your "Meme of the Week".
+        </p>
+
       </div>
 
     </div>
 
 {% endfor %}
+
+</div>
 
 {% endblock main %}

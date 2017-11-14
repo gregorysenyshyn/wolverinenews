@@ -148,20 +148,14 @@ data = {'pagesets': [
          {'files': [
            {'src': ['src/pages/*.html',
                     'src/pages/*.md',
-                    '!src/pages/announcements.html',
-                    '!src/pages/editorial.html'],
+                    '!src/pages/announcements.html'],
             'template': 'layout.html',
             'dest': ''},
-           # {'src': 'src/pages/news.html',
-           #  'template': 'layout.html',
-           #  'dest': '',
-           #  'options': {'section pages': ('src/pages/news/2017-2018')}},
            {'src': ['src/pages/tools/*.html', 'src/pages/tools/*.md'],
             'template': 'layout.html',
             'dest': 'tools'}],
           'partials': ['src/partials/main/*.html'],
-          'layouts': ['src/layouts/layout.html',
-                      'src/layouts/section-index.html'],
+          'layouts': ['src/layouts/layout.html'],
           'options': {}},
 
          {'files': [
@@ -181,6 +175,15 @@ data = {'pagesets': [
             'options': {'section pages': ('src/pages/editorial/'
                                           '2017-2018/articles'),
                         'section pages prefix': 'editorial'}},
+           {'src': 'src/pages/news.html',
+            'template': 'layout.html',
+            'dest': '',
+            'options': {'section pages': ('src/pages/news/'
+                                          '2017-2018'),
+                        'section pages prefix': 'news'}},
+           {'src': ['src/pages/news/2017-2018/*.html'],
+            'template': 'news-article.html',
+            'dest': 'news'},
            {'src': ['src/pages/editorial/2017-2018/articles/*.html'],
             'template': 'editorial-article.html',
             'dest': 'editorial'},
@@ -195,7 +198,8 @@ data = {'pagesets': [
         'layouts': ['src/layouts/layout.html',
                     'src/layouts/qanda.html',
                     'src/layouts/meme-of-the-week.html',
-                    'src/layouts/editorial-article.html'],
+                    'src/layouts/editorial-article.html',
+                    'src/layouts/news-article.html'],
         'options': {}},
 
        {'files': [{

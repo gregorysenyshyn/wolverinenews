@@ -195,14 +195,12 @@ h3 {
     margin: 1rem 0;
     color: white;
     text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
-    @media screen and (min-width: $md) {
-      text-shadow: -2px -2px 0 $black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black;
-    }
     @media screen and (min-width: $sm) and (max-width: $md) {
       margin: 1rem;
       font-size: 4rem;
     }
     @media screen and (min-width: $md) {
+      text-shadow: -2px -2px 0 $black, 2px -2px 0 $black, -2px 2px 0 $black, 2px 2px 0 $black;
       margin: 1rem;
       font-size: 7rem;
     }
@@ -368,6 +366,32 @@ h3 {
 }
 
 //
+// NEWS
+//
+
+.news-wrapper {
+  padding: 1.5rem;
+}
+
+.news-byline-box {
+  display: flex;
+}
+
+.news-landing-image {
+  margin-right: 1rem;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new-highline {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
 // EDITORIAL
 //
 
@@ -435,6 +459,7 @@ h3 {
   text-indent: 0px !important;
 }
 
+
 .editorial-title-top {
   display: flex;
   font-size: 60px;
@@ -459,6 +484,111 @@ h3 {
   margin: 50px;
 }
 
+
+.editorial-large-organizer-panel {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  flex-basis: 100%;
+  @media screen and (max-width: $md) {
+    flex-basis: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+.editorial-alex-panel { //To be used along side .panel//
+  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 33%;
+  width: 33%;
+  @media screen and (max-width: $md) {
+    flex-basis: 100%;
+    width: 100%
+  }
+}
+
+
+//
+//QandA
+//
+
+
+.qanda-question-text {
+  flex-basis: 100%;
+
+}
+
+.qanda-author-box {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.qanda-byline {
+  flex-basis: 80%;
+  color: gray;
+  font-size: 20px;
+  order: 2;
+}
+
+.qanda-author-photo-box {
+  flex-basis: 20%;
+  order: 1;
+}
+
+.qanda-author-photo {
+  height: 150px;
+}
+
+.qanda-answer-text {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+
+//
+//Meme of the Week
+//
+
+.motw-ironic-comic-sans-memes {
+  font-family: inherit;
+}
+
+.motw-outro-text {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.motw-title-text-box-div {
+  flex-direction: column !important;
+}
+
+//
+//Recipes
+//
+
+.recipe-title-text {
+
+}
+
+.recipe-author-box {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.recipe-author-line {
+  flex-basis: 80%;
+  color: gray;
+  font-size: 20px;
+  order: 2;
+}
+
+.recipe-author-photo-box {
+  flex-basis: 20%;
+  order: 1;
+}
 
 //
 //TEAMS
@@ -797,50 +927,3 @@ h3 {
   display: inline-block;
   margin: 0 1rem 0 0;
 }
-
-//
-//QandA
-//
-
-.qna-panel{
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-
-}
-
-.qna-question-text {
-  flex-basis: 100%;
-
-}
-
-.qna-author-box {
-  flex-basis: 100%;
-  display: flex;
-}
-
-.qna-byline{
-  flex-basis: 80%;
-  color: gray;
-  font-size: 20px;
-  order: 2;
-}
-
-.qna-author-photo-box {
-  flex-basis: 20%;
-  order: 1;
-}
-
-.qna-author-photo {
-  height: 150px;
-}
-
-.qna-answer-text {
-  flex-basis: 100%;
-  font-size: 30px;
-}
-
-//
-//Meme of the Week
-//

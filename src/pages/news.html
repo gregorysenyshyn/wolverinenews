@@ -1,0 +1,36 @@
+---
+title: News - Wolverine News
+---
+
+{% extends 'layout.html' %}
+{% block main %}
+{% include 'header.html' %}
+
+<div class="news-wrapper">
+  {% for item in section_pages %}
+  <a href="{{item.dest}}">
+    <div class="panel news-landing-panel">
+      <div>
+        <h2>{{item.title}}</h1>
+      </div>
+      <div class="news-byline-box">
+        <img class="news-landing-image" src="static/images/5yearold.jpg" height="220" width="195">
+        <div class="news-container">
+          <p>
+            {{item.stub}}
+          </p>
+           <div class="news-highline">
+            <br>
+            <br>
+            <p>
+              Article written by: {{item.author}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock main %}
