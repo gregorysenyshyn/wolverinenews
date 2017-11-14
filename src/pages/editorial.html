@@ -8,9 +8,35 @@ author: me
 {% block main %}
 
 {% include 'header.html' %}
+<div>
+  <h1 class="editorial-title-top"> Editorial Articles </h1>
+  <h3 class="editorial-description-top">Below are pieces written by the editorial staff. We hope you enjoy them!</h3>
+</div>
 
-{% for item in section_pages %}
-<p>{{item}}</p>
-{% endfor %}
+<div class="editorial-landing-wrapper">
+
+
+  <div class="editorial-sidebar">
+    <h1> Review-Preview </h1>
+    <h3 class="editorial-description-top">Here are reviews of recent events, and previews of events to come!</h3>
+  </div>
+
+  <div class="editorial-landing-main">
+
+    {% for item in section_pages %}
+
+    <div class="editorial-wrapper">
+      <div class="editorial-content panel">
+        <a href="{{item.dest}}">
+          <h2 class="editorial-article-title">{{item.title}}</h2>
+        </a>
+        <p class="editorial-article-author"> <strong> {{item.author}} </strong> </p>
+        <p class="editorial-content-underbox">{{item.description}}</p>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
 {% endblock main %}
-
