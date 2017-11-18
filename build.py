@@ -213,7 +213,7 @@ data = {'pagesets': [
       'options': {
             's3 bucket': 'wolverinenews.ca',
             'prod': 'dist',
-            'images': None
+            'images': 'images' 
             }
         }
 
@@ -236,19 +236,12 @@ def copy_files():
                                                os.path.basename(file)))
             print(' Done!')
 
-def get_local_config(path='local_config.json'):
-    local_config = None
-    with open(path) as f:
-        local_config = json.load(f)
-    return local_config
-
 
 if __name__ == '__main__':
     print(chr(27) + "[2J")
     print('Starting build!')
     t1 = time.time()
     production = False
-    local_config = get_local_config();
 
     print('\n\n=== C L E A N ===')
     print(f'cleaning {data["options"]["prod"]}...', end='')
@@ -276,8 +269,6 @@ if __name__ == '__main__':
     handle_js(production)
 
     print('\n\n=== I M A G E S ===')
-    if data['options']['images'] is None:
-        data['options']['images'] = local_config['images']
     image_src = f'{data["options"]["images"]}'
     image_dest = f'{data["options"]["prod"]}'
 

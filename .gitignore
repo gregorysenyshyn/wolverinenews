@@ -8,6 +8,7 @@ __pycache__/
 logs/
 dist
 nginx/
+images/
 repos/
 src/scss/*.css
 src/js/sheets.js
