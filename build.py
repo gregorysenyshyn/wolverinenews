@@ -213,7 +213,7 @@ data = {'pagesets': [
       'options': {
             's3 bucket': 'wolverinenews.ca',
             'prod': 'dist',
-            'images': 'images' 
+            'images': '~/Sites/wolverinenews/images' 
             }
         }
 
@@ -245,7 +245,7 @@ if __name__ == '__main__':
 
     print('\n\n=== C L E A N ===')
     print(f'cleaning {data["options"]["prod"]}...', end='')
-    tools.clean(data['options']['prod'])
+    tools.clean(os.path.expanduser(data['options']['prod']))
     print(' Done!')
 
     if len(argv) > 1 and argv[1] == 'production':
@@ -272,8 +272,10 @@ if __name__ == '__main__':
     image_src = f'{data["options"]["images"]}'
     image_dest = f'{data["options"]["prod"]}'
 
-    print((f'linking {image_src} to {image_dest}...'), end='')
-    subprocess.run(['ln', '-s', image_src, image_dest])
+    local_images = os.path.expanduser(image_src)
+    local_prod = os.path.expanduser(image_dest)
+    print((f'linking {local_images} to {local_prod}...'), end='')
+    subprocess.run(['ln', '-s', local_images, local_prod])
     print(' Done!')
 
     print('\n\n=== H T M L ===')
