@@ -6,8 +6,10 @@ order: 3
 ---
 {% extends 'editorial-article.html' %}
 {% block article_content %}
-{% filter markdown %}
 
+<div class="panel">
+
+{% filter markdown %}
 
 Space travel is still somewhat in its infancy. However, we’ve still observed many planets in our solar system by use of drones and rovers. One planet, however, provides a challenge to land on, even though it’s considered the next frontier for humanity by many: Mars.
 
@@ -31,10 +33,8 @@ However, these risks do have rewards. Sending humans to Mars would allow us to g
 
 So, what do you think? Should we send humans to Mars?
 
-Thanks for reading!
-
-
 {% endfilter %}
+</div>
 
     <p class="editorial-article-sources">
       SOURCE:
