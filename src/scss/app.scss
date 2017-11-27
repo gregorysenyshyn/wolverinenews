@@ -445,7 +445,7 @@ h3 {
 }
 
 .editorial-sidebar {
-  flex-basis: 25%;
+  flex-basis: 40%;
   min-width: 200px;
   margin: 50px;
 }
@@ -497,7 +497,7 @@ h3 {
 
 .editorial-title-top {
   display: flex;
-  font-size: 60px;
+  font-size: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -519,6 +519,11 @@ h3 {
   margin: 50px;
 }
 
+.editorial-article-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .editorial-large-organizer-panel {
   display: flex;
