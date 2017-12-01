@@ -26,6 +26,7 @@ body {
 
 button {
   border: 2px solid currentColor;
+  margin: 1rem;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -39,7 +40,7 @@ button {
   border-radius: 7px !important;
   font-weight: bold;
   &::after {
-   background-color: darken($blue, 20);
+   background-color: darken($blue, 10);
    content: '';
    display: block;
    height: 100%;
@@ -551,7 +552,7 @@ h3 {
 }
 
 .editorial-link-text {
-  margin: 1rem;
+color: $grey;
 }
 
 //
@@ -594,8 +595,25 @@ h3 {
 //Meme of the Week
 //
 
-.motw-ironic-comic-sans-memes {
-  font-family: inherit;
+.motw-date-n-photo-box {
+  display: flex;
+}
+
+.motw-author-photo {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.motw-meme-photo {
+  width: 100%;
+  background-color: red;
+  @media screen and (max-width: $lg){
+    width: 400px;
+  }
+  @media screen and (max-width: $sm){
+    width: 100%;
+  }
 }
 
 .motw-outro-text {
