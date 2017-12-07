@@ -18,3 +18,8 @@ memes:
     meme_text_part1: Roses are red
     meme_text_part2: I like to eat my veggies
     meme_image: /images/wedgies.jpeg
+    meme_alt: Man arrested for giving people wedgies.
+  - meme_title: Relatable
+    meme_date: December 7, 2017
+    meme_image: /images/Relatable.jpg
+    meme_alt: Me; I really need to live healthier. Me at 2 a.m.; runs away with jar of peanut butter.
