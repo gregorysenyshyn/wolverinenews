@@ -605,14 +605,16 @@ color: $grey;
   margin: 5px;
 }
 
+.motw-text-div {
+  font-size: 1rem;
+}
+
 .motw-meme-photo {
-  width: 100%;
-  background-color: red;
-  @media screen and (max-width: $lg){
-    width: 400px;
-  }
-  @media screen and (max-width: $sm){
+  max-width: 100%;
+  @media screen and (max-width: 475px){
+    height: 100%;
     width: 100%;
+    margin: 2px;
   }
 }
 
@@ -620,6 +622,7 @@ color: $grey;
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
+  margin: 5px;
 }
 
 .motw-title-text-box-div {
