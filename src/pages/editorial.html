@@ -16,32 +16,70 @@ author: me
 
 
   <div class="editorial-sidebar">
-    <h1> Review-Preview </h1>
-    <div>
-      <button><a class="editorial-link-text" href="/editorial/meme-of-the-week"><p>
-        Meme of the Week
-      </p></a></button>
+    <div class="editorial-button-box">
+      <div>
+        <button><a class="editorial-link-text" href="/editorial/meme-of-the-week"><p>
+          Meme of the Week
+        </p></a></button>
+      </div>
+      <div>
+        <button><a class="editorial-link-text" href="/editorial/qanda"><p>
+          Q and A
+        </p></a></button>
+      </div>
     </div>
+
     <div>
-      <button><a class="editorial-link-text" href="/editorial/qanda"><p>
-        Q and A
-      </p></a></button>
+
+      <div class="editorial-title-top">
+        <h1>Review / Preview</h1>
+      </div>
+
+      {% for item in section_pages %}
+
+        {% if item.type == "repre" %}
+
+      <div class="editorial-re-pre-panel">
+
+        <div class="panel editorial-alex-panel">
+          <a class="editorial-article-title editorial-re-pre-title" href="{{item.dest}}">
+            <h2>{{item.title}}</h2>
+          </a>
+          <p class="editorial-article-author">
+            {{item.author}}
+          </p>
+          <p>
+            {{item.date}}
+          </p>
+        </div>
+
+      </div>
+
+
+      {% endif %}
+
+    {% endfor %}
     </div>
+
   </div>
 
   <div class="editorial-landing-main">
 
     {% for item in section_pages %}
 
-    <div class="editorial-wrapper">
-      <div class="editorial-content panel">
-        <a href="{{item.dest}}">
-          <h2 class="editorial-article-title">{{item.title}}</h2>
-        </a>
-        <p class="editorial-article-author"> <strong> {{item.author}} </strong> </p>
-        <p class="editorial-content-underbox">{{item.description}}</p>
+      {% if item.type == "editorial" %}
+
+      <div class="editorial-wrapper">
+        <div class="editorial-content panel">
+          <a href="{{item.dest}}">
+            <h2 class="editorial-article-title">{{item.title}}</h2>
+          </a>
+          <p class="editorial-article-author"> <strong> {{item.author}} </strong> </p>
+          <p class="editorial-content-underbox">{{item.description}}</p>
+        </div>
       </div>
-    </div>
+
+      {% endif %}
 
     {% endfor %}
   </div>
