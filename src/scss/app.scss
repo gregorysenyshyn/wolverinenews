@@ -511,7 +511,6 @@ h3 {
 
 .editorial-title-top {
   display: flex;
-  font-size: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -578,14 +577,30 @@ h3 {
 
 .editorial-re-pre-intro {
   flex-basis: 66%;
+  @media screen and (max-width: 1435px){
+    flex-basis: 100%;
+  }
 }
 
+.editorial-re-pre-image-box {
+  @media screen and (max-width: 1435px) {
+    align-self: center;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+  }
+}
+
+
 .editorial-re-pre-image {
-  flex-basis: 33%;
+  flex-basis: 28%;
   width: 25rem;
   border: solid;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 20px;
+  @media screen and (max-width: 1435px){
+    width: 80%;
+  }
 }
 
 .editorial-button-box {
