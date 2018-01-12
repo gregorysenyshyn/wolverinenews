@@ -27,3 +27,8 @@ memes:
     meme_date: December 11, 2017
     meme_image: /images/yearbook.jpg
     meme_alt: I got $75 and bought a reduced price yearbook.
+  - meme_title: I don't want to water the grass, MOM.
+    meme_date: January 10, 2018
+    meme_text_part1: I want to be different.
+    meme_image: /images/Sprinkler-motw.jpg
+    meme_alt: Sprinkler watering electrical post.
