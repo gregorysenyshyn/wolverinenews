@@ -32,3 +32,7 @@ memes:
     meme_text_part1: I want to be different.
     meme_image: /images/Sprinkler-motw.jpg
     meme_alt: Sprinkler watering electrical post.
+  - meme_title: These prices are amazing!
+    meme_date: January 17, 2018
+    meme_image: /images/HalfPriceMeme.jpg
+    meme_alt: Half Price Meme
