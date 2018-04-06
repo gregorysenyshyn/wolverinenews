@@ -60,6 +60,7 @@ js_paths = {'dist/js/app.js': ['sheets.js',
             'dist/js/records.js': ['records.js'],
             'dist/js/teams.js': ['teams.js'],
             'dist/js/calculators.js': [ 'calculators.js'],
+            'dist/js/games.js': ['games/pong.js'],
             'dist/js/announcements.js': ['sheets.js',
                                          'announcements.js' ]
            }
@@ -213,7 +214,7 @@ data = {'pagesets': [
       'options': {
             's3 bucket': 'wolverinenews.ca',
             'prod': 'dist',
-            'images': '~/Sites/wolverinenews/images' 
+            'images': '~/Sites/wolverinenews/images'
             }
         }
 
