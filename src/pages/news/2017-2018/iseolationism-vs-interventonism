@@ -1,0 +1,35 @@
+---
+title: Isolationism VS Interventionism
+author: Gabrielle Beilke
+order: 40
+stub: Countries are generally responsible for themselves, but what happens during wars and conflicts? What happens when a country can no longer handle things by itself?
+---
+
+{% extends 'news-article.html' %}
+{% block news_content %}
+
+{% filter markdown %}
+
+Countries are generally responsible for themselves, but what happens during wars and conflicts? What happens when a country can no longer handle things by itself? Or when a country's government is mistreating its citizens? Is the rest of the world meant to sit by and do nothing or is it meant to act? Many countries and their citizens have differing opinions on how much to get involved in other countries’ affairs.
+
+Isolationism and interventionism are government policies and overall viewpoints. Isolationism is the idea that countries should remain out of the affairs of other countries and interventionism is the idea that they should intervene. Both of these are part of a country's foreign policy, which are carefully decided by governments after looking at the best interests of a country.
+
+In a two part article I’ll be discussing the pros and cons of isolationism and interventionism. Today I’ll be focusing on the cons of each.
+
+The number of strict isolationist countries is very low, including Japan, China, North Korea and Switzerland. China and North Korea are both communist countries, because the number of communist countries is so few they don’t have many natural allies. Switzerland has been a neutral country since 1515 and their neutrality is very commonly known.
+
+Many countries are considered isolationist without officially labelling themselves so. The US has historically been known for its non-interventionism, where they try to avoid alliances with other countries as to not get dragged into things, think of World War II when the US did not get involved until two years after the start of the war when they themselves were personally attacked. Their stance is different today, obviously.
+
+Isolationism has many pros and cons. One of the largest negatives of isolationism is that it puts your country on its own. Without any allies a certain level of global support is lost, and for some it leaves them with no one to support them in times of conflicts. If they can’t handle themselves. They also lose international influence.
+
+Another important negative of isolationism to consider is how it affects trade. Allies automatically give you strong trading partners, without allies sometimes finding trading partners is difficult.
+
+Foreign intervention also has many downsides, either for the citizens or the country itself. Many citizens oppose interventionism because it’s their government spending billions of dollars to put military support or other kinds of support in foreign countries. Many citizen find the idea of putting money into things other than their own country outrageous.
+
+Another negative of foreign intervention is that in some countries foreign intervention is completely unwanted. This can can anger citizens of that country and also negatively impact relations with that country and their allies.
+
+Isolationism vs interventionism is a hotly debated topic and both sides have negatives, but both sides also have positives. Next week I’ll talk about the positives of both and where Canada stands.
+
+{% endfilter %}
+
+{% endblock news_content %}
