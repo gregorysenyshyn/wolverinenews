@@ -435,8 +435,19 @@ h3 {
   height: 55%;
 }
 .news-article-image-large{
-  width: 75%;
-  height: 45%;
+  float:left;
+  margin: 0 1rem 1rem 0;
+   border: 3px solid $blue;
+   width: 45%;
+  height: auto;
+}
+
+.news-article-image-small{
+  float:left;
+  margin: 0 1rem 1rem 0;
+   border: 3px solid $blue;
+  width: 35%;
+  height: auto;
 }
 
 // EDITORIAL
