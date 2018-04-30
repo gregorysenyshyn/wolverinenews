@@ -213,7 +213,7 @@ data = {'pagesets': [
       'options': {
             's3 bucket': 'wolverinenews.ca',
             'prod': 'dist',
-            'images': '~/Sites/wolverinenews/images' 
+            'images': '~/Sites/wolverinenews/images'
             }
         }
 
