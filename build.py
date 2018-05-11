@@ -101,6 +101,7 @@ def handle_js(production):
 # ###### #
 
 SCSS_PATHS = {'dist/css/app.css': ['app.scss', 'osslt.scss'],
+              'dist/css/print.css': ['print.scss'],
               'dist/css/announcements.css': ['announcements.scss']}
 LOADPATH = ['src/scss/']
 
@@ -213,7 +214,7 @@ data = {'pagesets': [
       'options': {
             's3 bucket': 'wolverinenews.ca',
             'prod': 'dist',
-            'images': '~/Sites/wolverinenews/images' 
+            'images': '~/Sites/wolverinenews/images'
             }
         }
 
