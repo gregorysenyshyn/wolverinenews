@@ -1,1 +1,32 @@
+#header {
+  display: none;
+}
 
+nav {
+  display: none;
+}
+
+.news-byline {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 4em;
+}
+
+.panel {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
+}
+
+.items {
+  flex-basis: 25%;
+
+
+}
