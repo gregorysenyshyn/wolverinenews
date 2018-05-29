@@ -416,6 +416,7 @@ h3 {
 
 .news-landing-image {
   margin-right: 1rem;
+border: 2px solid $blue;
 }
 
 .news-container {
@@ -431,14 +432,31 @@ h3 {
 
 
 .news-article-image {
+  float:left;
+  margin: 0 1rem 1rem 0;
+  border: 3px solid $blue;
   width: 45%;
-  height: 55%;
+  height: auto;
 }
 .news-article-image-large{
-  width: 75%;
-  height: 45%;
+  float:left;
+  margin: 0 1rem 1rem 0;
+  border: 2px solid $blue;
+  width: 45%;
+  height: auto;
 }
 
+.news-article-image-small{
+  float:left;
+  margin: 0 1rem 1rem 0;
+  border: 3px solid $blue;
+  width: 30%;
+  height: auto;
+}
+.news-article-image-xsmall{
+  width: 25%;
+  height: 25%;
+}
 // EDITORIAL
 //
 
