@@ -461,6 +461,10 @@ border: 2px solid $blue;
   margin: 0 4rem;
    color: $blue;
 }
+.news-article-image-select-size {
+  height: 10%;
+  width: 10%;
+}
 // EDITORIAL
 //
 
@@ -1098,4 +1102,7 @@ border: 2px solid $blue;
 .calculator-label {
   display: inline-block;
   margin: 0 1rem 0 0;
+}
+.print-article {
+  display: none;
 }
