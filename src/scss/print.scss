@@ -1,1 +1,30 @@
+#footer {
+  display: none;
+}
 
+nav {
+  display: none;
+}
+
+.news-byline {
+  display: none;
+}
+
+news-wrapper {
+  display: none;
+}
+
+#header {
+  display: none;
+}
+
+.yearbook-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  flex-basis: 25%
+  }
