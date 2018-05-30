@@ -19,21 +19,26 @@ h1 {
   display: none;
 }
 .news-article-image {
-
-
+height: 45%;
+width: 45%;
 }
 .panel {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
   justify-content: space-around;
   align-items: flex-start;
   align-content: center;
 }
 .items {
-  flex-basis: 25%;
-
+  flex-basis: 50%;
 }
 .screen-article {
+
+}
+.print-article {
   display: none;
+}
+.yearbook-flexbox-grid {
+  
 }
