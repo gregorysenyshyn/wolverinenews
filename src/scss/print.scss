@@ -16,17 +16,24 @@ nav {
 
 h1 {
   font-family: sans-serif;
-  font-size: 4em;
+  font-size: 3em;
 }
 
-.panel {
+.yearbook-grid {
   display: flex;
-  flex-wrap: row wrap;
+  flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .items {
-  flex-basis: 25%;
+flex-basis: 33%;
 
+
+}
+
+.yearbook-grid-image {
+  width: 2in;
+  height: auto;
 
 }
