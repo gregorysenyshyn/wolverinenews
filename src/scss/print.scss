@@ -26,6 +26,13 @@ h1 {
   flex-wrap: wrap;
 }
 
+.yearbook-grid2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .items {
 flex-basis: 33%;
 
@@ -33,7 +40,18 @@ flex-basis: 33%;
 }
 
 .yearbook-grid-image {
-  width: 2in;
+  width: 1.5in;
   height: auto;
 
+}
+
+.yearbook-grid-image2 {
+  width: 5.8in;
+  height: auto;
+  border: 20px;
+
+}
+
+p {
+  display: none;
 }
