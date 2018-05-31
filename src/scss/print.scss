@@ -19,14 +19,21 @@ h1 {
   font-size: 3em;
 }
 
-.yearbook-grid {
+.yearbook-grid-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.yearbook-grid2 {
+.yearbook-grid-left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.yearbook-grid-right-column {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -35,7 +42,6 @@ h1 {
 
 .items {
 flex-basis: 33%;
-
 
 }
 
