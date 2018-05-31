@@ -26,3 +26,21 @@ h1{
   height: 2in;
   width: 2.5in;
 }
+
+.item{
+  flex-basis: 25%
+}
+
+.yearbook-panel{
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.screen-article{
+  display: none;
+}
