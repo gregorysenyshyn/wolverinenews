@@ -23,24 +23,26 @@ h1{
 }
 
 .news-article-image{
-  height: 2in;
-  width: 2.5in;
+  height: 1.5in;
+  width: 2in;
 }
 
 .item{
-  flex-basis: 25%
+  flex-basis: auto;
 }
 
-.yearbook-panel{
+.panel{
   display: flex;
   height: auto;
+  width: 7in;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  align-content: flex-start;
+  align-content: space-around;
 }
 
 .screen-article{
   display: none;
+  height: auto;
 }
