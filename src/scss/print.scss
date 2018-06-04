@@ -28,21 +28,46 @@ h1{
 }
 
 .item{
-  flex-basis: auto;
-}
-
-.panel{
-  display: flex;
-  height: auto;
-  width: 7in;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: space-around;
+  flex-basis: 33%;
 }
 
 .screen-article{
   display: none;
-  height: auto;
+}
+.yearbook-grid-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.yearbook-grid-left-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.yearbook-grid-middle-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.yearbook-grid-right-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.yearbook-grid-image{
+  width: 2.5in;
+  height: 2in;
+}
+
+.yearbook-grid-image2{
+  width: 3in;
+  height: 2in;
 }

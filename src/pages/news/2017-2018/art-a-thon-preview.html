@@ -5,17 +5,35 @@ order: 2000
 date: 2018/05/17
 stub: Art-a-Thon is a school event held in the art room where everyone makes some kind of piece of art and the next day it gets auctioned off in the school. Some of the things you can do at Art-a-Thon includes drawing, painting, spray painting, clay, printmaking, ink art, and any kind of art you can think of. Art-a-Thon gives the students the opportunity to really express themselves through the art they make. It allows them to experiment and try new things from 12 pm to 12 am.
 image: /images/art-a-thon-preview.jpg
+image2: /images/reflecting-on-spirit-week-2018.jpg
+image3: /images/a-newcomers-perspective-on-canada.jpg
+image4: /images/crime-stoppers-presentation-review.jpg
 ---
 
 {% extends 'news-article.html' %}
 {% block news_content %}
-
-<img src="/images/art-a-thon-preview.jpg" class="news-article-image"/>
+<div class="yearbook-grid-container">
+	<div class="yearbook-grid-left-column">
+		<div class="items">
+<img src="/images/art-a-thon-preview.jpg" class="yearbook-grid-image"/>
+</div>
+<div class="items">
+<img src="/images/reflecting-on-spirit-week-2018.jpg" class="yearbook-grid-image"/>
+</div>
+<div class="yearbook-grid-middle-column">
+<div class="items">
+<img src="/images/a-newcomers-perspective-on-canada.jpg" class="yearbook-grid-image"/>
+</div>
+</div>
+<div class="yearbook-grid-right-column">
+<div class="items">
+	<img src="/images/crime-stoppers-presentation-review.jpg" class="yearbook-grid-image2"/>
+ </div>
+</div>
+</div>
 {{stub}}
-<div class="screen-article"> <div class="item">
-	<div class="yearbook-panel">
-		<div class="item">
-
+<div class="screen-article">
+	<div class="item">
 {% filter markdown %}
 
 <h4>Before Art-a-Thon/What Art-a-Thon is</h4>
