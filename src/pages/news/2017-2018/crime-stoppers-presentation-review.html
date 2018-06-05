@@ -4,12 +4,33 @@ author: Josh Burr
 order: 69
 stub: Learn how to get paid by other peoples crime!
 image: /images/crime-stoppers-presentation-review.jpg
+image2: /images/5YearArthurHero.jpg
+image3: /images/a-newcomers-perspective-on-canada.jpg
+image4: /images/al-meredith.jpg
+image5: /images/alex-dawson.jpg
+image6: /images/alex-stewart.jpg
+image7: /images/alternatives-to-the-beep-test.jpg
+image8: /images/are-cell-phones-necessary-in-high-school.JPG
+image9: /images/are-hats-a-distraction.jpg
+image10: /images/are-you-ready-for-prom.jpg
+
 ---
 
 {% extends 'news-article.html' %}
 {% block news_content %}
+<div class="yearbook-grid-container">
+  <div class="yearbook-grid-left-column">
+    <img src="{{ image }}" class="yearbook-left-column-image">
+    <img src="{{ image2 }}" class="yearbook-left-column-image">
+    <img src="{{ image3 }}" class="yearbook-left-column-image">
+  </div>
+  <div class="yearbook-grid-right-column">
+    <!-- <img src="{{ image4 }}" class="yearbook-grid-image2">
+    <img src="{{ image5 }}" class="yearbook-grid-image2">
+    <img src="{{ image6 }}" class="yearbook-grid-image2"> -->
+  </div>
+</div>
 
-<img src="/images/crime-stoppers-presentation-review.jpg" class="news-article-image">
 
 {% filter markdown %}
 

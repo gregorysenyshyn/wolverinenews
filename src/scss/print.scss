@@ -1,44 +1,75 @@
-
-$blue: #2c1b76;
-$grey: #989aa0;
-$black: #231f20;
-
-#header{
+#header {
   display: none;
 }
+
 nav {
   display: none;
 }
-h1 {
-  display: none;
-}
+
 .news-byline {
   display: none;
 }
+
 #footer {
   display: none;
 }
-.news-article-image {
-height: 45%;
-width: 45%;
+
+h1 {
+  font-family: sans-serif;
+  font-size: 3em;
 }
-.panel {
+
+.yearbook-grid-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: row wrap;
   justify-content: space-around;
-  align-items: flex-start;
-  align-content: center;
+  max-width: 100%;
 }
-.items {
-  flex-basis: 50%;
-}
-.screen-article {
 
+.yearbook-grid-left-column {
+  display: flex;
+  flex-basis: 20%;
+  background-color: red;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.print-article {
+
+.yearbook-grid-right-column {
+  display: flex;
+  background-color: blue;
+  flex-basis: 80%;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.items {
+flex-basis: 33%;
+}
+
+.yearbook-left-column {
+  width: 1.5in;
+  height: auto;
+}
+
+.yearbook-left-column-image {
+  max-width: 100%;
+}
+
+.yearbook-top-big-image{
+  width: 5.8in;
+  height: auto;
+  border: 20px;
+}
+
+.large-image-flex-box {
+flex-basis: 100%;
+}
+
+.small-image-flex-box {
+  flex-basis:50%;
+}
+p {
   display: none;
-}
-.yearbook-flexbox-grid {
-  
 }
