@@ -20,10 +20,10 @@ h1 {
 }
 
 .yearbook-grid-container {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .yearbook-grid-left-column {
@@ -31,6 +31,8 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-basis: 20%;
+  background-color: red;
 }
 
 .yearbook-grid-right-column {
@@ -38,24 +40,22 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex-basis: 80%;
+  background-color: blue;
 }
 
-.items {
-flex-basis: 33%;
-
+.yearbook-left-column-image {
+  max-width: 100%;
 }
 
 .yearbook-grid-image {
   width: 1.5in;
   height: auto;
-
 }
 
 .yearbook-grid-image2 {
-  width: 5.8in;
-  height: auto;
   border: 20px;
-
+  max-width: 100%;
 }
 
 p {
