@@ -1,4 +1,4 @@
-#header {
+#header{
   display: none;
 }
 
@@ -28,7 +28,7 @@ h1{
 }
 
 .item{
-  flex-basis: 33%;
+  flex-basis: 100%;
 }
 
 .screen-article{
@@ -44,30 +44,28 @@ h1{
 .yearbook-grid-left-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.yearbook-grid-middle-column{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .yearbook-grid-right-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .yearbook-grid-image{
-  width: 2.5in;
+  width: 3in;
   height: 2in;
 }
 
 .yearbook-grid-image2{
-  width: 3in;
+  width: 2.5in;
+  height: 2in;
+}
+
+.yearbook-grid-image3{
+  width: 4in;
   height: 2in;
 }
