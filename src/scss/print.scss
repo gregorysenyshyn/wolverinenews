@@ -18,7 +18,7 @@ h4{
   display: none;
 }
 h1{
-  font-family: sans-serif;
+  font-family: fantasy;
   font-size: 25px;
 }
 
@@ -43,29 +43,34 @@ h1{
 
 .yearbook-grid-left-column{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .yearbook-grid-right-column{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .yearbook-grid-image{
   width: 3in;
   height: 2in;
+  padding-bottom: 0.3in;
+  padding-left: 0.3in;
+  padding-right: 0.3in;
 }
 
 .yearbook-grid-image2{
   width: 2.5in;
   height: 2in;
+  padding: 0.3in;
 }
 
 .yearbook-grid-image3{
   width: 4in;
   height: 2in;
+  border-image-width: 4px;
 }
