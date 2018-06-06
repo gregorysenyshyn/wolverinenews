@@ -21,8 +21,10 @@ news-wrapper {
 .yearbook-panel {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .item {
-  flex-basis: 25%
+flex-basis: 25%;
 }
