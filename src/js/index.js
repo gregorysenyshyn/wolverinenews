@@ -5,7 +5,7 @@ function parseTeamSheet (sheet) {
       var dateArray = sheet.data[0].rowData[record].values[0].formattedValue.split('/');
       currentRecord.date = new Date(dateArray[2], dateArray[0], dateArray[1]);
       currentRecord.type = sheet.data[0].rowData[record].values[1].formattedValue;
-      if (sheet.data[0].rowData[record].values[2].formattedValue !== undefined) { 
+      if (sheet.data[0].rowData[record].values[2].formattedValue !== undefined) {
         currentRecord.author = sheet.data[0].rowData[record].values[2].formattedValue;
       }
       if (currentRecord.type === 'Game Summary') {
@@ -53,7 +53,7 @@ function populateScoreboard(response) {
               var gameDate = document.createElement('h4');
               gameDate.appendChild(document.createTextNode(parsedPost.date.getFullYear() + '/' + parsedPost.date.getMonth() + '/' + parsedPost.date.getDate()));
               gameScore.appendChild(gameDate);
-              
+
               var ourName = document.createElement('span');
               ourName.className = 'index-scoreboard-school';
               ourName.appendChild(document.createTextNode('WHSS'));
