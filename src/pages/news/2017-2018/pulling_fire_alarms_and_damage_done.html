@@ -13,15 +13,19 @@ image2: /images/news-bb-jr1.jpg
 {% extends 'news-article.html' %}
 {% block news_content %}
 
-<img src="/images/pulling-fire-alarms-and-damage-done.png" class="news-article-image"/>
+<img src="/images/pulling-fire-alarms-and-damage-done.png" class="yearbook-panel-left-column"/>
 
-<div class="yearbook-panel">
-<img src="{{image}}" class="yearbook-panel">
+<div class="yearbook-panel-left-column">
+<img src="{{image}}" class="yearbook-panel-left-column">
       <div class="item">
        </div>
         </div>
 
-
+  <div class="yearbook-panel-right-column">
+  <img src="{{image2}}" class="yearbook-panel-right-column">
+              <div class="item">
+               </div>
+                </div>
 
 
 {% filter markdown %}

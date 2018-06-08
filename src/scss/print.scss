@@ -18,13 +18,27 @@ news-wrapper {
   display: none;
 }
 
-.yearbook-panel {
+.yearbook-panel-left-column {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.item {
-flex-basis: 25%;
+img {
+  width: 3in;
+  height: auto;
+}
+
+
+.yearbook-panel-right-column {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+img {
+  width: 3in;
+  height: auto;
 }
