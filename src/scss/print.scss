@@ -58,7 +58,7 @@ h1{
 .yearbook-grid-image{
   width: 3in;
   height: 2in;
-  margin-bottom: 0.3in;
+  margin-bottom: 0.1in;
   margin-left: 0.3in;
   margin-right: 0.3in;
   border-right: solid;
@@ -71,6 +71,7 @@ h1{
 .yearbook-grid-image3{
   width: 4in;
   height: 2in;
+  margin-bottom: 0.1in;
   border-right: solid;
   border-left: solid;
   border-top: solid;
@@ -81,10 +82,16 @@ h1{
 .yearbook-grid-image2{
   width: 2.5in;
   height: 2in;
-  margin: 0.3in;
+  margin-bottom: 0.1in;
+  margin-left: 0.3in;
+  margin-right: 0.3in;
   border-right: solid;
   border-left: solid;
   border-top: solid;
   border-bottom: solid;
   border-color: purple;
+}
+
+.text-area{
+  text-align: center;
 }
