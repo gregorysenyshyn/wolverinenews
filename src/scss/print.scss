@@ -46,6 +46,7 @@ h1{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  background: blue;
 }
 
 .yearbook-grid-right-column{
@@ -94,4 +95,8 @@ h1{
 
 .text-area{
   text-align: center;
+}
+
+.background{
+  background-color: blue;
 }
