@@ -26,6 +26,7 @@ h1 {
   max-width: 100%;
 }
 
+
 .yearbook-grid-left-column {
   display: flex;
   flex-basis: 20%;
@@ -49,7 +50,10 @@ h1 {
   height: auto;
 }
 .yearbook-grid-image2{
-  
+  flex-basis: 100%;
+}
+.yearbook-grid-image3{
+    flex-basis:50%;
 }
 .yearbook-left-column-image {
   max-width: 100%;
