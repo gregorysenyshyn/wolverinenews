@@ -22,23 +22,26 @@ news-wrapper {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column wrap;
 }
 
 img {
-  width: 3in;
-  height: auto;
+  width: 2.4in;
+  height: 2in;
 }
 
+
+.yearbook-panel-middle-column {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: column wrap;
+  margin: auto
+}
 
 .yearbook-panel-right-column {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  flex-direction: column;
-}
-
-img {
-  width: 3in;
-  height: auto;
+  flex-direction: column wrap;
 }
