@@ -2,6 +2,21 @@
   display: none;
 }
 
+#yearbook-header{
+  text-align: left;
+  text-decoration: underline;
+  font-family: fantasy;
+  font-size: 19px;
+}
+
+.news-wrapper{
+  background-color: purple;
+}
+
+.weight-protocol .calendar-header-bg {
+    background-color: #007DB2;
+}
+
 nav {
   display: none;
 }
@@ -14,12 +29,13 @@ nav {
   display: none;
 }
 
+
 h4{
   display: none;
 }
+
 h1{
-  font-family: fantasy;
-  font-size: 25px;
+  display: none;
 }
 
 .news-article-image{
@@ -46,7 +62,6 @@ h1{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: blue;
 }
 
 .yearbook-grid-right-column{
@@ -95,8 +110,4 @@ h1{
 
 .text-area{
   text-align: center;
-}
-
-.background{
-  background-color: blue;
 }
