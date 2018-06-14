@@ -19,10 +19,9 @@ news-wrapper {
 }
 
 .yearbook-panel-left-column {
-  display: flex;
-  list-style: none;
   flex-wrap: wrap;
   flex-direction: column wrap;
+  justify-content: space-between;
 }
 
 img {
@@ -30,18 +29,20 @@ img {
   height: 2in;
 }
 
-
 .yearbook-panel-middle-column {
-  display: flex;
-  list-style: none;
   flex-wrap: wrap;
   flex-direction: column wrap;
-  margin: auto
 }
 
 .yearbook-panel-right-column {
-  display: flex;
-  list-style: none;
   flex-wrap: wrap;
   flex-direction: column wrap;
+}
+
+html {
+   background: url(/images/news-bb-jr1.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
