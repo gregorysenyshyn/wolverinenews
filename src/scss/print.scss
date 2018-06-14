@@ -19,50 +19,55 @@ h1 {
   font-size: 3em;
 }
 
-.yearbook-grid-container {
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.lefttopimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:150px;
 }
 
-img {
-  width: 100%;
-  height: auto;
-
+.leftmiddleimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:350px;
 }
 
-.yearbook-grid-left-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-basis: 20%;
-  background-color: red;
+
+.leftbottomimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:550px;
 }
 
-.yearbook-grid-right-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-basis: 80%;
-  background-color: blue;
+.bottommiddleimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 65px;
+  top:550px;
 }
+//
+// .bottomrightimage {
+//   width: 2in;
+//   height: 2in;
+//   position: absolute;
+//   left: 15px;
+//   top:550px;
+// }
+//
+// .mainrightimage {
+//   width: 2in;
+//   height: 2in;
+//   position: absolute;
+//   left: 15px;
+//   top:550px;
+// }
 
-.yearbook-left-column-image {
-  max-width: 100%;
-}
-
-.yearbook-grid-image {
-  width: 1.5in;
-  height: auto;
-}
-
-.yearbook-grid-image2 {
-  border: 20px;
-  max-width: 100%;
-}
 
 p {
   display: none;
