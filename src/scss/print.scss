@@ -27,6 +27,7 @@ h1 {
 }
 
 .yearbook-grid-left-column {
+  order: 2;
   display: flex;
   flex-basis: 20%;
   background-color: red;
@@ -36,6 +37,7 @@ h1 {
 }
 
 .yearbook-grid-right-column {
+  order: 1;
   display: flex;
   background-color: blue;
   flex-basis: 80%;

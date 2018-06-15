@@ -1,0 +1,60 @@
+---
+title: Crime Stoppers Presentation Summary
+author: Josh Burr
+order: 88
+stub: Learn how to get paid by other peoples crime!
+image: /images/crime-stoppers-presentation-review.jpg
+image2: /images/5YearArthurHero.jpg
+image3: /images/a-newcomers-perspective-on-canada.jpg
+image4: /images/al-meredith.jpg
+image5: /images/alex-dawson.jpg
+image6: /images/alex-stewart.jpg
+image7: /images/alternatives-to-the-beep-test.jpg
+image8: /images/are-cell-phones-necessary-in-high-school.JPG
+image9: /images/are-hats-a-distraction.jpg
+image10: /images/are-you-ready-for-prom.jpg
+image11: /images/whymeme.jpg
+image12: /images/yearbook.jpg
+---
+
+{% extends 'news-article.html' %}
+{% block news_content %}
+<div class="yearbook-grid-container">
+  <div class="yearbook-grid-left-column">
+    <img src="{{ image }}" class="yearbook-left-column-image">
+    <img src="{{ image2 }}" class="yearbook-left-column-image">
+    <img src="{{ image3 }}" class="yearbook-left-column-image">
+    <img src="{{ image7 }}" class="yearbook-left-column-image">
+    <img src="{{ image8 }}" class="yearbook-left-column-image">
+    <img src="{{ image9 }}" class="yearbook-left-column-image">
+    <img src="{{ image10 }}" class="yearbook-left-column-image">
+    <img src="{{ image11 }}" class="yearbook-left-column-image">
+  </div>
+  <div class="yearbook-grid-right-column">
+    <div class="yearbook-grid-right-column-top-row">
+      <img src="{{ image4 }}" class="yearbook-grid-image2">
+    </div>
+    <div class="yearbook-grid-right-column-bottom-row">
+      <img src="{{ image5 }}" class="yearbook-grid-image3">
+      <img src="{{ image6 }}" class="yearbook-grid-image3">
+    </div>
+  </div>
+</div>
+
+
+{% filter markdown %}
+
+On April 17th 2018 the Guelph Wellington Crime Stoppers visited WHSS. During their day at the school they had multiple presentations for students. A lot of information on how the Crime Stoppers system works was presented to the students in attendance.
+
+Crime Stoppers works by hosting fundraisers such as mulch sales or BBQ lunches and dinners. Through these fundraisers they raise money to help pay to run the program and help “Tipsters” get their money.
+
+The program works by the general public reporting crimes to Crimes Stoppers via phone or through the website, then you receive a code which is then later linked to your payment and file which you can use to add more information to. Any and all crime can be passed on to Crime Stoppers but immediate crime such as breaking and entering, and murder you should still call 911. The information you provide is then passed onto the police. If an arrest is made with the use of your information you receive a cash payment.
+
+The great benefit about using Crime Stoppers is that through the investigation you remain anonymous, your name doesn't get brought up because no one will ask for it, and also you get paid.  You have no risk of being in danger. To collect your payment you meet with a Crime Stoppers representative in a public place. You then tell them your code and the cash is yours. No names or any sort of personal information gets passed on.
+
+
+
+
+{% endfilter %}
+
+{% endblock news_content %}
