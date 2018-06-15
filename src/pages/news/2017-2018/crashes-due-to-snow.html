@@ -3,13 +3,32 @@ title: Crash Due to Snow
 author: Alex Stewart
 order: 19
 stub: A Lamborghini crash may have been the costliest example among dozens of crashes on Toronto-area roads early Friday, during the season’s first blast of wintry weather in the city.
-image: /images/news-Snow.jpg
+image: /images/crime-stoppers-presentation-review.jpg
+image2: /images/5YearArthurHero.jpg
+image3: /images/a-newcomers-perspective-on-canada.jpg
+image4: /images/al-meredith.jpg
+image5: /images/alex-dawson.jpg
+image6: /images/alex-stewart.jpg
+image7: /images/alternatives-to-the-beep-test.jpg
+image8: /images/are-cell-phones-necessary-in-high-school.JPG
+image9: /images/are-hats-a-distraction.jpg
+image10: /images/are-you-ready-for-prom.jpg
 ---
 
 {% extends 'news-article.html' %}
 {% block news_content %}
 
-<img src="/images/news-Snow.jpg" class="news-article-image">
+<div class="yearbook-grid-container">
+  <div class="yearbook-grid-left-column">
+    <div style="height: 100px; width: 100px;"></div>
+    <img src="{{ image }}" class="righttopimage2">
+    <img src="{{ image2 }}" class="rightmiddleimage2">
+    <img src="{{ image3 }}" class="rightbottomimage2">
+    <img src="{{ image4 }}" class="middlebottomimage2">
+    <img src="{{ image5 }}" class="rightbottomimage2">
+    <img src="{{ image6 }}" class="mainrightimage2">
+  </div>
+</div>
 
 {% filter markdown %}
 
