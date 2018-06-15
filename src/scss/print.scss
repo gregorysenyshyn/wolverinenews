@@ -17,32 +17,39 @@ news-wrapper {
 #header {
   display: none;
 }
-
+ p {
+  display: none;
+}
+h1 {
+  display: none;
+}
 .yearbook-panel-left-column {
-  flex-wrap: wrap;
-  flex-direction: column wrap;
-  justify-content: space-between;
+  flex-direction: column;
+    flex-basis: 25%;
+    max-height: 100%;
+    background-color: red;
 }
+.top-left-column-image{
+  max-height: 33%;
+  max-width: 25%;
+}
+.top-middle-column-image {
+  max-height: 33%;
+  max-width: 50%;
 
-img {
-  width: 2.4in;
-  height: 2in;
 }
-
-.yearbook-panel-middle-column {
-  flex-wrap: wrap;
-  flex-direction: column wrap;
-}
-
-.yearbook-panel-right-column {
-  flex-wrap: wrap;
-  flex-direction: column wrap;
-}
-
-html {
-   background: url(/images/news-bb-jr1.jpg) no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-}
+// .yearbook-panel-middle-column {
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//     flex-basis: 50%;
+//     background-color: blue;
+//     max-height: 100%;
+// }
+//
+// .yearbook-panel-right-column {
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//     flex-basis: 25%;
+//     background-color: green;
+//     max-height: 100%;
+// }
