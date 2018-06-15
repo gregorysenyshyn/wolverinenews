@@ -2,7 +2,7 @@
   display: none;
 }
 
-#yearbook-header{
+h3{
   text-align: left;
   text-decoration: underline;
   font-family: fantasy;
@@ -65,7 +65,6 @@ h1{
 .yearbook-grid-image{
   width: 3in;
   height: 2in;
-  margin-bottom: 0.1in;
   margin-left: 0.3in;
   margin-right: 0.3in;
   border-right: solid;
@@ -78,7 +77,6 @@ h1{
 .yearbook-grid-image3{
   width: 4in;
   height: 2in;
-  margin-bottom: 0.1in;
   border-right: solid;
   border-left: solid;
   border-top: solid;
@@ -89,7 +87,6 @@ h1{
 .yearbook-grid-image2{
   width: 2.5in;
   height: 2in;
-  margin-bottom: 0.1in;
   margin-left: 0.3in;
   margin-right: 0.3in;
   border-right: solid;
@@ -97,9 +94,23 @@ h1{
   border-top: solid;
   border-bottom: solid;
   border-color: purple;
+  display: none;
 }
 
 .text-area{
   text-align: center;
 
+}
+
+.text-area-stub{
+  text-align: center;
+  width: 3in;
+  padding-bottom: 10px;
+  margin-left: 0.3in;
+}
+
+.text-area-stub-img3{
+  text-align: center;
+  width: 4in;
+  padding-bottom: 10px;
 }
