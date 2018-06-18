@@ -38,6 +38,10 @@ h1{
   flex-basis: 100%;
 }
 
+body{
+  background: content-box radial-gradient(#9370DB, #AFEEEE);
+}
+
 .screen-article{
   display: none;
 }
@@ -63,54 +67,45 @@ h1{
 }
 
 .yearbook-grid-image{
-  width: 3in;
-  height: 2in;
+  width: 2.5in;
+  height: 1.5in;
   margin-left: 0.3in;
   margin-right: 0.3in;
   border-right: solid;
   border-left: solid;
   border-top: solid;
   border-bottom: solid;
-  border-color: purple;
+  border-color: #7B68EE;
+  border-radius: 0.2in;
+  border-width: 4.5px;
 }
 
 .yearbook-grid-image3{
-  width: 4in;
+  width: 3.5in;
   height: 2in;
   border-right: solid;
   border-left: solid;
   border-top: solid;
   border-bottom: solid;
-  border-color: purple;
-}
-
-.yearbook-grid-image2{
-  width: 2.5in;
-  height: 2in;
-  margin-left: 0.3in;
-  margin-right: 0.3in;
-  border-right: solid;
-  border-left: solid;
-  border-top: solid;
-  border-bottom: solid;
-  border-color: purple;
-  display: none;
+  border-color: #7B68EE;
+  border-radius: 0.2in;
+  border-width: 4.5px;
 }
 
 .text-area{
   text-align: center;
-
 }
 
 .text-area-stub{
   text-align: center;
-  width: 3in;
-  padding-bottom: 10px;
+  width: 2.5in;
   margin-left: 0.3in;
+  color: black;
 }
 
 .text-area-stub-img3{
   text-align: center;
-  width: 4in;
+  width: 3.5in;
   padding-bottom: 10px;
+  color: black;
 }
