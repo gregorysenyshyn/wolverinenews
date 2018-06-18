@@ -6,19 +6,41 @@ order: 135
 stub: Is it really worth it to pull the fire alarm for no reason?
 image: /images/pulling-fire-alarms-and-damage-done.png
 image2: /images/news-bb-jr1.jpg
+image3: /images/a-newcomers-perspective-on-canada.jpg
+image4: /images/al-meredith.jpg
+image5: /images/alex-dawson.jpg
+image6: /images/alex-stewart.jpg
+image7: /images/alternatives-to-the-beep-test.jpg
+image8: /images/are-cell-phones-necessary-in-high-school.JPG
+image9: /images/are-hats-a-distraction.jpg
+image10: /images/are-you-ready-for-prom.jpg
+image11: /images/whymeme.jpg
+image12: /images/yearbook.jpg
 ---
 
-
-
-{% extends 'news-article.html' %}
-{% block news_content %}
-
-
-
-<div class="yearbook-panel-left-column">
-  <img src="{{image}}" class="top-left-column-image">
-  <img src="{{image2}}" class="top-middle-column-image">
-</div>
+ {% extends 'news-article.html' %}
+ {% block news_content %}
+ <div class="yearbook-grid-container">
+   <div class="yearbook-grid-left-column">
+     <img src="{{ image }}" class="yearbook-left-column-image">
+     <img src="{{ image2 }}" class="yearbook-left-column-image">
+     <img src="{{ image3 }}" class="yearbook-left-column-image">
+     <img src="{{ image7 }}" class="yearbook-left-column-image">
+     <img src="{{ image8 }}" class="yearbook-left-column-image">
+     <img src="{{ image9 }}" class="yearbook-left-column-image">
+     <img src="{{ image10 }}" class="yearbook-left-column-image">
+     <img src="{{ image11 }}" class="yearbook-left-column-image">
+   </div>
+   <div class="yearbook-grid-right-column">
+     <div class="yearbook-grid-right-column-top-row">
+       <img src="{{ image4 }}" class="yearbook-grid-image2">
+     </div>
+    <div class="yearbook-grid-right-column-bottom-row">
+       <img src="{{ image5 }}" class="yearbook-grid-image3">
+       <img src="{{ image6 }}" class="yearbook-grid-image3">
+    </div>
+   </div>
+ </div>
 
 
 <!-- <div class="yearbook-panel-right-column">

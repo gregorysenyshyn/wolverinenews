@@ -23,21 +23,86 @@ news-wrapper {
 h1 {
   display: none;
 }
-.yearbook-panel-left-column {
+
+
+.yearbook-grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.yearbook-grid-left-column {
+  order: 2;
+  display: flex;
+  flex-basis: 20%;
+  background-color: red;
   flex-direction: column;
-    flex-basis: 25%;
+  height: 11in;
+  max-height: 100%;
+}
+
+.yearbook-grid-right-column {
+  order: 1;
+  display: flex;
+  background-color: blue;
+  flex-basis: 80%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 5.5in;
+  max-height: 100%;
+}
+
+.yearbook-left-column {
+  width: 1.5in;
+  height: auto;
+}
+.yearbook-grid-image2{
+  max-width: 100%;
+  max-height: 100%;
+}
+.yearbook-grid-image3{
+    flex-basis:50%;
+    max-width: 100%;
     max-height: 100%;
-    background-color: red;
 }
-.top-left-column-image{
-  max-height: 33%;
-  max-width: 25%;
-}
-.top-middle-column-image {
-  max-height: 33%;
-  max-width: 50%;
+.yearbook-left-column-image {
+  max-width: 100%;
 
 }
+.yearbook-grid-right-column-bottom-row{
+  display: flex;
+  background-color: green;
+  // flex-basis: 80%;
+  // flex-direction: row;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
+  max-height: 100%;
+}
+.yearbook-top-big-image{
+  width: 5.8in;
+  height: auto;
+  border: 20px;
+
+}
+.yearbook-grid-right-column-top-row{
+
+}
+.large-image-flex-box {
+flex-basis: 100%;
+}
+
+.small-image-flex-box {
+  flex-basis:50%;
+}
+p {
+  display: none;
+}
+h1{
+  display: none;
+}
+
 // .yearbook-panel-middle-column {
 //   flex-wrap: wrap;
 //   flex-direction: column;
