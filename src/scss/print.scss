@@ -1,1 +1,74 @@
+#header {
+  display: none;
+}
 
+nav {
+  display: none;
+}
+
+.news-byline {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+}
+
+.lefttopimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:150px;
+}
+
+.leftmiddleimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:350px;
+}
+
+
+.leftbottomimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 15px;
+  top:550px;
+}
+
+.middlebottomimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 215px;
+  top:550px;
+}
+
+.rightbottomimage {
+  width: 2in;
+  height: 2in;
+  position: absolute;
+  left: 415px;
+  top: 550px;
+}
+
+ .mainrightimage {
+  width: 4.1in;
+  height: 4.05in;
+  position: absolute;
+  left:215px;
+  top:152px;
+}
+
+
+p {
+  display: none;
+}
